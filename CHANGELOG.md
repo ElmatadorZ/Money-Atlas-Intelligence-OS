@@ -1,5 +1,24 @@
 # Changelog
 
+## [2.3] — 2026-11-16 — Passes a professional-level test
+
+A harder evaluation (`evals/2026-11-16-hard/`: CFA-level grading, recomputed arithmetic, a new
+criterion for computation and data use) found v2.2 described calculations instead of doing them
+and stated that a recent event "has never happened".
+
+### Added
+- **QUANTIFY WHAT THE DATA ALLOWS**: sizing and leverage, plan sufficiency and drawdown, the
+  expected cost of each choice (DCA, fees, tax, real return), pricing formulas with their
+  convention (and the other convention's number), and — when a point forecast is demanded — the
+  honest best estimate (spot or forward) with a volatility range instead of a bare refusal.
+- **Absence claims are dated**: never "has never happened" about recent history; "as far as my
+  data goes".
+
+### Measured
+Held-out T1–T6 (of 132): no skill 118.5, v2.0 118.0, v2.2 128.0, **v2.3 131.5**; ranked best
+answer 5 of 6 (grader A) and 6 of 6 (grader B). Dev set D1–D10 (of 220): no skill 178.5,
+v2.0 198.0, v2.2 208.0.
+
 ## [2.2] — 2026-11-16 — The two misses from round 2
 
 ### Changed

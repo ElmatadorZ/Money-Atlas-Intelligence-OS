@@ -181,3 +181,23 @@ def test_market_myths_are_answered_as_prose():
     # and lost proportion points. The Market Core still applies, as prose.
     _, body = _split()
     assert "without the LIGHT banners" in _section(body, "ACTIVATION")
+
+
+# ---------------------------------------------------------------- v2.3
+# A harder test (10 professional-level questions) found v2.2 described calculations the
+# data allowed instead of doing them, refused a point forecast without giving the honest
+# best estimate, and asserted that a recent event "has never happened".
+
+def test_quantify_what_the_data_allows():
+    _, body = _split()
+    q = _section(body, "QUANTIFY WHAT THE DATA ALLOWS")
+    for item in ("**Sizing and leverage**", "**Plans and portfolios**", "**Choices**",
+                 "**Pricing formulas**", "**Point forecasts on request**"):
+        assert item in q
+    assert "do not just refuse" in q
+    assert "Check the arithmetic" in q
+
+
+def test_absence_claims_about_recent_history_are_dated():
+    _, body = _split()
+    assert re.search(r'never say something "has never happened"', _section(body, "DATA RULES"))
