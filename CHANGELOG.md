@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.3.0] — 2026-11-16 — Claude Code plugin
+
+- Install from the Claude Code CLI:
+  `/plugin install money-atlas-intelligence-os --marketplace ElmatadorZ/Money-Atlas-Intelligence-OS`,
+  or `claude plugin marketplace add ElmatadorZ/Money-Atlas-Intelligence-OS` then
+  `claude plugin install money-atlas-intelligence-os@elmatadorz-money-atlas`.
+- `.claude-plugin/plugin.json` (2.3.0) and `marketplace.json` (`elmatadorz-money-atlas`, so it can
+  sit beside the other ElmatadorZ marketplaces).
+- `skills/money-atlas-intelligence-os/` holds SKILL.md and every file it loads, kept identical to
+  the root by `tools/sync_plugin_skill.py`, a test and a CI job that runs
+  `claude plugin validate --strict`.
+
 ## [2.3] — 2026-11-16 — Passes a professional-level test
 
 A harder evaluation (`evals/2026-11-16-hard/`: CFA-level grading, recomputed arithmetic, a new

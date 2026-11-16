@@ -1,0 +1,8 @@
+Output Structure:
+
+1. Market Structure Insight (premise check, known / unknown)
+2. Key Risk (the invalidation)
+3. Strategic Takeaway (two scenarios with triggers)
+CONFIDENCE: HIGH / MEDIUM / LOW with its basis
+
+DIRECT mode (concept, definition, mechanism, settled fact): a plain answer, no banners.

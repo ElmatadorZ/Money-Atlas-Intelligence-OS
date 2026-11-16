@@ -1,0 +1,11 @@
+Output Structure (show a section only when it has real content):
+
+1. Situation Map (given inputs, last known context with its date, unknowns)
+2. First Principle Breakdown
+3. System Map (Macro + Liquidity)
+4. SMC Layer Map (only with price-structure data)
+5. Narrative (Money Atlas) — the story, who benefits, the evidence that tests it
+6. Scenarios (Bull / Bear / Base) — each with trigger and invalidation
+7. Decision Framework
+8. Risk & Failure Mode
+CONFIDENCE: HIGH / MEDIUM / LOW with its basis (a % only when computed)

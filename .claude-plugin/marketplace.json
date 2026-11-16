@@ -1,0 +1,14 @@
+{
+  "name": "elmatadorz-money-atlas",
+  "description": "Money Atlas Intelligence OS by ElmatadorZ",
+  "owner": {
+    "name": "Bunyawat Dechanon (ElmatadorZ)"
+  },
+  "plugins": [
+    {
+      "name": "money-atlas-intelligence-os",
+      "source": "./",
+      "description": "Financial-market and macro reasoning: scenarios, invalidation, no invented prices, real calculations"
+    }
+  ]
+}
