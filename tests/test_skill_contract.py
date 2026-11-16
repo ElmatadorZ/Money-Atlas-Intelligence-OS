@@ -152,3 +152,32 @@ def test_mode_reference_files_agree_with_skill():
     # reintroduce the bare confidence percentage the skill dropped.
     for f in ("full_mode.txt", "light_mode.txt", "system_prompt.txt", "session_boot.txt"):
         assert "X%" not in (ROOT / f).read_text(encoding="utf-8"), f
+
+
+# ---------------------------------------------------------------- v2.2
+# Round 2 left two misses: a "gold always rises with inflation" question answered
+# as a plain explanation (no known/inferred split, a wrong 2022 detail), and an
+# expired Thai tax deduction presented as current. These tests pin the fixes.
+
+def test_market_myths_are_tested_not_explained():
+    _, body = _split()
+    act = _section(body, "ACTIVATION")
+    assert "no claim to test" in act
+    assert re.search(r"claim about how markets behave", act)
+    assert re.search(r'"always" or "every time" happens is not DIRECT', act)
+
+
+def test_historical_figures_and_changing_rules_are_dated():
+    _, body = _split()
+    rules = _section(body, "DATA RULES")
+    assert "**Historical figures**" in rules and "describe the move without the" in rules
+    assert "**Rules and products change.**" in rules
+    assert "official source" in rules
+    assert "without its date" in _section(body, "FAILURE SYSTEM")
+
+
+def test_market_myths_are_answered_as_prose():
+    # Round 3: the myth question routed to LIGHT came out with trading-desk banners
+    # and lost proportion points. The Market Core still applies, as prose.
+    _, body = _split()
+    assert "without the LIGHT banners" in _section(body, "ACTIVATION")

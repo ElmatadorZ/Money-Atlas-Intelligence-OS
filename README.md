@@ -1,10 +1,43 @@
 # Money Atlas Intelligence OS
 ### Claude Skill (Agent) — Financial Market Strategic Intelligence
 
-**Version:** 2.1  
+**Version:** 2.2  
 **Author:** Bunyawat Dechanon (ElmatadorZ)  
 **Brand:** Money Atlas / Alternative Slowbar  
 **Type:** Custom Skill (SKILL.md format)
+
+---
+
+## 📢 Update announcement — v2.1 / v2.2 (16 Nov 2026)
+
+**Why:** a blind test found that answers written **with v2.0 scored lower than answers written
+without any skill** (141.0 vs 152.0 of 160). v2.0 did not invent prices, but it wrapped simple
+questions in the full framework, forced an SMC map with no chart, put unsupported percentages on
+its confidence, and refused to build trade levels from a price the user gave.
+
+**What changed:**
+
+| | Before (v2.0) | Now (v2.2) |
+|---|---|---|
+| Concept question ("bond prices when yields rise?") | Full market framework + "~95% confidence" | **DIRECT mode** — a plain answer |
+| Confidence | "CONFIDENCE: 25%" with no basis | **HIGH / MEDIUM / LOW + basis**; % only when computed |
+| SMC layer map | On every market question | **Only with price-structure data** |
+| "Gold is at $2,650 — entry, stop, target?" | Declined to give levels | Levels from your price + **`[ASSUMED]`** values, arithmetic shown, and a warning if the price looks stale |
+| Figures | "Don't invent a price" | Every figure is **given / last known (dated) / `[ASSUMED]`**; historical figures and **tax rules are dated**, with the official source |
+| "Smart money is buying — all in?" | Scenarios | Scenarios + **never endorses all-in, concentration or leverage** |
+| "Stocks fall every time rates rise?" | Explained | **The claim is tested** — when it held, when it failed |
+| Trigger | "ALWAYS trigger — do not skip" | Normal description; the Genesis Protocol router decides when installed |
+
+**Measured result** (blind, two graders, web-checked; details in [Test results](#test-results--with-the-skill-vs-without-it)):
+
+| | No skill | v2.0 | v2.1 | v2.2 |
+|---|---|---|---|---|
+| Round 2 — 12 questions (of 240) | 226.0 | 213.0 | **235.5** | — |
+| Round 3 — 4 fresh held-out (of 80) | 74.5 | — | **78.0** | 76.5 |
+
+Honest reading: v2.1 and v2.2 both beat answering without the skill, on questions they were not
+tuned on. v2.2 did not measurably beat v2.1 — its new rules gained on calibration and invalidation
+and lost on length. One fix made after round 3 (myth questions as prose) is not yet measured.
 
 ---
 
@@ -114,6 +147,7 @@ preferred the no-skill answer on 15 of 16 calls. v2.0 already refused to invent 
 concept questions in the full framework, forced an SMC map onto questions with no chart, put
 unsupported percentages on its confidence, and refused to build trade levels from the price given.
 v2.1 fixes those causes and was re-tested with 4 held-out questions written before v2.1 existed.
+v2.2 was then tested on 4 more fresh held-out questions (round 3, below).
 
 | Round 2 (12 questions, 2 graders) | No skill | v2.0 | **v2.1** |
 |---|---|---|---|
@@ -130,7 +164,15 @@ v2.1 fixes those causes and was re-tested with 4 held-out questions written befo
 | Usefulness | 24.0 | 22.0 | **24.0** |
 | Proportion (length fits question) | **23.5** | 11.0 | 23.0 |
 
-Still open: one held-out mechanism question (does gold rise with inflation?) scored 17.5, below both
+| Round 3 (4 fresh held-out questions) | No skill | v2.1 | **v2.2** |
+|---|---|---|---|
+| Total (of 80) | 74.5 | **78.0** | 76.5 |
+
+v2.2 targeted round 2's misses (myth questions, dated rules and history). It gained on calibration
+and invalidation but lost on length and two factual details, so it did not beat v2.1; on 4
+questions the gap is within noise.
+
+Round 2 had left open: one held-out mechanism question (does gold rise with inflation?) scored 17.5, below both
 other conditions — it was answered as a plain explanation, without an explicit known/inferred split
 or invalidation, and with a wrong detail about gold's 2022 path. Facts that changed after training
 (Thailand's SSF tax deduction ended after 2024) still slip through. Limits: 12 questions, one answer

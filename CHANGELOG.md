@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.2] — 2026-11-16 — The two misses from round 2
+
+### Changed
+- A question that asks why something "always" or "every time" happens is no longer DIRECT: the
+  claim inside it is tested with the Market Core (what the evidence shows, when it held and
+  failed, how to tell the regime), written as prose without the LIGHT banners.
+- **Historical figures** follow the Data Rules: quote a level or date only when sure, otherwise
+  describe the move without the number.
+- **Rules and products change**: tax schemes and limits, regulations, fund availability, fees and
+  tickers are dated last-known facts, with the official source to confirm.
+- FULL mode target length ~600 words (was ~700).
+
+### Measured
+Round 3, four fresh held-out questions: no skill 74.5, v2.1 78.0, v2.2 76.5 of 80. Both skill
+versions beat no skill; v2.2 did not beat v2.1 (within noise on 4 questions). The prose rule
+for myth questions was added after round 3 and is not yet measured. See `evals/2026-11-16/`.
+
 ## [2.1] — 2026-11-16 — Measured, then fixed
 
 A blind A/B test of v2.0 (`evals/2026-11-16/`) found that answers written with the skill

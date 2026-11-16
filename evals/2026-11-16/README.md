@@ -80,9 +80,36 @@ The 4.5 points v2.1 lost, from the graders' notes:
   The skill marks figures by kind but not rules that may have changed since training.
 - **M3, M5:** a little long.
 
+## Round 3 — no skill vs v2.1 vs v2.2 (fresh held-out H5–H8)
+
+v2.2 targeted the two misses above: questions that state a market "rule" are tested, not just
+explained, and historical figures, tax rules and products are dated or described without a number
+when not certain. Because H1–H4 had been seen, four **new** held-out questions (`heldout2.json`)
+were written and timestamped (`heldout2_fixed_at.txt`) before v2.2 was written. The rubric only
+adds them to its examples (`rubric_round3.md`).
+
+| Question | No skill | v2.1 | v2.2 |
+|---|---|---|---|
+| H5 "rates up, stocks always fall?" (Thai) | 18.0 | **19.0** | **19.0** |
+| H6 Thai tax-deductible funds this year (Thai) | 18.0 | **19.0** | 18.5 |
+| H7 ETH at $3,000: where to put the stop? | 18.5 | **20.0** | **20.0** |
+| H8 BTC 2021 peak and the fall after | **20.0** | **20.0** | 19.0 |
+| **Total (of 80)** | 74.5 | **78.0** | 76.5 |
+| Ranked first (grader A / B) | 0 / 0 | 2 / 2 | 2 / 2 |
+
+Both skill versions beat no skill on fresh questions. **v2.2 did not beat v2.1**: it gained on
+calibration (8.0 vs 7.5) and invalidation (8.0 vs 7.0) but lost on proportion (7.0 vs 8.0: the
+myth question came out with trading-desk banners) and accuracy (6.0 vs 7.5: an understated 2013
+BTC drawdown, a ThaiESG holding-period date). On 4 questions with one answer each, a 1.5-point
+gap is within noise.
+
+After round 3, one change was made **without re-measuring**: questions that test a market rule are
+written as prose, without the LIGHT banners (the cause of the H5 proportion loss). Measuring it
+fairly needs another fresh held-out set.
+
 ## Limits
 
-- Small sample: 12 questions, one answer per condition, two graders.
+- Small sample: 12 + 4 questions, one answer per condition, two graders.
 - The same no-skill and v2.0 answers scored differently in the two rounds (M1–M8: no skill
   152.0 → 151.0, v2.0 141.0 → 140.5). Compare conditions within a round.
 - M1–M8 shaped v2.1, so the held-out H1–H4 are the fairer test (77.5 vs 75.0 and 72.5) — a

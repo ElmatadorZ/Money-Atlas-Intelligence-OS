@@ -1,0 +1,572 @@
+{
+ "H5": {
+  "C": {
+   "A1": [
+    2,
+    "Checked: Fed hiked continuously 2004-06 while US stocks rose -> correct. 2017 hikes with strong stocks, then a sharp Q4 2018 drop -> correct. 2022 fast hikes hit tech hardest -> correct. Discount-rate, competing-yield and debt-cost mechanisms are accurate."
+   ],
+   "A2": [
+    2,
+    "Deliberately avoids unverifiable numbers."
+   ],
+   "A3": [
+    2,
+    "Rejects 'every time' and explains why."
+   ],
+   "A4": [
+    2,
+    "Says the current cycle can't be assessed without live rate, inflation and earnings data."
+   ],
+   "A5": [
+    2,
+    "HIGH on 'not always', which is justified by history."
+   ],
+   "A6": [
+    2,
+    "Both scenarios plus the conditions behind them (cause, speed, expectations, valuation)."
+   ],
+   "A7": [
+    2,
+    "Names the key risk (hikes faster than expected while valuations are high) and the invalidation signal (earnings estimates cut)."
+   ],
+   "A8": [
+    2,
+    "Answers the conceptual question."
+   ],
+   "A9": [
+    2,
+    "Gives concrete signals to watch."
+   ],
+   "A10": [
+    1,
+    "Trading-desk template (MARKET STRUCTURE / KEY RISK / STRATEGIC TAKEAWAY / CONFIDENCE) is heavier than a conceptual yes/no myth question needs."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Checked: 2004-06 hikes with a stock uptrend -> correct. 2022 stocks and bonds fell together -> correct. Banks' wider net interest margin and rate-sensitive sectors -> accurate. Expectations/surprise mechanism -> accurate."
+   ],
+   "A2": [
+    2,
+    "No fabricated figures."
+   ],
+   "A3": [
+    2,
+    "Corrects the absolutist premise."
+   ],
+   "A4": [
+    1,
+    "Doesn't state what it can't know about the current cycle or rate environment."
+   ],
+   "A5": [
+    2,
+    "Appropriately hedged ('มัก', 'อาจ')."
+   ],
+   "A6": [
+    2,
+    "Four distinct conditions plus sector differences."
+   ],
+   "A7": [
+    1,
+    "Explains when hikes hurt, but gives no explicit invalidation signal for the 'not always' view."
+   ],
+   "A8": [
+    2,
+    "Answers the question."
+   ],
+   "A9": [
+    2,
+    "Good list of questions to ask instead."
+   ],
+   "A10": [
+    2,
+    "Proportionate, plain structure."
+   ]
+  },
+  "A": {
+   "A1": [
+    2,
+    "Checked: 2004-06 hikes with stocks rising, and 2022 heavy falls -> correct. Mechanisms and the banking/sector point are accurate. 'Stocks often rise on hike-announcement days when the hike matches expectations' is a fair general claim."
+   ],
+   "A2": [
+    2,
+    "No fabricated figures."
+   ],
+   "A3": [
+    2,
+    "Explicitly says 'every time' is the wrong part."
+   ],
+   "A4": [
+    2,
+    "States it can't assess the current cycle without the latest rate and earnings data."
+   ],
+   "A5": [
+    2,
+    "HIGH on 'not always', which is justified."
+   ],
+   "A6": [
+    2,
+    "Cause, expectations and sector all covered."
+   ],
+   "A7": [
+    1,
+    "Mentions fast inflation-fighting hikes as the bad case, but gives no explicit invalidation signals."
+   ],
+   "A8": [
+    2,
+    "Answers the question."
+   ],
+   "A9": [
+    2,
+    "Three-question rule of thumb."
+   ],
+   "A10": [
+    2,
+    "Concise and proportionate."
+   ]
+  },
+  "rank": [
+   "C",
+   "A",
+   "B"
+  ],
+  "why": "All three are accurate and correct the premise. C adds a second historical case, explicit invalidation signals and a clear statement of what it can't know, though its template is heavier than needed. A is the most proportionate and states its limits, while B is good but never says what it can't know about the current cycle.",
+  "checked": [
+   "Fed hiking cycle Jun 2004-Jun 2006 (17 hikes) with S&P 500 rising -> correct",
+   "Fed hiked 3x in 2017 with S&P +~19%, then a sharp Q4 2018 drop -> correct",
+   "2022: rapid Fed hikes, S&P ~-19%, Nasdaq worse, bonds also fell -> correct",
+   "Banks can benefit from a wider net interest margin when rates rise -> generally correct"
+  ]
+ },
+ "H6": {
+  "C": {
+   "A1": [
+    1,
+    "Checked: RMF 30%/500k, combined with PVD/GPF/teacher fund/NSF (กอช.)/annuity -> correct. ThaiESG 30%/300k separate from the 500k -> correct. SSF deduction ended after 2567 with 10-year hold -> correct. Minor error: it says the 8-to-5-year cut applies to units bought from 2568, but K-Asset/Krungsri say 5 years applies to units bought from 2567 onward. It omits the RMF continuity rule (no skipping more than one year in a row), but that is an omission, not a false claim."
+   ],
+   "A2": [
+    2,
+    "No invented figures. The 600k example arithmetic is correct."
+   ],
+   "A3": [
+    2,
+    "No false premise. Rightly flags that 'this year' (2569) rules may differ."
+   ],
+   "A4": [
+    2,
+    "Explicit that its knowledge runs to 2568. Tags ThaiESGX as [UNVERIFIED]."
+   ],
+   "A5": [
+    2,
+    "Hedges ThaiESGX status instead of asserting it, which turned out right: new money can still go in during 2569 under the ThaiESG cap."
+   ],
+   "A6": [
+    2,
+    "Weighs liquidity and lock-up against the tax saving for low brackets."
+   ],
+   "A7": [
+    2,
+    "Lock-up and loss risk. Doesn't mention the tax-clawback penalty explicitly, but the main risks are covered."
+   ],
+   "A8": [
+    2,
+    "Asks for income, PVD/annuity and time horizon. No personalized instruction."
+   ],
+   "A9": [
+    2,
+    "Clear caps table and worked example, plus a December deadline."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ]
+  },
+  "B": {
+   "A1": [
+    1,
+    "Correct: RMF 30%/500k and continuity rule; ThaiESG 300k separate; กอช. cap 30,000; SSF ended 2567; 800k combined max. Errors: says ThaiESGX new money is '2568 only, can't buy this year', but K-Asset and Bangkok Bank show new money can go into ThaiESGX in 2569 under the shared ThaiESG cap. Also says the 5-year hold applies from 2568 purchases when it applies from 2567. Little practical tax impact because the cap is shared, so 1 rather than 0."
+   ],
+   "A2": [
+    2,
+    "Deadline 'around 29-30 Dec' is given as typical, not as fact. No fabricated stats."
+   ],
+   "A3": [
+    2,
+    "No false premise."
+   ],
+   "A4": [
+    2,
+    "Opening caveat that it can't verify the latest rules."
+   ],
+   "A5": [
+    1,
+    "Despite the caveat, it states flatly that ThaiESGX is closed this year, which is wrong."
+   ],
+   "A6": [
+    2,
+    "Notes that low-bracket buyers may not benefit."
+   ],
+   "A7": [
+    2,
+    "Clawback plus surcharge, tax on gains, lock-up, and the deadline."
+   ],
+   "A8": [
+    2,
+    "Asks for income and existing deductions. No instruction."
+   ],
+   "A9": [
+    2,
+    "Very usable table and checklist."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ]
+  },
+  "A": {
+   "A1": [
+    1,
+    "Correct: RMF 30%/500k, 5y + age 55, and continuity rule; ThaiESG 300k separate with a 5-year hold for units bought 2567-2569 (matches Krungsri/K-Asset); SSF ended 2567; LTF switch deduction spread over later years (50k/yr 2569-2572), correctly flagged. Error: 'the new-money window has closed' for ThaiESGX is wrong; new money can be invested in 2569 under the ThaiESG cap."
+   ],
+   "A2": [
+    2,
+    "Tax-saving examples are clearly illustrative arithmetic."
+   ],
+   "A3": [
+    2,
+    "No false premise."
+   ],
+   "A4": [
+    2,
+    "Gives a cutoff caveat, tags the LTF carry-over [UNVERIFIED], and tells the user to check with the fund house."
+   ],
+   "A5": [
+    1,
+    "Claims knowledge 'to mid-2569' and asserts the ThaiESGX closure without a hedge."
+   ],
+   "A6": [
+    2,
+    "Bracket comparison (20% vs 5%) and the lock-up trade-off."
+   ],
+   "A7": [
+    2,
+    "Clawback, over-buying beyond the cap, and order-cutoff timing."
+   ],
+   "A8": [
+    2,
+    "Asks for income, PVD/annuity and age. Disclaimer included."
+   ],
+   "A9": [
+    2,
+    "Most practically complete (LTF carry-over, PVD squeeze)."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ]
+  },
+  "rank": [
+   "C",
+   "A",
+   "B"
+  ],
+  "why": "C is the only answer that does not assert a wrong ThaiESGX status: it flags it as unverified and gets every limit right, with only a minor holding-period date slip. A has the correct ThaiESG window and the useful LTF carry-over point but wrongly says ThaiESGX new money is closed. B makes that same error and also misdates the 5-year rule.",
+  "checked": [
+   "RMF 30% / 500k, combined with PVD/GPF/teacher fund/กอช./annuity -> correct",
+   "RMF continuity (can't skip >1 consecutive year) -> still in force per Finnomena (A, B correct; C omits)",
+   "ThaiESG 30% / 300k, separate from the 500k -> correct (Krungsri, K-Asset)",
+   "ThaiESG 5-year hold applies to purchases from 2567 (2024) onward, not 2568 -> C and B slightly wrong, A ('2567-2569') right",
+   "ThaiESGX new money in 2569 -> still allowed, sharing the ThaiESG 300k cap (K-Asset, Bangkok Bank, Finnomena), so A and B are wrong to say it closed",
+   "ThaiESGX LTF switch: 300k in 2568, remainder up to 50k/yr in 2569-2572 -> A's carry-over point correct",
+   "SSF deduction ended after tax year 2567, existing units held 10 years -> correct",
+   "กอช. deduction up to 30,000 baht -> correct (B)"
+  ]
+ },
+ "H7": {
+  "C": {
+   "A1": [
+    2,
+    "Checked: arithmetic (1.5x$120=$180 gives $2,820; 3% ATR gives $2,865; 5% gives $2,775; $100/$180=0.56 ETH, ~$1,670 notional; 2R=$3,360) is all correct, and the ATR/structure method is standard. 'Gaps through stops' in a 24/7 market is loosely worded (it means slippage) but not a material error."
+   ],
+   "A2": [
+    2,
+    "ATR and account size are tagged [ASSUMED]. $2,880 is marked as an example. All levels are derived from the user's $3,000."
+   ],
+   "A3": [
+    2,
+    "No false premise. Asks the user to confirm the $3,000 is current."
+   ],
+   "A4": [
+    2,
+    "Explicit Given/Unknown split and says it has no live feed."
+   ],
+   "A5": [
+    2,
+    "Split confidence: LOW for the level, HIGH for the method. Appropriate."
+   ],
+   "A6": [
+    2,
+    "Structure vs ATR stops, ATR sensitivity range, and works/fails paths."
+   ],
+   "A7": [
+    2,
+    "Invalidation (close below structure low), slippage, leverage and liquidation, and don't widen the stop. Some tension between 'close, not wick' and a hard stop, but minor."
+   ],
+   "A8": [
+    2,
+    "Framework, not an instruction. Asks for timeframe, swing low, ATR and account size. Warns on leverage."
+   ],
+   "A9": [
+    2,
+    "User can plug in numbers immediately."
+   ],
+   "A10": [
+    2,
+    "Length fits a trading-method question."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Checked: arithmetic ($2,850-$30=$2,820; 1.5x4% ATR=$180; 3% gives $2,865; 6% gives $2,730; 0.56 ETH; 2R $3,360) is all correct. The method is standard. The sweep and liquidation descriptions are accurate."
+   ],
+   "A2": [
+    2,
+    "Swing low $2,850, ATR 4% and account $10k are all tagged [ASSUMED]."
+   ],
+   "A3": [
+    2,
+    "No false premise. Flags that the price may be stale."
+   ],
+   "A4": [
+    2,
+    "Given vs not-known listed, including leverage."
+   ],
+   "A5": [
+    2,
+    "Confidence split HIGH method / LOW level."
+   ],
+   "A6": [
+    2,
+    "Two methods cross-checked, an ATR range, and Path A/B."
+   ],
+   "A7": [
+    2,
+    "Invalidation clearly stated, and it reconciles the close-vs-wick issue via the sweep buffer. Liquidation check included."
+   ],
+   "A8": [
+    2,
+    "Asks for the missing facts. Framework, not personal advice. Leverage warning."
+   ],
+   "A9": [
+    2,
+    "Very usable worked example."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ]
+  },
+  "A": {
+   "A1": [
+    2,
+    "Checked: arithmetic (1.5-2x$120 gives $2,760-$2,820; $100/$150=0.67 ETH; table % to price conversions) is correct. 'ETH often moves 3-5% a day' is consistent with ETH's historical ~3-4% daily volatility."
+   ],
+   "A2": [
+    2,
+    "Levels are conditional ('if that low is $2,880', 'with a daily ATR near $120') and the style table is a rough guide. Not presented as current data."
+   ],
+   "A3": [
+    2,
+    "No false premise."
+   ],
+   "A4": [
+    1,
+    "Says it can't see the chart or account, but doesn't flag that $3,000 may be stale or separate known from assumed as explicitly as the others."
+   ],
+   "A5": [
+    2,
+    "No overconfident numbers."
+   ],
+   "A6": [
+    2,
+    "Structure, ATR, a style table and trailing are all covered."
+   ],
+   "A7": [
+    2,
+    "Stop as invalidation, sweeps, liquidation vs stop, R:R gate, and a hard stop given 24/7 trading."
+   ],
+   "A8": [
+    2,
+    "Asks for timeframe, swing low, entry reason and leverage. Gives the general-education caveat."
+   ],
+   "A9": [
+    2,
+    "Actionable formula and checklist."
+   ],
+   "A10": [
+    2,
+    "Proportionate, though slightly list-heavy."
+   ]
+  },
+  "rank": [
+   "B",
+   "C",
+   "A"
+  ],
+  "why": "B and C share the same correct, assumption-labelled method. B makes structure the primary stop and handles the wick/sweep issue cleanly, while C leaves a small close-vs-wick tension. A is accurate and practical but less explicit about what is assumed versus known and never questions the $3,000 input.",
+  "checked": [
+   "ATR-multiple stop arithmetic in all three -> correct",
+   "Position size = risk$/(entry-stop): 100/180=0.56 ETH, 100/150=0.67 ETH -> correct",
+   "2R target 3000+2x180=$3,360 -> correct",
+   "ETH typical daily move 3-5% -> consistent with historical realized vol (~60-70% annualized, ~3.5%/day)",
+   "Crypto trades 24/7, so stops can slip in fast moves -> correct; 'gaps' (C) is loosely worded"
+  ]
+ },
+ "H8": {
+  "C": {
+   "A1": [
+    2,
+    "Checked: ATH ~$68.8-69k on 10 Nov 2021, top daily close ~$67.5k on 8 Nov, April 2021 high ~$64.8k, LUNA May / Celsius+3AC June / below $20k June 2022, FTX low ~$15.5k on 21 Nov 2022, ~77% drop, earlier drawdowns ~84% (2017-18) and ~86% (2013-15). All correct."
+   ],
+   "A2": [
+    2,
+    "No invented figures. Every level is a well-documented historical value, with the exchange spread given."
+   ],
+   "A3": [
+    2,
+    "No false premise, and it adds none."
+   ],
+   "A4": [
+    2,
+    "Says the figures come from training data and that the exact highs and lows vary by data source."
+   ],
+   "A5": [
+    2,
+    "Firm on settled history, with suitable rounding."
+   ],
+   "A6": [
+    2,
+    "Single settled answer. Separates intraday from daily-close peak and the April vs November tops."
+   ],
+   "A7": [
+    2,
+    "Not relevant to historical fact."
+   ],
+   "A8": [
+    2,
+    "Answers exactly what was asked."
+   ],
+   "A9": [
+    2,
+    "Peak, trough, % fall, timeline and causes all clear."
+   ],
+   "A10": [
+    2,
+    "Short lead plus bullets. The causes paragraph is a small extra but proportionate."
+   ]
+  },
+  "B": {
+   "A1": [
+    1,
+    "Peak, daily close, trough, 77%, and the LUNA/Celsius/3AC/FTX sequence are correct. But 'roughly 80-85% after the 2013 and 2017 peaks' understates the 2013-15 fall, which was ~86-87%: a minor error."
+   ],
+   "A2": [
+    2,
+    "No fabricated figures."
+   ],
+   "A3": [
+    2,
+    "No false premise."
+   ],
+   "A4": [
+    2,
+    "Training-data caveat, notes source differences, and says the current price needs a live source."
+   ],
+   "A5": [
+    2,
+    "Firm where firm."
+   ],
+   "A6": [
+    2,
+    "Separates intraday from daily close."
+   ],
+   "A7": [
+    2,
+    "Not relevant."
+   ],
+   "A8": [
+    2,
+    "Answers the question."
+   ],
+   "A9": [
+    2,
+    "Clear and actionable knowledge."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ]
+  },
+  "A": {
+   "A1": [
+    2,
+    "Checked: 10 Nov 2021 ~$69k (CMC/CoinGecko ~$68.8-69k), April ~$64.8k, June 2022 low ~$17.6k (18 Jun) and first sub-$20k since Dec 2020, FTX low ~$15.5k on 21 Nov 2022, ~77%, prior drawdowns 84%/86%, new ATH above 2021 high in March 2024 (5 Mar). All correct. '>$1T wiped' is borderline (~$1.30T to ~$0.30T is about $1.0T) but acceptable."
+   ],
+   "A2": [
+    2,
+    "Historical figures are real and attributed to named data sources."
+   ],
+   "A3": [
+    2,
+    "No false premise."
+   ],
+   "A4": [
+    2,
+    "Settled history presented as established, with the exchange spread noted. No live-data claim."
+   ],
+   "A5": [
+    2,
+    "Firm and appropriately rounded."
+   ],
+   "A6": [
+    2,
+    "Single settled answer. Adds the intermediate June low."
+   ],
+   "A7": [
+    2,
+    "Not relevant."
+   ],
+   "A8": [
+    2,
+    "Answers the question."
+   ],
+   "A9": [
+    2,
+    "Clear, with useful context on the March 2024 recovery."
+   ],
+   "A10": [
+    2,
+    "Concise and proportionate."
+   ]
+  },
+  "rank": [
+   "C",
+   "A",
+   "B"
+  ],
+  "why": "C and A are both fully accurate. C edges ahead with the daily-close nuance, a clear causal story and an explicit source caveat. B is equally clear but understates the 2013-15 drawdown as 80-85% when it was ~86-87%.",
+  "checked": [
+   "BTC 2021 ATH -> ~$68,789 (CMC) to ~$69,044 (CoinGecko) on 10 Nov 2021, correct",
+   "Highest daily close ~$67.5k on 8 Nov 2021 -> correct",
+   "April 2021 high ~$64.8k -> correct (14 Apr)",
+   "June 2022 low ~$17.6k and first time below $20k since 2020 -> correct",
+   "Cycle low ~$15.5k on 21 Nov 2022 after FTX -> correct (~$15,476-15,480)",
+   "Drawdown ~77% -> correct (69k to 15.5k = 77.5%)",
+   "2017-18 drawdown ~84% -> correct; 2013-15 ~86% -> correct (~86-87%), so B's '80-85%' understates it",
+   "BTC topped its 2021 high in March 2024 -> correct (5 Mar 2024)",
+   "'>$1T market value wiped' (A) -> borderline, about $1.0T"
+  ]
+ }
+}
