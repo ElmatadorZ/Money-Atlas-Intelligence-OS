@@ -1,7 +1,7 @@
 # Money Atlas Intelligence OS
 ### Claude Skill (Agent) — Financial Market Strategic Intelligence
 
-**Version:** 2.0  
+**Version:** 2.1  
 **Author:** Bunyawat Dechanon (ElmatadorZ)  
 **Brand:** Money Atlas / Alternative Slowbar  
 **Type:** Custom Skill (SKILL.md format)
@@ -58,46 +58,83 @@ Identifies where price is in the institutional cycle:
 | L4 | Distribution | Quiet selling, engineered fake breakouts |
 | L5 | Exit Liquidity | Retail buys tops, institutions exit |
 
-Every analysis maps the current layer + next probable move + invalidation condition.
+With price-structure data, an analysis maps the current layer + next probable move + invalidation condition. Without it, the skill says the layer cannot be placed and names the input that would place it.
 
 ---
 
 ## Output Modes
 
-### LIGHT MODE — Quick Insight
-For single-asset questions and fast reads.
+Pick the smallest mode that carries the answer. Auto-detected; override with `FULL`, `LIGHT` or `short`.
+
+| Mode | When | Shape |
+|---|---|---|
+| **DIRECT** | A concept, definition, mechanism or settled fact | A plain answer — no banners, scenarios or confidence field |
+| **LIGHT** | One asset, a quick view, a premise to check | The Market Core in a few paragraphs (~300 words) |
+| **FULL** | An investment or allocation decision, a trading plan, a macro thesis | The template below, only the sections with real content (~700 words) |
+
+Every LIGHT and FULL answer carries the **Market Core**: the premise checked, known vs unknown
+(including what cannot be known without live data), at least two scenarios with triggers, the risk
+and its invalidation, and confidence stated with its basis.
 
 ```
-📍 MARKET STRUCTURE INSIGHT
-[SMC layer + price context]
-
-📍 KEY RISK
-[What breaks the thesis]
-
-📍 STRATEGIC TAKEAWAY
-[1-2 sentence actionable insight]
-```
-
-### FULL MODE — Deep Analysis
-For investment decisions, macro analysis, strategy, or "should I" questions.
-
-```
-📍 SITUATION MAP
+📍 SITUATION MAP          given inputs, last known context with its date, unknowns
 📍 FIRST PRINCIPLE BREAKDOWN
 📍 SYSTEM MAP (Macro → Liquidity → Asset → Price)
-📍 SMC LAYER MAP
-📍 NARRATIVE INTELLIGENCE
+📍 SMC LAYER MAP          only when there is price-structure data to read
+📍 NARRATIVE INTELLIGENCE the story, who benefits, the evidence that tests it
 📍 SCENARIOS
-   🐂 Bull: [entry zone | target | condition]
+   🐂 Bull: [trigger | target | condition]
    🐻 Bear: [trigger | target | condition]
-   ⚖️ Base: [most probable path]
+   ⚖️ Base: [most probable path, and why]
 📍 DECISION FRAMEWORK
 📍 RISK & FAILURE MODE
-   CONFIDENCE: [X%] | KEY UNKNOWNS: [list]
+   CONFIDENCE: [HIGH / MEDIUM / LOW — basis] | KEY UNKNOWNS: [list]
 ```
 
-Mode is auto-detected from question context.  
-User can override: type `FULL` or `LIGHT` at any time.
+**Data Rules.** Every figure is *given* (from the user, sanity-checked), *last known* (with its
+date, never presented as current) or *assumed* (labelled `[ASSUMED]`, with the arithmetic shown).
+Anything else is invented. Asked for an entry, stop and target from a single price, the skill builds
+them from that price plus labelled assumptions instead of refusing.
+
+**Confidence.** HIGH / MEDIUM / LOW with its basis; a percentage only when it is computed from a
+stated base rate, model or data.
+
+---
+
+## Test results — with the skill vs without it
+
+Fresh agents answered the same questions with no skill, with v2.0 and with v2.1, without web access
+or live data. Two independent graders scored every answer blind against a fixed 10-criterion rubric
+and checked the facts with web search. Everything is in
+[`evals/2026-11-16/`](evals/2026-11-16/README.md): prompts, rubric, all 36 answers, both graders'
+scores, the unblinding keys and `aggregate.py`.
+
+**Round 1 found v2.0 made answers worse:** 141.0 vs 152.0 of 160 without the skill, and the graders
+preferred the no-skill answer on 15 of 16 calls. v2.0 already refused to invent prices, but it wrapped
+concept questions in the full framework, forced an SMC map onto questions with no chart, put
+unsupported percentages on its confidence, and refused to build trade levels from the price given.
+v2.1 fixes those causes and was re-tested with 4 held-out questions written before v2.1 existed.
+
+| Round 2 (12 questions, 2 graders) | No skill | v2.0 | **v2.1** |
+|---|---|---|---|
+| Total (of 240) | 226.0 | 213.0 | **235.5** |
+| Held-out questions only (of 80) | 75.0 | 72.5 | **77.5** |
+| Ranked best answer (grader A / B) | 4 / 4 | 0 / 0 | **8 / 8** |
+
+| Criterion (of 24) | No skill | v2.0 | **v2.1** |
+|---|---|---|---|
+| No fabrication | 23.0 | 24.0 | **24.0** |
+| Known / unknown | 18.5 | 24.0 | 23.0 |
+| Calibrated confidence | 23.5 | 14.0 | **24.0** |
+| Risk and invalidation | 20.5 | 24.0 | 23.0 |
+| Usefulness | 24.0 | 22.0 | **24.0** |
+| Proportion (length fits question) | **23.5** | 11.0 | 23.0 |
+
+Still open: one held-out mechanism question (does gold rise with inflation?) scored 17.5, below both
+other conditions — it was answered as a plain explanation, without an explicit known/inferred split
+or invalidation, and with a wrong detail about gold's 2022 path. Facts that changed after training
+(Thailand's SSF tax deduction ended after 2024) still slip through. Limits: 12 questions, one answer
+each, two graders; M1–M8 shaped v2.1, so the held-out rows are the fairer comparison.
 
 ---
 
@@ -186,6 +223,7 @@ money-atlas-intelligence-os/
 ├── cli/                        ← Command-line runners
 │
 ├── tests/                      ← unit tests for the reasoning engines + skill contract
+├── evals/2026-11-16/           ← blind A/B test: prompts, answers, grades, aggregate.py
 ├── examples/                   ← worked input→output examples + runnable demo
 │   └── worked/
 └── tools/validate_skill.py     ← installability + integrity checker (run in CI)
@@ -220,7 +258,8 @@ python -m pytest -q              # unit tests over the reasoning engines + skill
 The tests are not decorative. They pin the gates that would cost money if they drifted — a BUY
 signal only on high-confidence accumulation, risk raised on distribution, First Principle truths
 kept separate from inference — and the skill's own promises: every scenario carries an invalidation
-condition, and the skill abstains rather than invent a price when it has no data. See
+condition, the skill abstains rather than invent a price when it has no data, concept questions get a
+plain answer, confidence carries its basis, and every file SKILL.md points to exists. See
 [`examples/worked/`](examples/worked/) for what the output looks like in each case, including the
 [insufficient-data case](examples/worked/03-insufficient-data.md) where the correct answer is to
 decline.
@@ -229,10 +268,11 @@ decline.
 
 ## Non-Negotiable Constraints
 
-Every output must include:
+Every market read or decision must include (a concept question gets a plain answer instead):
 
 - **Multiple scenarios** — no single prediction
-- **Explicit uncertainty** — confidence level + key unknowns
+- **Explicit uncertainty** — confidence level with its basis + key unknowns
+- **No invented figures** — every number given, last known with its date, or labelled `[ASSUMED]`
 - **Invalidation point** — what breaks the entire analysis
 - **Human decision primacy** — the skill advises, the human decides
 

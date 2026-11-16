@@ -12,12 +12,14 @@ Two kinds of example live here:
 
 | File | Question | What it demonstrates |
 |---|---|---|
-| [worked/01-btc-light-mode.md](worked/01-btc-light-mode.md) | "Quick read on BTC?" | LIGHT mode: one scenario, confidence, invalidation |
+| [worked/01-btc-light-mode.md](worked/01-btc-light-mode.md) | "Quick read on BTC?" | LIGHT mode: main path + alternative, grounded confidence, invalidation |
 | [worked/02-gold-full-mode.md](worked/02-gold-full-mode.md) | "Should I add gold here?" | FULL mode: First Principle → SMC → scenarios with entry/exit |
 | [worked/03-insufficient-data.md](worked/03-insufficient-data.md) | "Where's BTC headed?" (no data) | Honest degradation — the skill abstains instead of inventing a price |
+| [worked/04-concept-direct-mode.md](worked/04-concept-direct-mode.md) | "What happens to bond prices when yields rise?" | DIRECT mode: a concept answered plainly, no framework |
 
-Every worked example ends with an **invalidation condition**, because an output
-without one is invalid by the skill's own FAILURE SYSTEM.
+Every market-read example ends with an **invalidation condition**, because an output
+without one is invalid by the skill's own FAILURE SYSTEM. A concept answer (DIRECT mode)
+needs none.
 
 ## Running the demo
 
