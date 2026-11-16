@@ -1,0 +1,1226 @@
+{
+ "T1": {
+  "A": {
+   "A1": [
+    2,
+    "Checked 13/0.85=15.3, 16/13-1=+23%, 13/0.8=16.25, breakeven 1-13/16=18.75%, bear -20%: all correct; rate-regime remark is conditional"
+   ],
+   "A2": [
+    2,
+    "No invented levels; unknowns (bond yield, trailing/forward) explicitly not filled"
+   ],
+   "A3": [
+    2,
+    "Challenges the P/E-vs-average premise (E durability, sector mix, regime)"
+   ],
+   "A4": [
+    2,
+    "Clear given/unknown split in situation map"
+   ],
+   "A5": [
+    1,
+    "'CONFIDENCE ~55%' is a precise probability with no basis"
+   ],
+   "A6": [
+    2,
+    "Bull/bear/base with conditions"
+   ],
+   "A7": [
+    2,
+    "Explicit failure modes incl. >19% EPS cut"
+   ],
+   "A8": [
+    2,
+    "Horizon-conditional framework, staged buying, no personal instruction"
+   ],
+   "A9": [
+    2,
+    "Earnings-breakeven framing is the professional core of the question"
+   ],
+   "A10": [
+    1,
+    "SMC 'L1/L3' layer map and narrative section add template noise to an index-valuation question"
+   ],
+   "A11": [
+    2,
+    "Uses all three inputs; every calculation recomputed correct"
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "SET dividend yield 3-4% (end-2025 4.04%), household debt 'near 90%' (86.7% Q4-25), GDP 2-3%: all fair"
+   ],
+   "A2": [
+    2,
+    "Structural figures are approximately correct; forward P/E 14-15x framed conditionally"
+   ],
+   "A3": [
+    2,
+    "Questions whether 16x is still the right anchor"
+   ],
+   "A4": [
+    1,
+    "Unknowns implied via questions, not cleanly separated from givens"
+   ],
+   "A5": [
+    2,
+    "Hedged appropriately"
+   ],
+   "A6": [
+    2,
+    "Sentiment vs earnings-driven drop, cheap vs trap"
+   ],
+   "A7": [
+    2,
+    "Value-trap conditions spelled out"
+   ],
+   "A8": [
+    2,
+    "Staged entry, sizing for further fall, no instruction"
+   ],
+   "A9": [
+    2,
+    "Good structural de-rating reasoning, P/BV and EM comparison"
+   ],
+   "A10": [
+    2,
+    "Proportionate"
+   ],
+   "A11": [
+    1,
+    "Discount and ~20%+ upside right, but the 15% fall is not used in any calculation (no implied prior P/E or EPS breakeven)"
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "No errors found"
+   ],
+   "A2": [
+    2,
+    "Explicitly adds no figures"
+   ],
+   "A3": [
+    2,
+    "Premise check on trailing vs forward and anchor"
+   ],
+   "A4": [
+    2,
+    "Known/not-known listed"
+   ],
+   "A5": [
+    2,
+    "Low-medium confidence, arithmetic labelled as not forecast"
+   ],
+   "A6": [
+    2,
+    "Re-rating vs value trap"
+   ],
+   "A7": [
+    2,
+    "Invalidation: forward EPS cuts"
+   ],
+   "A8": [
+    2,
+    "DCA suggestion, sizing tied to horizon"
+   ],
+   "A9": [
+    1,
+    "Correct but thin: no EPS breakeven, no use of the fall"
+   ],
+   "A10": [
+    2,
+    "Concise"
+   ],
+   "A11": [
+    1,
+    "19% discount and +23% correct; 15% fall unused numerically"
+   ]
+  },
+  "D": {
+   "A1": [
+    2,
+    "No errors"
+   ],
+   "A2": [
+    2,
+    "No invented data"
+   ],
+   "A3": [
+    2,
+    "Shows the fall alone explains the discount; questions anchor"
+   ],
+   "A4": [
+    2,
+    "Explicit unknowns"
+   ],
+   "A5": [
+    2,
+    "Firm on arithmetic, low-medium on view"
+   ],
+   "A6": [
+    2,
+    "Two paths"
+   ],
+   "A7": [
+    2,
+    "Invalidation stated"
+   ],
+   "A8": [
+    2,
+    "Staged buys, sizes for trap case, refers to adviser"
+   ],
+   "A9": [
+    2,
+    "Key insight (market was ~at average before the fall; 15% EPS cut erases discount) delivered tightly"
+   ],
+   "A10": [
+    2,
+    "Well proportioned"
+   ],
+   "A11": [
+    2,
+    "13/16=0.81, 13/0.85=15.3, 16/13=1.23 all correct; uses all inputs"
+   ]
+  },
+  "rank": [
+   "D",
+   "A",
+   "B",
+   "C"
+  ],
+  "why": "D uses every input correctly (prior P/E ~15.3, a 15% EPS cut erasing the discount) with no padding, and A has the sharpest insight (19% EPS breakeven) but dilutes it with SMC template noise and a made-up 55% confidence. B adds useful structural de-rating context but skips the arithmetic on the fall, and C is correct but thin.",
+  "checked": [
+   "13/0.85=15.29 -> correct",
+   "16/13-1=23.1% -> correct",
+   "1-13/16=18.75% breakeven EPS decline -> correct (A ~19%)",
+   "13/0.8=16.25 -> correct",
+   "1/13=7.7% earnings yield -> correct",
+   "SET dividend yield 3-4% (B) -> SET reported 4.04% at end-2025, OK",
+   "Thai household debt near 90% of GDP (B) -> 86.7% Q4 2025, OK",
+   "SET historical P/E end-2025 13.5x, forward 13.9x -> consistent with prompt framing"
+  ]
+ },
+ "T2": {
+  "A": {
+   "A1": [
+    2,
+    "Falling-rate tailwind for 60/40, 2022 stock-bond co-move, margin math: all correct"
+   ],
+   "A2": [
+    2,
+    "Borrow rate 5%, 25% bear market, 25% maintenance all tagged [ASSUMED]"
+   ],
+   "A3": [
+    2,
+    "Flags past-vs-future and that 15% is unreachable"
+   ],
+   "A4": [
+    2,
+    "Given/assumed/unknown explicit"
+   ],
+   "A5": [
+    2,
+    "High on math, low on outcome"
+   ],
+   "A6": [
+    2,
+    "Benign/inflation-shock/base plus 'more equities' alternative"
+   ],
+   "A7": [
+    2,
+    "Margin-call trigger and fat tails stated"
+   ],
+   "A8": [
+    2,
+    "Names missing personal facts, recommends well under 2x, no instruction"
+   ],
+   "A9": [
+    2,
+    "Derives max achievable CAGR at any leverage (~11% at 3.5x)"
+   ],
+   "A10": [
+    2,
+    "Dense, no filler"
+   ],
+   "A11": [
+    2,
+    "8.5% arith, 17%-r, 2% drag, 15%-r, 12+/-20, -28% 2-sigma, 20/sqrt10, 1-0.75^2=44%, 1-0.7^2=51%, call at -33.3%, optimum L=3.5 -> 11.1%: all correct"
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "2008 60/40 fall ~one third and 2022 co-move correct within range"
+   ],
+   "A2": [
+    2,
+    "Assumptions labelled; historical sizes flagged approximate"
+   ],
+   "A3": [
+    2,
+    "Premise check on past 8% and 15% target"
+   ],
+   "A4": [
+    2,
+    "Given / not-known explicit"
+   ],
+   "A5": [
+    2,
+    "Probabilities are computed from stated model, not asserted"
+   ],
+   "A6": [
+    2,
+    "Bull/bear/base and non-leverage options"
+   ],
+   "A7": [
+    2,
+    "Margin call, daily-reset ETF, fat tails"
+   ],
+   "A8": [
+    2,
+    "Modest leverage, cash buffer, names personal unknowns"
+   ],
+   "A9": [
+    2,
+    "Adds P(loss year), 1-in-20 year, 10y P(>=15%)"
+   ],
+   "A10": [
+    2,
+    "Long but every section carries content"
+   ],
+   "A11": [
+    2,
+    "P(R<0)=N(-0.6)=27%, 12-1.645*20=-20.9%, z=5/6.3=0.79 -> ~21%, A=1.33, -60% needs +150%: all correct"
+   ]
+  },
+  "C": {
+   "A1": [
+    1,
+    "'100% global equities ... expect drawdowns of 40-50%' understates 2008 (~-55 to -58% for global equities); other history correct"
+   ],
+   "A2": [
+    2,
+    "Historical stats unsourced but approximately right; 5% borrow labelled"
+   ],
+   "A3": [
+    2,
+    "Flags 1982-2020 bond tailwind and 15% target"
+   ],
+   "A4": [
+    1,
+    "Assumptions stated but personal unknowns only in footer"
+   ],
+   "A5": [
+    2,
+    "Appropriate"
+   ],
+   "A6": [
+    2,
+    "Cut bonds, futures, modest leverage, saving more"
+   ],
+   "A7": [
+    2,
+    "2022 regime and margin risk"
+   ],
+   "A8": [
+    2,
+    "No instruction, behaviour stress-test"
+   ],
+   "A9": [
+    2,
+    "Optimal-leverage formula 5+3.5L-0.5L^2, peak 11% at 3.5x, 14% at 4.5x if r=4%: insightful"
+   ],
+   "A10": [
+    2,
+    "Proportionate"
+   ],
+   "A11": [
+    2,
+    "All core numbers correct; ln2/ln1.1=7.3y OK; minor nit Sharpe uses 8% not 8.5% arith (0.30 vs 0.35)"
+   ]
+  },
+  "D": {
+   "A1": [
+    2,
+    "Mechanisms correct; risk-parity counterpoint fair"
+   ],
+   "A2": [
+    2,
+    "Historical figures flagged as unverified memory"
+   ],
+   "A3": [
+    2,
+    "Flags favourable sample and 15% target"
+   ],
+   "A4": [
+    2,
+    "Explicit inputs and missing inputs"
+   ],
+   "A5": [
+    1,
+    "'about 75%' / 'about 40%' confidence figures unsupported"
+   ],
+   "A6": [
+    2,
+    "Bull/base/bear/chaos and alternatives"
+   ],
+   "A7": [
+    2,
+    "Margin mechanics, ETF drag, taxes"
+   ],
+   "A8": [
+    2,
+    "No instruction, suggests 1.2-1.5x"
+   ],
+   "A9": [
+    2,
+    "Breakeven b<g-sigma^2=7% and forward-6% sensitivity are useful"
+   ],
+   "A10": [
+    1,
+    "'SMC LAYER MAP: Not applicable' and narrative sections are template filler"
+   ],
+   "A11": [
+    1,
+    "Says if 8% is arithmetic 'every levered figure ~0.5% lower' - actually 1% lower (16-b-2=14-b vs 15-b); '1.2-1.5x gives 9-10%' is 8.5-9.1% at b=5%; rest correct"
+   ]
+  },
+  "rank": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "why": "A and B both get every number right, label all assumptions and show 15% is unreachable; A edges ahead by deriving the maximum achievable CAGR at any leverage and a tighter drawdown/margin treatment. C has the same insight but understates equity drawdowns, and D has a levered-return error on the arithmetic-vs-CAGR case plus template padding and invented confidence percentages.",
+  "checked": [
+   "CAGR 8%, vol 10% -> arithmetic 8.5% -> correct",
+   "2x arith 17%-b, drag 0.5*0.2^2=2%, CAGR 15%-b -> correct",
+   "Optimal leverage (8.5-5)/0.01=3.5x, CAGR 11.1% -> correct (A,C)",
+   "r=4%: L=4.5x, 14.1% -> correct (C)",
+   "Margin call at 25% maintenance: (A-100)/A=0.25 -> A=133, fall 33% -> correct",
+   "P(loss) N(-12/20)=27% -> correct (B)",
+   "10y P(CAGR>=15%) ~21% -> correct (B)",
+   "D: if 8% arithmetic, 2x CAGR=14-b, i.e. 1pp lower, not 0.5pp -> error",
+   "D: 1.2x/1.5x at b=5% -> 8.5%/9.1%, not 9-10% -> overstated",
+   "2022 60/40 drawdown ~19-21% (Dimensional ~19%) -> C's ~-20% OK",
+   "2008 60/40 peak-to-trough ~29-35% -> 'a third' / '-30 to -35%' OK",
+   "Global equities 2008 drawdown ~-55 to -58% -> C's 40-50% for 100% equities understated"
+  ]
+ },
+ "T3": {
+  "A": {
+   "A1": [
+    1,
+    "'ATR $50 typical for gold at this price' is a factual claim that understates 2025-26 gold daily ranges; late-2025 level ~4,400 is correct"
+   ],
+   "A2": [
+    2,
+    "USD/THB 33, ATR, contract spec tagged [ASSUMED]"
+   ],
+   "A3": [
+    2,
+    "Checks units/currency and that levels are current"
+   ],
+   "A4": [
+    2,
+    "Given/unknown/assumed explicit"
+   ],
+   "A5": [
+    2,
+    "Low on direction, medium on structure"
+   ],
+   "A6": [
+    2,
+    "Breakout, breakdown, no-trade"
+   ],
+   "A7": [
+    2,
+    "Fake-breakout and pattern-dead rules, gap risk"
+   ],
+   "A8": [
+    2,
+    "1% respected, rounds down, caps attempts at 2%"
+   ],
+   "A9": [
+    2,
+    "Complete, executable plan"
+   ],
+   "A10": [
+    2,
+    "Tight"
+   ],
+   "A11": [
+    2,
+    "5000/33=$151; 55pt stop 0.027->0.02 lot $110=3,630 THB 0.73%; 4620 =3.9R; 60pt short 0.02 lot $120=3,960 THB; 4250=0.83R, 4180=2R; ATR80 -> 0.01 lot: all correct"
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Mechanics and pattern descriptions correct"
+   ],
+   "A2": [
+    2,
+    "Levels derived from prompt; placeholders labelled"
+   ],
+   "A3": [
+    2,
+    "Notes missing price/ATR/wick highs"
+   ],
+   "A4": [
+    2,
+    "Explicit unknowns"
+   ],
+   "A5": [
+    1,
+    "'about 55%' probability of liquidity event unsupported"
+   ],
+   "A6": [
+    2,
+    "Bull, two bears, base, chaos"
+   ],
+   "A7": [
+    2,
+    "Invalidations per setup, gap risk"
+   ],
+   "A8": [
+    2,
+    "Sizing to 1%, skip-trade rule, no adding to losers"
+   ],
+   "A9": [
+    2,
+    "Sweep-and-fail setup and size table are professional"
+   ],
+   "A10": [
+    1,
+    "8.7k chars with first-principle/system/narrative/SMC sections that repeat"
+   ],
+   "A11": [
+    2,
+    "Bear A 0.04 lot $140=4,620 THB; Bull 0.03 $150=4,950; 95pt 0.01 $95; 105pt 0.01 $105; TP1 2R, 2.4R/4.1R, measured move 4,090 ~2R; 151-pt max stop: all correct"
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "No factual errors"
+   ],
+   "A2": [
+    2,
+    "Rate labelled illustrative; no invented levels"
+   ],
+   "A3": [
+    2,
+    "Does not force a direction"
+   ],
+   "A4": [
+    1,
+    "Unknowns listed briefly; no labelled ATR assumption"
+   ],
+   "A5": [
+    2,
+    "Calibrated"
+   ],
+   "A6": [
+    2,
+    "Breakout, breakdown, optional fade, no-trade"
+   ],
+   "A7": [
+    2,
+    "Execution rules and divergence filter"
+   ],
+   "A8": [
+    2,
+    "Never moves stop to fit size; caps risk"
+   ],
+   "A9": [
+    1,
+    "Solid but trigger 4,410 vs entry 4,405 inconsistent and the aggressive fade contradicts its own 'trade only on breaks' summary"
+   ],
+   "A10": [
+    2,
+    "Proportionate"
+   ],
+   "A11": [
+    2,
+    "110pt -> 0.01 lot $110 ~3,600 THB 0.73%; 2:1 to 4620; 65pt -> 0.02 $130 ~4,300; 1.8:1; fade 40pt 0.03 $120, 1.75:1; range 220->90: all correct"
+   ]
+  },
+  "D": {
+   "A1": [
+    2,
+    "Level ~4,400 consistent with mid-2026 trading range (June 2026 ~3,990-4,520)"
+   ],
+   "A2": [
+    2,
+    "USD/THB, lot spec, ATR all [ASSUMED]"
+   ],
+   "A3": [
+    2,
+    "Verifies level currency"
+   ],
+   "A4": [
+    2,
+    "Explicit"
+   ],
+   "A5": [
+    2,
+    "Refuses to give an unsupported percentage"
+   ],
+   "A6": [
+    2,
+    "Breakout, sweep-reverse, base"
+   ],
+   "A7": [
+    1,
+    "Says structure fails below 4,180 although its own logic breaks it at 4,310 - inconsistent invalidation"
+   ],
+   "A8": [
+    2,
+    "1% sizing, one plan at a time"
+   ],
+   "A9": [
+    2,
+    "Executable"
+   ],
+   "A10": [
+    2,
+    "Proportionate"
+   ],
+   "A11": [
+    2,
+    "60pt: 2.5oz -> 0.02 lot $120=3,960 THB; 50pt: 3oz -> 0.03 lot $150=4,950 THB; 3.5R, 1.6R, 2.8R: all correct"
+   ]
+  },
+  "rank": [
+   "A",
+   "D",
+   "B",
+   "C"
+  ],
+  "why": "A gives a compact, fully labelled two-sided plan with every size and R multiple correct and sensible attempt caps; D is nearly as good but has an inconsistent invalidation level. B has the strongest setup design (sweep-and-fail) and correct sizing but is bloated and adds an unsupported 55%, while C mixes a counter-pattern fade into a 'trade only on breaks' plan.",
+  "checked": [
+   "5,000 THB / 33 = $151.5 -> all used ~$150-151",
+   "A long: 150/(55*100)=0.027 -> 0.02 lot, risk $110 -> 3,630 THB -> correct",
+   "A short: 0.025 -> 0.02, $120 -> 3,960 THB -> correct",
+   "B Bear A: 151/3500=0.043 -> 0.04, $140 -> 4,620 THB -> correct",
+   "B Bear B: measured move 4310-220=4090; (4300-4090)/105=2.0R -> correct",
+   "C long: 151/11000=0.0137 -> 0.01 lot -> correct",
+   "D short: 151/50=3.02 oz -> 0.03 lot, $150 -> correct",
+   "Measured move 4400+220=4620 -> correct (all)",
+   "Gold traded ~4,380 Oct 2025, >5,000 Jan 2026, ~3,990-4,520 June 2026 -> A's 'late 2025' and D's 'to mid-2026' level claims OK",
+   "A's 'ATR $50 typical at this price' -> likely understated for $4,000+ gold"
+  ]
+ },
+ "T4": {
+  "A": {
+   "A1": [
+    2,
+    "Mean reversion of top funds, fee certainty correct"
+   ],
+   "A2": [
+    2,
+    "8% gross tagged [ASSUMED]"
+   ],
+   "A3": [
+    2,
+    "Flags 3y too short, sector luck, different asset classes"
+   ],
+   "A4": [
+    2,
+    "Given / can't know explicit"
+   ],
+   "A5": [
+    2,
+    "Medium on method, not assessable on fund"
+   ],
+   "A6": [
+    2,
+    "Skill / hot-market / base"
+   ],
+   "A7": [
+    2,
+    "Main risk and view-changers"
+   ],
+   "A8": [
+    2,
+    "Partial move, names horizon, emergency fund, debts"
+   ],
+   "A9": [
+    2,
+    "Breakeven 9% gross vs 7% net is the key number"
+   ],
+   "A10": [
+    2,
+    "Proportionate"
+   ],
+   "A11": [
+    2,
+    "1.25^3=1.95; 100k at 6%/7%/8% over 10y = 179.1k/196.7k/215.9k; fee cost 36.8k; breakeven 9%: all correct"
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Survivorship/selection bias correct"
+   ],
+   "A2": [
+    2,
+    "30-50% drawdown range labelled as not a forecast"
+   ],
+   "A3": [
+    2,
+    "Catches annual vs cumulative ambiguity (25% cumulative = 7.7%/yr) and net vs gross"
+   ],
+   "A4": [
+    2,
+    "Clear"
+   ],
+   "A5": [
+    1,
+    "'70% confidence' / '0% confidence' arbitrary"
+   ],
+   "A6": [
+    2,
+    "Bull/bear/base"
+   ],
+   "A7": [
+    2,
+    "Invalidation stated"
+   ],
+   "A8": [
+    2,
+    "10-20% trial, DCA, horizon conditions"
+   ],
+   "A9": [
+    2,
+    "The cumulative-return reading is a sharp premise catch"
+   ],
+   "A10": [
+    1,
+    "'SMC LAYER MAP (applied to funds)' is pseudo-analysis padding"
+   ],
+   "A11": [
+    2,
+    "1.25^3=1.95; 1.25^(1/3)-1=7.7%; 1.07^20=3.87, 1.05^20=2.65, ~31% wealth lost: correct"
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "SSF/RMF early-exit clawback and SEC Thailand registration check correct"
+   ],
+   "A2": [
+    2,
+    "No invented data"
+   ],
+   "A3": [
+    2,
+    "Adds fraud red-flag check beyond luck/risk"
+   ],
+   "A4": [
+    1,
+    "No explicit known/unknown separation"
+   ],
+   "A5": [
+    2,
+    "Appropriate"
+   ],
+   "A6": [
+    2,
+    "Index fund third option"
+   ],
+   "A7": [
+    1,
+    "Risks listed but no explicit invalidation of view"
+   ],
+   "A8": [
+    2,
+    "Portion only, fee-only adviser, purpose and timing"
+   ],
+   "A9": [
+    2,
+    "Thai-specific switching costs are useful"
+   ],
+   "A10": [
+    2,
+    "Proportionate"
+   ],
+   "A11": [
+    1,
+    "1.065^20=3.52M, 1.05^20=2.65M, 870k (~25%) correct, but never checks the 25%/3y figure (cumulative or 1.95x) or a breakeven vs 7%"
+   ]
+  },
+  "D": {
+   "A1": [
+    2,
+    "SPIVA persistence finding correctly characterised"
+   ],
+   "A2": [
+    2,
+    "Fee example tagged [ASSUMED], SPIVA rate marked unverified"
+   ],
+   "A3": [
+    2,
+    "Different asset classes, picked window"
+   ],
+   "A4": [
+    2,
+    "Explicit"
+   ],
+   "A5": [
+    2,
+    "Calibrated"
+   ],
+   "A6": [
+    2,
+    "Mean reversion vs real edge"
+   ],
+   "A7": [
+    2,
+    "Triggers and view-changers"
+   ],
+   "A8": [
+    2,
+    "Portion only, names horizon, adviser"
+   ],
+   "A9": [
+    2,
+    "Correct and actionable"
+   ],
+   "A10": [
+    2,
+    "Proportionate"
+   ],
+   "A11": [
+    1,
+    "1.06^10/1.07^10 -> 1.79M/1.97M, ~180k correct, but compares against an assumed 1% fee rather than the 7% given; 25%/3y not computed"
+   ]
+  },
+  "rank": [
+   "A",
+   "D",
+   "B",
+   "C"
+  ],
+  "why": "A uses every input, computes the breakeven (9% gross to beat 7% net) and fee drag correctly, and gives a clean checklist; D is equally sound but less tied to the given numbers. B makes the best premise catch (25% possibly cumulative = 7.7%/yr) but loses credibility with an SMC 'fund cycle' layer and arbitrary confidence, and C has useful Thai specifics but no use of the 25% figure and no explicit invalidation.",
+  "checked": [
+   "1.25^3=1.953 -> correct (A,B)",
+   "25% cumulative over 3y -> 7.72%/yr -> correct (B)",
+   "1.06^10=1.791, 1.07^10=1.967, 1.08^10=2.159 -> correct (A,D)",
+   "1.07^20=3.870, 1.05^20=2.653 -> correct (B,C)",
+   "1.065^20=3.524; 3.52M-2.65M=0.87M (24.7%) -> correct (C)",
+   "SPIVA persistence: few top performers stay on top -> confirmed",
+   "SSF/RMF: breaching holding conditions requires repaying tax benefit -> correct (C)"
+  ]
+ },
+ "T5": {
+  "A": {
+   "A1": [
+    2,
+    "Rate/information channels, intermeeting = emergency signal, DXY mostly EUR (57.6%) correct"
+   ],
+   "A2": [
+    2,
+    "No levels"
+   ],
+   "A3": [
+    2,
+    "Stresses surprise vs priced and scheduled vs intermeeting"
+   ],
+   "A4": [
+    2,
+    "Given/not-known explicit"
+   ],
+   "A5": [
+    2,
+    "Medium on direction, low on scenario"
+   ],
+   "A6": [
+    2,
+    "Insurance, panic, base"
+   ],
+   "A7": [
+    2,
+    "Explicit invalidation (DXY up and gold down = funding squeeze)"
+   ],
+   "A8": [
+    2,
+    "N/A personal; no trade instruction"
+   ],
+   "A9": [
+    2,
+    "Watch-list (spreads, 2s10s, USD/JPY, guidance) is expert"
+   ],
+   "A10": [
+    2,
+    "Tight"
+   ],
+   "A11": [
+    2,
+    "No calculation needed"
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "March 2020 sequence (stocks fell after 3 Mar cut, gold liquidated mid-March, USD spiked), Aug 2024 yen-carry, dollar smile correct; 'BTC gaps first' loosely worded"
+   ],
+   "A2": [
+    2,
+    "No invented levels"
+   ],
+   "A3": [
+    2,
+    "Surprise vs priced, scheduled vs intermeeting"
+   ],
+   "A4": [
+    2,
+    "Explicit unknowns list"
+   ],
+   "A5": [
+    1,
+    "'~55%' and '~40%' confidence figures unsupported"
+   ],
+   "A6": [
+    2,
+    "Bull/bear/base/chaos"
+   ],
+   "A7": [
+    2,
+    "Per-asset invalidation and map failure modes"
+   ],
+   "A8": [
+    2,
+    "No personal instruction"
+   ],
+   "A9": [
+    2,
+    "Deep: phases, EM differentiation, positioning signals"
+   ],
+   "A10": [
+    1,
+    "11.6k chars with SMC/narrative/entry-logic sections far beyond a first-week map"
+   ],
+   "A11": [
+    2,
+    "No calculation needed"
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "2001/2008/2020 surprise cuts as alarm cuts, March 2020 gold selling, Fed-independence context to mid-2026 correct"
+   ],
+   "A2": [
+    2,
+    "Context labelled as last known"
+   ],
+   "A3": [
+    2,
+    "Flags priced-in size of surprise"
+   ],
+   "A4": [
+    2,
+    "Explicit"
+   ],
+   "A5": [
+    2,
+    "Medium day 1, low week"
+   ],
+   "A6": [
+    2,
+    "Adds third 'credibility/political' path - highly relevant"
+   ],
+   "A7": [
+    2,
+    "Kill conditions for each view"
+   ],
+   "A8": [
+    2,
+    "No instruction"
+   ],
+   "A9": [
+    2,
+    "Concise and expert, includes cross-currency basis"
+   ],
+   "A10": [
+    2,
+    "Well proportioned"
+   ],
+   "A11": [
+    2,
+    "No calculation needed"
+   ]
+  },
+  "D": {
+   "A1": [
+    1,
+    "Regime test (A=curve steepens, B=yields fall across curve) is muddled - panic cuts also bull-steepen; otherwise correct (2008/2020 gold liquidation, THB-gold link)"
+   ],
+   "A2": [
+    1,
+    "'DXY 0.75-1.5%' and 'BTC 5-10%' magnitudes asserted with only vague historical basis (Sept 2024 DXY moved <0.5%)"
+   ],
+   "A3": [
+    2,
+    "Notes surprise only relative to priced"
+   ],
+   "A4": [
+    1,
+    "Known/unknown only in closing caveats"
+   ],
+   "A5": [
+    2,
+    "Mostly calibrated"
+   ],
+   "A6": [
+    2,
+    "Two scenarios"
+   ],
+   "A7": [
+    1,
+    "Checklist but no explicit invalidation"
+   ],
+   "A8": [
+    2,
+    "No instruction"
+   ],
+   "A9": [
+    2,
+    "THB-specific transmission is useful"
+   ],
+   "A10": [
+    2,
+    "Well structured"
+   ],
+   "A11": [
+    2,
+    "No calculation needed"
+   ]
+  },
+  "rank": [
+   "C",
+   "A",
+   "B",
+   "D"
+  ],
+  "why": "C and A both give correct transmission channels, conditional asset paths and clear tests, with C adding the relevant Fed-credibility path and kill conditions in fewer words. B is the deepest but over-long with unsupported confidence figures, and D asserts move sizes and uses a shaky curve-based regime test.",
+  "checked": [
+   "3 Mar 2020 intermeeting 50bp cut -> stocks fell ~3%, gold rose; mid-March gold liquidation and USD spike -> confirmed",
+   "Aug 2024 yen-carry unwind -> real event",
+   "DXY EUR weight 57.6% -> 'mostly EUR' correct",
+   "Sept 2024 50bp at scheduled meeting -> partly priced; B's 'closer' framing acceptable",
+   "Jan 2001 / 2008 / 2020 surprise cuts as alarm cuts -> broadly correct (C)",
+   "D DXY 0.75-1.5% day-1 move -> not supported by Sept 2024 (<0.5%) analog",
+   "Fed independence debate / new chair 2026 -> consistent with 2026 reporting"
+  ]
+ },
+ "T6": {
+  "A": {
+   "A1": [
+    2,
+    "15% WHT, 20,000-baht savings exemption with consent, tax-free fixed deposit 24m+ correct"
+   ],
+   "A2": [
+    2,
+    "Rules dated and caveated"
+   ],
+   "A3": [
+    2,
+    "Corrects premise: tax on nominal interest cuts real return to ~0.27%"
+   ],
+   "A4": [
+    2,
+    "Account-type dependence explicit"
+   ],
+   "A5": [
+    2,
+    "Firm on math, caveats on rules"
+   ],
+   "A6": [
+    2,
+    "Taxed/untaxed/tax-free account cases"
+   ],
+   "A7": [
+    2,
+    "Inflation >1.275% turns real return negative; personal inflation"
+   ],
+   "A8": [
+    2,
+    "Names account type; no instruction"
+   ],
+   "A9": [
+    2,
+    "Complete"
+   ],
+   "A10": [
+    2,
+    "Proportionate"
+   ],
+   "A11": [
+    2,
+    "1.5*0.85=1.275%; 1.01275/1.01-1=0.272%; 1.015/1.01-1=0.495%; 100k -> +495/+272: correct"
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Tax rules correct"
+   ],
+   "A2": [
+    2,
+    "No invented data"
+   ],
+   "A3": [
+    2,
+    "Corrects premise"
+   ],
+   "A4": [
+    2,
+    "Unknowns listed"
+   ],
+   "A5": [
+    1,
+    "'90% confidence' on deterministic arithmetic is miscalibrated"
+   ],
+   "A6": [
+    2,
+    "Account cases and inflation sensitivity"
+   ],
+   "A7": [
+    2,
+    "Breakeven 1.275% inflation and 2% case"
+   ],
+   "A8": [
+    2,
+    "Names account type, horizon, no instruction"
+   ],
+   "A9": [
+    2,
+    "Adds 2% inflation case"
+   ],
+   "A10": [
+    2,
+    "OK"
+   ],
+   "A11": [
+    2,
+    "1.01275/1.02-1=-0.71% correct; core math correct"
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "Tax rules correct"
+   ],
+   "A2": [
+    2,
+    "Rules dated to mid-2026, caveated"
+   ],
+   "A3": [
+    2,
+    "Explains why tax on nominal hits real return harder"
+   ],
+   "A4": [
+    2,
+    "Explicit"
+   ],
+   "A5": [
+    2,
+    "Calibrated"
+   ],
+   "A6": [
+    2,
+    "Exempt cases"
+   ],
+   "A7": [
+    2,
+    "Breakeven nominal rate 1%/0.85=1.18%"
+   ],
+   "A8": [
+    2,
+    "No instruction"
+   ],
+   "A9": [
+    2,
+    "Tax = ~45% of pre-tax real return is the key insight"
+   ],
+   "A10": [
+    2,
+    "Proportionate"
+   ],
+   "A11": [
+    2,
+    "1.275%, 0.272%, 0.495%, 225/495=45%, 1/0.85=1.176%: all correct"
+   ]
+  },
+  "D": {
+   "A1": [
+    2,
+    "Tax-free deposit limits 25,000/month, 600,000 total, 24m+ correct; 20,000 savings exemption correct"
+   ],
+   "A2": [
+    2,
+    "No invented data"
+   ],
+   "A3": [
+    2,
+    "Corrects premise"
+   ],
+   "A4": [
+    2,
+    "Separates cases"
+   ],
+   "A5": [
+    2,
+    "Calibrated"
+   ],
+   "A6": [
+    2,
+    "Exempt cases"
+   ],
+   "A7": [
+    2,
+    "Inflation +0.3pp wipes real return"
+   ],
+   "A8": [
+    2,
+    "No instruction"
+   ],
+   "A9": [
+    2,
+    "Most precise on tax-free deposit rules"
+   ],
+   "A10": [
+    2,
+    "Concise"
+   ],
+   "A11": [
+    2,
+    "1.275%, 0.275%/0.272%, 272 baht: correct"
+   ]
+  },
+  "rank": [
+   "C",
+   "D",
+   "A",
+   "B"
+  ],
+  "why": "All four get the 0.27% after-tax real return right; C adds the two most useful professional numbers (tax takes ~45% of the real return; 1.18% breakeven deposit rate). D gives the most precise tax-free-deposit limits, A is clean but slightly vaguer, and B attaches a meaningless 90% confidence to deterministic arithmetic.",
+  "checked": [
+   "1.5%*(1-0.15)=1.275% -> correct",
+   "(1.01275/1.01)-1=0.2723% -> correct",
+   "(1.015/1.01)-1=0.495% -> correct",
+   "100,000: 101,275/1.01=100,272 -> +272 baht -> correct",
+   "225/495=45% -> correct (C)",
+   "1%/0.85=1.176% breakeven -> correct (C)",
+   "(1.01275/1.02)-1=-0.71% -> correct (B)",
+   "Thai deposit interest 15% WHT; savings interest exempt up to 20,000 baht/yr with data-sharing consent -> confirmed",
+   "Tax-free fixed deposit: 24m+, equal monthly, <=25,000/month, <=600,000 total, one account per person -> confirmed (D)",
+   "None mention that 15% WHT need not be final tax (can file and reclaim at low brackets) -> common omission, not scored as error"
+  ]
+ }
+}

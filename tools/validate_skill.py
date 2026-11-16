@@ -44,6 +44,16 @@ def check(name: str, cond: bool) -> None:
     print(f"  {'PASS' if cond else 'FAIL'}  {name}")
 
 
+def exists_case_exact(rel: str) -> bool:
+    """Path.exists() ignores case on macOS/Windows; skills load on Linux."""
+    here = ROOT
+    for part in Path(rel.rstrip("/")).parts:
+        if not here.is_dir() or part not in {p.name for p in here.iterdir()}:
+            return False
+        here = here / part
+    return True
+
+
 def main() -> int:
     if not SKILL.exists():
         print(f"FATAL: SKILL.md not found at {SKILL}")
@@ -84,6 +94,17 @@ def main() -> int:
           re.search(r"insufficient|no live data|abstention|abstain", body, re.I) is not None)
     check("declares it is not personalized investment advice",
           re.search(r"not.{0,20}(financial|investment) advice|does not issue", body, re.I) is not None)
+
+    check("description does not demand ALWAYS-trigger",
+          re.search(r"ALWAYS trigger|do not skip", str(fm.get("description", "")), re.I) is None)
+    check("DIRECT mode for concept questions", "**DIRECT**" in body)
+    for section in ("MARKET CORE", "DATA RULES", "CONFIDENCE RULES", "PERSONAL MONEY DECISIONS"):
+        check(f"{section} section present", re.search(rf"^## {section}\b", body, re.M) is not None)
+    check("no bare confidence-% template", "[X%]" not in body)
+    refs = set(re.findall(r"`([\w./-]+\.(?:txt|md)|examples/[\w/-]+/?)`", body)) - {"SKILL.md"}
+    missing = [r for r in sorted(refs) if not exists_case_exact(r)]
+    check("every file SKILL.md points to exists (case-exact)" + (f" — missing {missing}" if missing else ""),
+          not missing)
 
     print("\nREPOSITORY")
     check("LICENSE exists", (ROOT / "LICENSE").exists())

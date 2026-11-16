@@ -1,0 +1,1525 @@
+{
+ "D1": {
+  "A": {
+   "A1": [
+    2,
+    "Negative funding = shorts pay longs; funding can stay negative - correct."
+   ],
+   "A2": [
+    2,
+    "Stop and retest level tagged [ASSUMED]."
+   ],
+   "A3": [
+    2,
+    "Premise check: one candle is not proof; funding caveat."
+   ],
+   "A4": [
+    2,
+    "Explicit given vs not known."
+   ],
+   "A5": [
+    2,
+    "MEDIUM-LOW, reasoned without fake probabilities."
+   ],
+   "A6": [
+    2,
+    "Bull/bear/base and enter-now vs retest options."
+   ],
+   "A7": [
+    2,
+    "Clear invalidation (close <58k, trade <56.9k)."
+   ],
+   "A8": [
+    2,
+    "Respects user's 1% rule, no leverage, framework framing."
+   ],
+   "A9": [
+    2,
+    "R-multiples per entry make the choice concrete; ATR-buffer note."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ],
+   "A11": [
+    2,
+    "Recomputed: 200/2,200=0.091 BTC ($5,373); 200/1,300=0.154 BTC ($8,953); 0.86R/2.15R/2.2R/4.5R: all correct."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Funding mechanics and measured move (58k-6k=52k) correct."
+   ],
+   "A2": [
+    2,
+    "All levels derived from prompt; explicit statement."
+   ],
+   "A3": [
+    2,
+    "Questions its own consensus; notes deeper second sweep risk."
+   ],
+   "A4": [
+    2,
+    "Given and missing data explicit (OI, spot/perp, macro)."
+   ],
+   "A5": [
+    1,
+    "'~55-60%' probability is unsupported precision."
+   ],
+   "A6": [
+    2,
+    "Four scenarios plus confirmation-only and half-size options."
+   ],
+   "A7": [
+    2,
+    "Four invalidation conditions incl. volume misread."
+   ],
+   "A8": [
+    2,
+    "Respects 1% rule, no leverage, offers 'do nothing'."
+   ],
+   "A9": [
+    2,
+    "Most complete professional plan."
+   ],
+   "A10": [
+    1,
+    "Long with template SMC/narrative sections."
+   ],
+   "A11": [
+    2,
+    "Recomputed: 100/2,300=0.0435; 100/1,600=0.0625; total 0.106 BTC, avg 58,687, notional $6,220; TP1 0.053x2,310=$122; TP2 0.053x4,810=$255; $377/200=1.9R: correct (the '1.2R' label is per-half)."
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "Spring/swing-failure and funding mechanics correctly described."
+   ],
+   "A2": [
+    2,
+    "Levels derived from prompt."
+   ],
+   "A3": [
+    1,
+    "Notes single candle risk but treats absorption as fact."
+   ],
+   "A4": [
+    1,
+    "No explicit known/unknown section."
+   ],
+   "A5": [
+    1,
+    "No confidence statement; presents the long as settled."
+   ],
+   "A6": [
+    1,
+    "Little on bear path or no-trade alternative."
+   ],
+   "A7": [
+    2,
+    "Hard stop, early exit, time stop, funding check."
+   ],
+   "A8": [
+    1,
+    "Direct 'Go long 0.1 BTC' instruction with no missing personal facts named."
+   ],
+   "A9": [
+    2,
+    "Actionable plan with staged exits and checklist."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ],
+   "A11": [
+    2,
+    "Recomputed: 0.05x2,300=$115; 0.05x1,500=$75; total $190; avg 58,700; TP1 1.21R, TP2 2.5-2.8R correct; runner 70k = 5.9R (stated ~5.8R, trivial)."
+   ]
+  },
+  "rank": [
+   "B",
+   "A",
+   "C"
+  ],
+  "why": "B's plan has correct sizing, staged exits, full scenarios, and explicit missing data such as OI and the weekly HL level. A is a correct, tighter alternative, while C's math is right but it reads as a one-sided instruction with little uncertainty or alternative.",
+  "checked": [
+   "1% of $20k = $200",
+   "B legs: 0.0435 + 0.0625 = 0.106 BTC, avg 58,687, blended 1.9R",
+   "A: 0.091 / 0.154 BTC sizes and R multiples",
+   "C: $115 + $75 = $190; R multiples from 58.7k avg with 1,900 risk/BTC",
+   "Negative funding: shorts pay longs -> correct in all"
+  ]
+ },
+ "D2": {
+  "A": {
+   "A1": [
+    2,
+    "Real yields, breakevens, supercore, fiscal dominance, confounders: mechanisms correct."
+   ],
+   "A2": [
+    2,
+    "No data invented."
+   ],
+   "A3": [
+    2,
+    "Identifies the puzzle and orders explanations from boring to important."
+   ],
+   "A4": [
+    1,
+    "Does not explicitly separate given facts from unknowns."
+   ],
+   "A5": [
+    2,
+    "'Probably' language, one-day caveat."
+   ],
+   "A6": [
+    2,
+    "Four explanations including same-day confounders."
+   ],
+   "A7": [
+    2,
+    "Follow-through test over 3-5 days and next data releases."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    2,
+    "Clear diagnostic table; best single tell identified."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ],
+   "A11": [
+    2,
+    "No calculation required."
+   ]
+  },
+  "B": {
+   "A1": [
+    1,
+    "Mechanisms mostly right, but the credibility row's curve description is muddled and 'gold is priced against real yields... almost certainly means real yields fell' overstates a link that broke down in 2022-25."
+   ],
+   "A2": [
+    2,
+    "No data invented."
+   ],
+   "A3": [
+    2,
+    "Identifies the puzzle."
+   ],
+   "A4": [
+    2,
+    "States the three given facts and unknowns."
+   ],
+   "A5": [
+    1,
+    "35/35/30 scenario probabilities unsupported."
+   ],
+   "A6": [
+    2,
+    "Four explanations."
+   ],
+   "A7": [
+    2,
+    "Invalidation stated."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    2,
+    "Detailed diagnostics."
+   ],
+   "A10": [
+    0,
+    "Very long; SMC/narrative/decision sections pad a conceptual question."
+   ],
+   "A11": [
+    2,
+    "No calculation required."
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "Mechanisms correct."
+   ],
+   "A2": [
+    2,
+    "No data invented."
+   ],
+   "A3": [
+    2,
+    "Identifies puzzle."
+   ],
+   "A4": [
+    2,
+    "States what it doesn't have."
+   ],
+   "A5": [
+    2,
+    "LOW confidence, appropriate."
+   ],
+   "A6": [
+    1,
+    "Growth-scare explanation only appears in takeaways; confounders missing."
+   ],
+   "A7": [
+    2,
+    "Clear invalidation (reversal within sessions)."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    2,
+    "Sharp diagnostics (breakevens vs real, 2y, DXY)."
+   ],
+   "A10": [
+    2,
+    "Concise."
+   ],
+   "A11": [
+    2,
+    "No calculation required."
+   ]
+  },
+  "rank": [
+   "A",
+   "C",
+   "B"
+  ],
+  "why": "A explains the puzzle most completely, including same-day confounders, and gives a clean diagnostic table. C is concise and correct but less complete; B is accurate in outline but bloated, gives pseudo-precise probabilities and muddles the curve logic.",
+  "checked": [
+   "Hot CPI normally lifts yields and hurts gold -> correct framing in all",
+   "Breakevens up + real yields down = credibility signal -> correct",
+   "Gold-real-yield correlation broke down from 2022 (central-bank buying, fiscal concerns) -> B's 'almost certainly' overstated"
+  ]
+ },
+ "D3": {
+  "A": {
+   "A1": [
+    2,
+    "Leverage math, liquidation ~5% less maintenance margin (~4-4.5%), fees on notional: correct."
+   ],
+   "A2": [
+    2,
+    "$1,000 and $10,000 are clearly examples."
+   ],
+   "A3": [
+    2,
+    "Corrects the 3% premise directly."
+   ],
+   "A4": [
+    1,
+    "Asks for account and margin but does not lay out known/unknown explicitly."
+   ],
+   "A5": [
+    2,
+    "Firm on arithmetic."
+   ],
+   "A6": [
+    2,
+    "Covers both whole-account and small-slice cases."
+   ],
+   "A7": [
+    2,
+    "Slippage, gaps, liquidation, noise."
+   ],
+   "A8": [
+    2,
+    "No instruction; asks for account size; isolated margin."
+   ],
+   "A9": [
+    2,
+    "Complete and actionable."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ],
+   "A11": [
+    2,
+    "Recomputed: 3%x20=60%; $600 on $20k; $100/0.03=$3,333 (0.33x): correct."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Leverage math, liquidation ~5%: correct."
+   ],
+   "A2": [
+    2,
+    "Example labelled ASSUMED."
+   ],
+   "A3": [
+    2,
+    "Corrects premise."
+   ],
+   "A4": [
+    2,
+    "States what it can't know."
+   ],
+   "A5": [
+    2,
+    "Firm on math."
+   ],
+   "A6": [
+    1,
+    "Limited alternative setups."
+   ],
+   "A7": [
+    2,
+    "Stop slippage, cross-margin spillover, noise."
+   ],
+   "A8": [
+    2,
+    "No instruction; adviser note."
+   ],
+   "A9": [
+    2,
+    "Correct sizing formula."
+   ],
+   "A10": [
+    2,
+    "Concise."
+   ],
+   "A11": [
+    2,
+    "60%, $600, $333 correct."
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "Leverage math, liquidation, recovery math: correct."
+   ],
+   "A2": [
+    2,
+    "No invented data."
+   ],
+   "A3": [
+    2,
+    "Corrects premise."
+   ],
+   "A4": [
+    2,
+    "Missing inputs listed."
+   ],
+   "A5": [
+    1,
+    "'90%' confidence on pure arithmetic is miscalibrated."
+   ],
+   "A6": [
+    2,
+    "Sizing table and the case where 20x on small margin is fine."
+   ],
+   "A7": [
+    2,
+    "Losing streak, liquidation, slippage."
+   ],
+   "A8": [
+    2,
+    "No instruction; isolated margin."
+   ],
+   "A9": [
+    2,
+    "Sizing table with effective leverage is very useful."
+   ],
+   "A10": [
+    1,
+    "SMC and narrative template sections."
+   ],
+   "A11": [
+    2,
+    "Recomputed: 1000->400->160; +150% to recover; $333/$667/$1,000; $50 margin -> $30 = 3%: all correct."
+   ]
+  },
+  "rank": [
+   "A",
+   "C",
+   "B"
+  ],
+  "why": "A corrects the premise, quantifies liquidation buffer and slippage, and covers both account cases concisely. C has the best sizing table but is padded and oddly gives 90% confidence to arithmetic; B is correct but thinner.",
+  "checked": [
+   "3% x 20 = 60% of margin",
+   "Liquidation ~1/20 = 5%, minus maintenance margin -> ~4.5%",
+   "$10/0.03 = $333; $100/0.03 = $3,333",
+   "60% loss needs +150% to recover"
+  ]
+ },
+ "D4": {
+  "A": {
+   "A1": [
+    2,
+    "Sequence risk, bucket strategy, RMF, risk-on correlation of SET and crypto: correct; crypto 70-80% drawdowns correct (2018 -84%, 2022 -77%)."
+   ],
+   "A2": [
+    2,
+    "Stress inputs and glide path labelled assumptions; 30k/month spending labelled hypothetical."
+   ],
+   "A3": [
+    2,
+    "Challenges the 90%-risk-asset premise and raises the 'is 2M enough' question."
+   ],
+   "A4": [
+    2,
+    "Given vs unknown explicit; 7 key unknowns."
+   ],
+   "A5": [
+    1,
+    "'~70% / ~40%' confidence figures unsupported."
+   ],
+   "A6": [
+    2,
+    "Bull/bear/chaos/base and IF-branches by income situation."
+   ],
+   "A7": [
+    2,
+    "Explicit failure modes."
+   ],
+   "A8": [
+    2,
+    "Framework not instruction; names missing facts; health insurance; CFP."
+   ],
+   "A9": [
+    2,
+    "Stress test, glide path, bucket and adequacy check - covers the hard part."
+   ],
+   "A10": [
+    1,
+    "Very long; SMC and narrative sections are padding."
+   ],
+   "A11": [
+    2,
+    "Recomputed: -420k-280k=-700k (-35%), recovery +53.8%; alt -330k-70k=-400k (-20%), +25%; 2M/360k=5.6 yrs: all correct."
+   ]
+  },
+  "B": {
+   "A1": [
+    1,
+    "Checked: SET flat ~10 yrs and <1% of world cap correct; RMF hold to 55 and 5 yrs correct; licensed-exchange crypto tax exemption correct; but implies ThaiESG can hold global equities - ThaiESG must invest >=80% in Thai assets."
+   ],
+   "A2": [
+    2,
+    "Return assumption (5%) and 4% rule clearly hypothetical."
+   ],
+   "A3": [
+    2,
+    "Challenges concentration and 90% risk exposure."
+   ],
+   "A4": [
+    1,
+    "Missing facts listed but given/inferred not separated."
+   ],
+   "A5": [
+    2,
+    "Firm on math, labels allocation as general guidance."
+   ],
+   "A6": [
+    2,
+    "Allocation ranges, bucket approach, saving more."
+   ],
+   "A7": [
+    1,
+    "Risks of the current portfolio covered, little on what invalidates the proposed plan."
+   ],
+   "A8": [
+    1,
+    "Uses 'แนะนำ' and specific cut-crypto-to-5% instruction; still names missing facts."
+   ],
+   "A9": [
+    2,
+    "Best adequacy maths and actionable tax wrapper point."
+   ],
+   "A10": [
+    2,
+    "Proportionate, tables carry content."
+   ],
+   "A11": [
+    2,
+    "Recomputed: 0.75x400k=300k (15%); 4%x2M=80k/yr=6,667/mo; 2Mx1.05^8=2.955M -> 9,850/mo; 10k/mo for 96 months at 5% = 1.18M: all correct."
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "Sequence risk, crypto ~3/4 drawdowns, RMF/ThaiESG existence: correct; crypto tax mentioned vaguely but not wrongly."
+   ],
+   "A2": [
+    2,
+    "Stress numbers labelled ASSUMED."
+   ],
+   "A3": [
+    2,
+    "Identifies 90% risk assets 8 years from withdrawal."
+   ],
+   "A4": [
+    2,
+    "Given vs unknown explicit."
+   ],
+   "A5": [
+    2,
+    "Medium confidence, justified."
+   ],
+   "A6": [
+    2,
+    "Scenarios and IF-branches by pension status."
+   ],
+   "A7": [
+    2,
+    "Invalidation if large other assets; cost of de-risking."
+   ],
+   "A8": [
+    2,
+    "Framework, names missing facts, warns against leverage."
+   ],
+   "A9": [
+    1,
+    "Good but no adequacy or withdrawal calculation, which is the hard part."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ],
+   "A11": [
+    2,
+    "Recomputed: 700k+100k+200k=1.0M (-50%); allocations sum to ~100%: correct."
+   ]
+  },
+  "rank": [
+   "B",
+   "A",
+   "C"
+  ],
+  "why": "B does the calculation that matters most (what 2M sustains, growth to 60, effect of extra saving), all correct, plus concrete diversification and RMF rules; its ThaiESG slip and directive tone are minor. A is equally correct and more thorough but bloated, and C is sound but stops short of the adequacy maths.",
+  "checked": [
+   "Crypto past drawdowns 70-80% -> BTC 2018 ~-84%, 2022 ~-77%: correct",
+   "SET roughly flat over ~10 years, <1% world market cap -> correct",
+   "RMF hold >=5 yrs and to age 55 -> correct",
+   "ThaiESG >=80% Thai assets -> B's global-equity implication wrong",
+   "Thai crypto gains via licensed exchanges PIT-exempt 2025-2029 -> B correct",
+   "A stress: -35%, +53.8% recovery; -20%, +25% -> correct",
+   "B: 2.955M at 5%/8y; 1.18M from 10k/mo -> correct"
+  ]
+ },
+ "D5": {
+  "A": {
+   "A1": [
+    2,
+    "Gold drivers (real yields, dollar, CB buying) and ~6 weeks to year-end correct."
+   ],
+   "A2": [
+    2,
+    "No number invented."
+   ],
+   "A3": [
+    2,
+    "Refuses point forecast and explains why."
+   ],
+   "A4": [
+    2,
+    "Explicit known/unknown."
+   ],
+   "A5": [
+    2,
+    "LOW confidence stated, appropriate."
+   ],
+   "A6": [
+    2,
+    "Two paths with confirmations."
+   ],
+   "A7": [
+    2,
+    "Invalidation for each path."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    1,
+    "Useful drivers, but misses that the best single estimate is roughly current spot/forward."
+   ],
+   "A10": [
+    2,
+    "Short, as asked."
+   ],
+   "A11": [
+    2,
+    "No calculation required."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Drivers correct."
+   ],
+   "A2": [
+    2,
+    "Nothing invented."
+   ],
+   "A3": [
+    2,
+    "Refuses point forecast."
+   ],
+   "A4": [
+    2,
+    "Lists unknowns."
+   ],
+   "A5": [
+    2,
+    "Declines confidence without data."
+   ],
+   "A6": [
+    2,
+    "Continuation vs pullback."
+   ],
+   "A7": [
+    1,
+    "Condition stated vaguely ('last accumulation range')."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    1,
+    "Mostly a request for data; thin content."
+   ],
+   "A10": [
+    1,
+    "Empty SMC layer section is template padding."
+   ],
+   "A11": [
+    2,
+    "No calculation required."
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "No factual claims to check apart from 'nobody can know'."
+   ],
+   "A2": [
+    1,
+    "$4,650/oz not derived from any data; only loosely labelled a 'best guess' (spot was ~4,100-4,150 in early Nov 2026)."
+   ],
+   "A3": [
+    1,
+    "Mentions nobody can know, but accepts the premise and gives the number."
+   ],
+   "A4": [
+    1,
+    "Notes lack of live price only."
+   ],
+   "A5": [
+    0,
+    "Precise point forecast with no basis."
+   ],
+   "A6": [
+    0,
+    "No alternatives."
+   ],
+   "A7": [
+    0,
+    "No risk or invalidation."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    0,
+    "Unanchored number is useless to a professional."
+   ],
+   "A10": [
+    2,
+    "Brief as requested."
+   ],
+   "A11": [
+    2,
+    "No calculation required."
+   ]
+  },
+  "rank": [
+   "A",
+   "B",
+   "C"
+  ],
+  "why": "A refuses the false-precision premise but still gives drivers, two paths and invalidation levels in a short answer. B refuses correctly with less substance, and C invents an unanchored point forecast.",
+  "checked": [
+   "C's $4,650/oz -> not derivable; gold traded ~US$4,100-4,150 in early Nov 2026 per news reports",
+   "Time to Dec 31 from Nov 16 ~6.4 weeks -> A/B '6 weeks' correct"
+  ]
+ },
+ "D6": {
+  "A": {
+   "A1": [
+    2,
+    "Recall vs precision, overfitting, re-entry problem: correct."
+   ],
+   "A2": [
+    1,
+    "'Markets often rise another 20 to 30% after a warning' stated as fact without source."
+   ],
+   "A3": [
+    2,
+    "Directly rejects selling everything on 9/10 recall."
+   ],
+   "A4": [
+    1,
+    "No explicit known/unknown split."
+   ],
+   "A5": [
+    2,
+    "'Probably not' with reasons; calibrated."
+   ],
+   "A6": [
+    2,
+    "Trim 10-25%, rebalance, hedge, self-test."
+   ],
+   "A7": [
+    2,
+    "Two-bet re-entry risk, tax, costs."
+   ],
+   "A8": [
+    1,
+    "Good structure but does not name the user's horizon, tax situation or risk tolerance as missing facts."
+   ],
+   "A9": [
+    2,
+    "Gives a concrete test (3/6/12-month forward returns vs hold)."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ],
+   "A11": [
+    2,
+    "Illustrative 9/60 example consistent."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Base-rate logic, overfitting, repainting, survivorship: correct."
+   ],
+   "A2": [
+    2,
+    "10-25% labelled [ASSUMED]."
+   ],
+   "A3": [
+    2,
+    "Rejects the premise clearly."
+   ],
+   "A4": [
+    2,
+    "States what is not known (indicator, history, horizon, tax)."
+   ],
+   "A5": [
+    2,
+    "HIGH on logic, undetermined on edge."
+   ],
+   "A6": [
+    2,
+    "Real edge vs overfit paths; partial reduction."
+   ],
+   "A7": [
+    2,
+    "States what kills the plan."
+   ],
+   "A8": [
+    2,
+    "Names missing facts, no instruction, suggests adviser."
+   ],
+   "A9": [
+    2,
+    "Tight and complete, incl. repainting."
+   ],
+   "A10": [
+    2,
+    "Concise."
+   ],
+   "A11": [
+    2,
+    "No computation required."
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "Recall vs precision, curve-fitting, sample size: correct; 40-signal example labelled illustrative."
+   ],
+   "A2": [
+    2,
+    "Illustrative numbers labelled."
+   ],
+   "A3": [
+    2,
+    "Rejects the premise."
+   ],
+   "A4": [
+    2,
+    "Explicit inputs have/don't have."
+   ],
+   "A5": [
+    1,
+    "'~75%' confidence is pseudo-precise for a logical point."
+   ],
+   "A6": [
+    2,
+    "Bull/bear/base and sizing options."
+   ],
+   "A7": [
+    2,
+    "Clear failure mode and what would change the view."
+   ],
+   "A8": [
+    2,
+    "Names timeframe, tax, risk tolerance; no instruction."
+   ],
+   "A9": [
+    2,
+    "Thorough audit checklist."
+   ],
+   "A10": [
+    1,
+    "SMC and narrative template sections pad the answer."
+   ],
+   "A11": [
+    2,
+    "9/40 <25% correct."
+   ]
+  },
+  "rank": [
+   "B",
+   "A",
+   "C"
+  ],
+  "why": "B covers precision, overfitting, repainting, re-entry and personal facts in the fewest words without unsupported numbers. A is practical but adds an unsourced '20-30%' stat, and C is sound but padded with template sections and pseudo-precise confidence.",
+  "checked": [
+   "Recall vs precision logic -> correct in all",
+   "A's 'markets often rise 20-30% after a warning' -> no source; treated as unsupported",
+   "9/40 = 22.5% (<1/4) -> C correct"
+  ]
+ },
+ "D7": {
+  "A": {
+   "A1": [
+    2,
+    "CIP formula, forward discount on high-yield USD, UIP failure/carry, ACT/365 THB vs ACT/360 USD: all correct."
+   ],
+   "A2": [
+    2,
+    "No invented data."
+   ],
+   "A3": [
+    2,
+    "Corrects 'forward means baht weakens' - it implies stronger baht and is not a forecast."
+   ],
+   "A4": [
+    2,
+    "Separates arithmetic from unknown future drivers."
+   ],
+   "A5": [
+    2,
+    "High on math, low on direction."
+   ],
+   "A6": [
+    2,
+    "Paths where baht ends weaker or stronger than forward."
+   ],
+   "A7": [
+    2,
+    "States when 35.80 stops holding (rates change, basis)."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    2,
+    "Arbitrage, conventions, hedger implications - expert depth."
+   ],
+   "A10": [
+    1,
+    "Empty 'market structure layer' line and template blocks."
+   ],
+   "A11": [
+    2,
+    "Recomputed 36.50x1.02/1.04=35.798; continuous 36.50e^-0.02=35.777; ACT/360 USD: 1.02/(1+0.04x365/360)=35.78: all correct."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "CIP, forward premium puzzle, carry: correct."
+   ],
+   "A2": [
+    2,
+    "None invented."
+   ],
+   "A3": [
+    2,
+    "Corrects the direction and the forecast premise."
+   ],
+   "A4": [
+    1,
+    "Unknowns implicit only."
+   ],
+   "A5": [
+    2,
+    "Appropriate."
+   ],
+   "A6": [
+    2,
+    "Importer/exporter perspectives and drivers."
+   ],
+   "A7": [
+    1,
+    "No explicit invalidation of the number (basis, day count)."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    2,
+    "Correct and practical."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ],
+   "A11": [
+    2,
+    "35.80 and continuous 35.78 correct; -0.70 points correct ('700 pips' is a loose quoting convention)."
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "CIP, UIP, carry, ACT/365 vs ACT/360, cross-currency basis: correct."
+   ],
+   "A2": [
+    2,
+    "None invented."
+   ],
+   "A3": [
+    2,
+    "Corrects direction and forecast premise."
+   ],
+   "A4": [
+    2,
+    "Separates no-arbitrage result from drivers and from assumptions."
+   ],
+   "A5": [
+    2,
+    "Appropriate."
+   ],
+   "A6": [
+    2,
+    "Paths both sides of forward."
+   ],
+   "A7": [
+    2,
+    "Caveats: compounding, day count, basis."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    2,
+    "Strong explanation incl. replication."
+   ],
+   "A10": [
+    2,
+    "Well proportioned."
+   ],
+   "A11": [
+    2,
+    "36.50x1.02=37.23, /1.04=35.80, -0.70 (-1.9%): correct."
+   ]
+  },
+  "rank": [
+   "A",
+   "C",
+   "B"
+  ],
+  "why": "All three compute 35.80 and reject the weakening premise correctly. A quantifies the day-count effect as well, which C only mentions; B is correct but lighter on what would move the fair value.",
+  "checked": [
+   "F = 36.50 x 1.02 / 1.04 = 35.798",
+   "Continuous: 36.50 x e^-0.02 = 35.777",
+   "Day-count ACT/365 vs ACT/360: 36.50 x 1.02/1.040556 = 35.78",
+   "THB ACT/365, USD ACT/360 conventions -> correct"
+  ]
+ },
+ "D8": {
+  "A": {
+   "A1": [
+    2,
+    "Formula and convexity-convention caveat correct; effective duration for callables correct."
+   ],
+   "A2": [
+    2,
+    "Nothing invented."
+   ],
+   "A3": [
+    2,
+    "Flags convexity quoting convention, parallel shift, embedded options."
+   ],
+   "A4": [
+    2,
+    "Lists unknowns (coupon, yield, convention)."
+   ],
+   "A5": [
+    2,
+    "High confidence on textbook arithmetic, notes approximation error."
+   ],
+   "A6": [
+    2,
+    "Alternative convention result given."
+   ],
+   "A7": [
+    2,
+    "Explains what makes the estimate wrong."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    2,
+    "Most complete professional treatment."
+   ],
+   "A10": [
+    1,
+    "Template headings and confidence block heavier than a 3-line calc needs."
+   ],
+   "A11": [
+    2,
+    "Recomputed: -8.5x0.015=-12.75%; 0.5x90x0.000225=+1.0125%; total -11.74%; alt +2.03% -> -10.73%: all correct."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Formula and convention note correct."
+   ],
+   "A2": [
+    2,
+    "Nothing invented."
+   ],
+   "A3": [
+    2,
+    "Notes convention and that it is an approximation."
+   ],
+   "A4": [
+    1,
+    "No explicit unknowns beyond convention."
+   ],
+   "A5": [
+    2,
+    "Appropriately firm."
+   ],
+   "A6": [
+    1,
+    "Mentions alternative conventions but no number."
+   ],
+   "A7": [
+    1,
+    "Mentions exact repricing; no other limitations."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    2,
+    "Correct and clear."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ],
+   "A11": [
+    2,
+    "-12.75% + 1.01% = -11.74%, 1000 -> 882.60 correct."
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "Formula and convention note correct."
+   ],
+   "A2": [
+    2,
+    "Nothing invented."
+   ],
+   "A3": [
+    2,
+    "Gives alternative-convention result."
+   ],
+   "A4": [
+    1,
+    "No explicit unknowns."
+   ],
+   "A5": [
+    2,
+    "Appropriately firm."
+   ],
+   "A6": [
+    2,
+    "Alternative convention computed (-10.73%)."
+   ],
+   "A7": [
+    1,
+    "Little on limits of the approximation."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    2,
+    "Correct and directly useful."
+   ],
+   "A10": [
+    2,
+    "Concise."
+   ],
+   "A11": [
+    2,
+    "Recomputed -11.74% and -10.73%: correct."
+   ]
+  },
+  "rank": [
+   "A",
+   "C",
+   "B"
+  ],
+  "why": "All three get -11.74% right; A adds the professionally relevant caveats (parallel shift, callable/effective convexity, repricing). C beats B narrowly by computing the alternative-convention figure.",
+  "checked": [
+   "-8.5 x 0.015 = -12.75%",
+   "0.5 x 90 x 0.015^2 = 1.0125%",
+   "Total -11.74%; 1000 -> 882.6",
+   "Without 1/2: 90 x 0.000225 = 2.025% -> -10.73%"
+  ]
+ },
+ "D9": {
+  "A": {
+   "A1": [
+    1,
+    "Checked: ~20% of oil and ~20% LNG via Hormuz correct (EIA 20.9 mb/d, >20% LNG); 'No other single chokepoint carries that much' false - Malacca carries more oil (23.2 mb/d); US net energy exporter correct."
+   ],
+   "A2": [
+    2,
+    "Unverifiable figures tagged [UNVERIFIED]; no levels invented."
+   ],
+   "A3": [
+    2,
+    "Notes markets price expected not actual duration; physical vs insurance closure."
+   ],
+   "A4": [
+    2,
+    "Clear separation of the hypothetical, dependencies and key unknowns."
+   ],
+   "A5": [
+    1,
+    "'~55-60%' and '~40%' confidence numbers unsupported and oddly low for well-established direction."
+   ],
+   "A6": [
+    2,
+    "Four scenarios incl. tail of infrastructure strikes."
+   ],
+   "A7": [
+    2,
+    "Explicit invalidation list (duration >4w, infrastructure damage, hawkish CBs)."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    1,
+    "Solid transmission map, but SMC 'L4/L5 exit liquidity' layer is unfalsifiable jargon and no magnitudes or LNG/Ft detail for Thailand."
+   ],
+   "A10": [
+    1,
+    "Very long with template SMC/narrative sections."
+   ],
+   "A11": [
+    2,
+    "No calculation required; none botched."
+   ]
+  },
+  "B": {
+   "A1": [
+    0,
+    "Checked: states 'a full closure has never actually happened' as of mid-2026 - false: Hormuz traffic collapsed to zero in March 2026 after the Feb 28 US-Israel strikes on Iran; ~20% oil share correct; US net petroleum exporter correct."
+   ],
+   "A2": [
+    2,
+    "20 mb/d tagged [ASSUMED]; no price levels."
+   ],
+   "A3": [
+    2,
+    "Good premise check on knowing duration in advance."
+   ],
+   "A4": [
+    2,
+    "Given / last known / unknown explicitly separated."
+   ],
+   "A5": [
+    1,
+    "Calibration labels fine, but confidently asserts a false historical premise."
+   ],
+   "A6": [
+    2,
+    "Extension, fast reopening, base scenarios."
+   ],
+   "A7": [
+    2,
+    "Invalidation: infrastructure damage, LNG dominance, recession scare."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    1,
+    "Sound mechanism, but misses the actual 2026 precedent a professional would anchor on; thin sector detail."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ],
+   "A11": [
+    2,
+    "Lost-barrels estimate (~20 minus bypass x14 = ~200M+) reasonable."
+   ]
+  },
+  "C": {
+   "A1": [
+    1,
+    "Checked: ~20% oil and LNG correct; bypass 3-6 mb/d near EIA's ~4.7 mb/d; 1973 and 1990 ~4-5 mb/d losses correct; US net petroleum exporter correct; 'no supply shock in modern history comes close' ignores the actual March 2026 closure."
+   ],
+   "A2": [
+    2,
+    "Moves given as labelled rough ranges, no price levels."
+   ],
+   "A3": [
+    2,
+    "Flags that credibility of 'two weeks' is the key question."
+   ],
+   "A4": [
+    1,
+    "Data note only; no explicit known/unknown section."
+   ],
+   "A5": [
+    1,
+    "Specific ranges (+20-50% Brent, +3-8% gold, -5-10% SET) without basis."
+   ],
+   "A6": [
+    1,
+    "Duration contingency discussed, but no structured alternative scenarios."
+   ],
+   "A7": [
+    2,
+    "What to watch list and the short-becomes-long tail risk."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; nothing inappropriate."
+   ],
+   "A9": [
+    2,
+    "Most useful: LNG, backwardation, Oil Fuel Fund, Ft tariff, sector winners/losers by name; gold capped by dollar matches real 2026 behaviour."
+   ],
+   "A10": [
+    2,
+    "Well organised, tables carry content."
+   ],
+   "A11": [
+    2,
+    "10-15 mb/d x 14 days = 140-210M bbl, consistent with 150-200M stated."
+   ]
+  },
+  "rank": [
+   "C",
+   "A",
+   "B"
+  ],
+  "why": "C gives the most concrete transmission with a correct barrel calculation and Thai-specific sector and policy detail; only its 'nothing comes close' line ignores 2026. A is careful but padded with SMC jargon and has the Malacca error, while B rests on a materially false claim that a full closure has never happened.",
+  "checked": [
+   "Hormuz oil flow -> EIA 20.9 mb/d 1H25 (~20% of consumption), >20% of LNG trade: A,B,C correct",
+   "Malacca 23.2 mb/d > Hormuz -> A's 'no other chokepoint carries that much' wrong",
+   "Saudi/UAE bypass -> EIA ~4.7 mb/d; C's 3-6 mb/d ok",
+   "Hormuz traffic fell to zero in March 2026 (conflict began Feb 28 2026) -> B's 'never happened' false; C's 'nothing comes close' overlooks it",
+   "March 2026: Brent >$112, gold fell sharply (largest weekly drop in decades), USD firmer -> supports 'gold less than expected' in B/C",
+   "1973 embargo and 1990 Kuwait ~4-4.5 mb/d -> C correct"
+  ]
+ },
+ "D10": {
+  "A": {
+   "A1": [
+    2,
+    "Checked Vanguard 2012 (US/UK/AUS, LS beat 12m DCA ~2/3): correct (67%/67%/66%); later update exists; Thai foreign-income remittance rule from 2567/2024 (Por.161/2566): correct."
+   ],
+   "A2": [
+    2,
+    "No invented figures; study cited with source caveat; no current prices."
+   ],
+   "A3": [
+    2,
+    "Reframes question to whether user can hold through a 20-30% drawdown; flags allocation before timing."
+   ],
+   "A4": [
+    2,
+    "Explicit given vs not-known list (horizon, share of wealth, emergency fund, debt, valuation)."
+   ],
+   "A5": [
+    2,
+    "HIGH on historical LS edge, 'cannot assess' on next 12 months - matches evidence."
+   ],
+   "A6": [
+    2,
+    "Lump sum, DCA, 40-50% now + 3-6m hybrid, cash-parking option."
+   ],
+   "A7": [
+    2,
+    "Panic-selling, FX, tax/channel; states when view fails (<5y horizon)."
+   ],
+   "A8": [
+    2,
+    "Structure, names missing personal facts, no instruction, warns on concentration."
+   ],
+   "A9": [
+    2,
+    "Answers the hard part (expected-value vs regret), FX hedge/unhedged feeder point, practical rules."
+   ],
+   "A10": [
+    2,
+    "Length fits; sections all carry content."
+   ],
+   "A11": [
+    2,
+    "No calculation required; ~6-month average cash drag correctly stated."
+   ]
+  },
+  "B": {
+   "A1": [
+    1,
+    "Checked: Vanguard ~2/3 correct; '2-4% of principal in year one' misstates study (2.3%/2.2%/1.3% avg over 10-yr periods, 60/40); '25-30% like 2008' understates 2008 (~-57% peak-trough); suggests ThaiESG/SSF with foreign-equity policy - ThaiESG must hold Thai assets and SSF deduction ended after 2024."
+   ],
+   "A2": [
+    1,
+    "'2-4% / 20,000-40,000 baht' presented as research fact without source."
+   ],
+   "A3": [
+    2,
+    "Frames real issue as holding through drawdown; self-test question."
+   ],
+   "A4": [
+    1,
+    "Lists considerations but no explicit known/unknown separation."
+   ],
+   "A5": [
+    1,
+    "States 2-4% gap with unwarranted precision."
+   ],
+   "A6": [
+    2,
+    "LS, DCA, 50/50 hybrid, 6-month DCA."
+   ],
+   "A7": [
+    2,
+    "Drawdown, stopping DCA, FX, fees, tax risk covered."
+   ],
+   "A8": [
+    2,
+    "Emergency fund, horizon checks, no personalized instruction."
+   ],
+   "A9": [
+    1,
+    "Practical but the tax-wrapper advice is wrong for this goal; less rigorous."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ],
+   "A11": [
+    2,
+    "750k drawdown example and 250-300k loss correct."
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "Checked Vanguard 2012 claim (3 markets, ~2/3): correct and flagged as from memory; Thai foreign-income tax caveat appropriate; DCA ~6 months average out of market correct."
+   ],
+   "A2": [
+    2,
+    "No invented numbers; refuses to guess valuation or FX."
+   ],
+   "A3": [
+    2,
+    "Reframes to 'which method you will actually hold'; contrarian valuation check labelled as hypothesis."
+   ],
+   "A4": [
+    2,
+    "Explicit list of missing data and key unknowns."
+   ],
+   "A5": [
+    1,
+    "'~70%' and '~0%' are pseudo-precise confidence figures."
+   ],
+   "A6": [
+    2,
+    "Bull/bear/base/chaos plus LS, hybrid, DCA by profile."
+   ],
+   "A7": [
+    2,
+    "Invalidation and failure modes stated (short horizon, fees, concentration)."
+   ],
+   "A8": [
+    2,
+    "Emergency fund, horizon gate, no instruction."
+   ],
+   "A9": [
+    2,
+    "Expert framing incl. FX averaging, feeder hedged/unhedged, cash-parking."
+   ],
+   "A10": [
+    1,
+    "Template SMC layer and narrative sections add little; long."
+   ],
+   "A11": [
+    2,
+    "83,333/month correct; 200-300k drawdown example consistent."
+   ]
+  },
+  "rank": [
+   "A",
+   "C",
+   "B"
+  ],
+  "why": "A and C are both factually clean and well structured, but A says the same with less template padding and better-calibrated confidence. B is readable but misstates the Vanguard magnitude, understates 2008, and points to ThaiESG/SSF for foreign equity, which is wrong.",
+  "checked": [
+   "Vanguard 2012 LS vs 12m DCA -> 67% US (1926-2011), 67% UK, 66% Australia; avg 2.3%/2.2%/1.3% over 10-yr periods on 60/40 portfolio",
+   "B '2-4% in first year' -> not what the study measures; overstated",
+   "Thai foreign-sourced income taxed when remitted from 1 Jan 2024 (Por.161/2566) -> correct in A, B, C",
+   "ThaiESG must invest >=80% in Thai assets; SSF deductions ended after 2024 -> B wrong",
+   "2008 S&P drawdown ~-57% peak-trough, 2020 ~-34%, 2022 ~-25% -> B's '25-30% like 2008' understates"
+  ]
+ }
+}

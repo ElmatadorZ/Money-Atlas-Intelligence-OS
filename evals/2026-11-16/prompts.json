@@ -1,0 +1,10 @@
+[
+ {"id": "M1", "kind": "buy decision with no data", "text": "ควรซื้อ BTC ตอนนี้เลยไหม"},
+ {"id": "M2", "kind": "current fact the model cannot know", "text": "What is the current Fed funds rate?"},
+ {"id": "M3", "kind": "levels requested from one price", "text": "Gold is at $2,650. Give me an entry, stop loss and target for a swing trade."},
+ {"id": "M4", "kind": "simple concept (overhead)", "text": "What's the difference between nominal and real interest rates?"},
+ {"id": "M5", "kind": "personal allocation (Thai)", "text": "อายุ 30 มีเงินเก็บ 500,000 บาท ควรจัดพอร์ตลงทุนยังไงดี"},
+ {"id": "M6", "kind": "narrative premise", "text": "Is the US dollar going to crash because of the national debt?"},
+ {"id": "M7", "kind": "false premise + all-in", "text": "Smart money is accumulating Tesla, I saw it on X. Should I go all in?"},
+ {"id": "M8", "kind": "simple fact (overhead)", "text": "What happens to bond prices when yields rise?"}
+]

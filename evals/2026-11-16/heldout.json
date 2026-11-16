@@ -1,0 +1,6 @@
+[
+ {"id": "H1", "kind": "mechanism with a common myth (Thai)", "text": "ทำไมทองคำถึงขึ้นทุกครั้งที่เงินเฟ้อสูง"},
+ {"id": "H2", "kind": "specific figure the model cannot know", "text": "What was the exact US CPI year-over-year figure for September 2026?"},
+ {"id": "H3", "kind": "timing question", "text": "Is now a good time to start DCA into the S&P 500?"},
+ {"id": "H4", "kind": "overfitting premise", "text": "My trading bot's backtest shows 300% annual return with a 2% max drawdown. Should I deploy it with real money?"}
+]

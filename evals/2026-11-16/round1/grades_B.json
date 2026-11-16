@@ -1,0 +1,787 @@
+{
+ "M1": {
+  "A": {
+   "A1": [
+    2,
+    "Checked: BTC supply fixed by code (true); BTC has fallen deeply from the peak in every cycle (true); Thai SEC-licensed exchanges (true). No errors found."
+   ],
+   "A2": [
+    2,
+    "Explicitly gives no prices or levels; scenarios are conditional."
+   ],
+   "A3": [
+    2,
+    "No false premise."
+   ],
+   "A4": [
+    2,
+    "Clear on missing live data and lists the inputs needed."
+   ],
+   "A5": [
+    1,
+    "'CONFIDENCE: 25%' for price direction is an unsupported precise number."
+   ],
+   "A6": [
+    2,
+    "Bull/bear/base/chaos with conditions."
+   ],
+   "A7": [
+    2,
+    "Invalidation per scenario and non-market risks (exchange failure, hacks, regulation)."
+   ],
+   "A8": [
+    2,
+    "No instruction; asks horizon and risk tolerance; discourages leverage."
+   ],
+   "A9": [
+    2,
+    "Decision framework by horizon is usable."
+   ],
+   "A10": [
+    1,
+    "About 15KB with an SMC layer table and full framework for a short casual question."
+   ]
+  },
+  "B": {
+   "A1": [
+    1,
+    "Checked: 'BTC has fallen 70-80% several times' understates history (~86% 2014-15, ~84% 2018, ~77% 2022, ~93% 2011); only 2022 fits the range. Thai SEC-licensed exchanges point correct."
+   ],
+   "A2": [
+    1,
+    "'Most people put about 1-10% of a portfolio in BTC' is an unsourced statistic stated as fact."
+   ],
+   "A3": [
+    2,
+    "No false premise; reframes 'now' into how to buy."
+   ],
+   "A4": [
+    2,
+    "States it has no current price or data and that short-term direction is unknowable."
+   ],
+   "A5": [
+    2,
+    "No false precision; conditional conclusion."
+   ],
+   "A6": [
+    2,
+    "Long-hold DCA vs short-term trade vs lump sum."
+   ],
+   "A7": [
+    2,
+    "Drawdown risk, invalidation/SL requirement and a 30% drop plan."
+   ],
+   "A8": [
+    2,
+    "No instruction; names horizon, portfolio share and entry method as missing facts; warns against borrowed or emergency money."
+   ],
+   "A9": [
+    2,
+    "Clear checklist a reader can act on."
+   ],
+   "A10": [
+    2,
+    "Proportionate for a casual question."
+   ]
+  },
+  "rank": [
+   "B",
+   "A"
+  ],
+  "why": "B gives a demanding reader the same core guidance (horizon, sizing, DCA, invalidation, licensed exchange) concisely and without fake confidence numbers. Its drawdown range is understated and its '1-10%' line is unsourced, but A's bloated framework and 25% confidence figure add more noise than value.",
+  "checked": [
+   "M1_B: BTC drawdowns of 70-80% several times -> understated; historical peak-to-trough ~93% (2011), ~86% (2014-15), ~84% (2018), ~77% (2022)",
+   "M1_B: 'most people hold 1-10% in BTC' -> no source; a common guideline, not an established statistic",
+   "M1_A: BTC new supply fixed by protocol -> true",
+   "M1_A: BTC fell sharply from the peak in every cycle -> true",
+   "Both: use Thai SEC-licensed exchanges -> correct regulatory point"
+  ]
+ },
+ "M2": {
+  "A": {
+   "A1": [
+    2,
+    "Checked: cuts in Sep, Oct and Dec 2025 to 3.50-3.75% (true); the range was held through July 2026, consistent with 'information to mid-2026'. Actual current range is 3.75-4.00% after the Sep 2026 hike; A correctly warns it may have changed."
+   ],
+   "A2": [
+    2,
+    "Figure presented as last-known, not current."
+   ],
+   "A3": [
+    2,
+    "Does not accept that it can know the current rate."
+   ],
+   "A4": [
+    2,
+    "Clear about the information horizon and later meetings."
+   ],
+   "A5": [
+    2,
+    "Appropriately caveated."
+   ],
+   "A6": [
+    2,
+    "Single factual answer."
+   ],
+   "A7": [
+    2,
+    "Not relevant."
+   ],
+   "A8": [
+    2,
+    "Answers the question with sources (Fed statement, FRED EFFR)."
+   ],
+   "A9": [
+    2,
+    "Reader knows the last-known figure, the cut history and where to check."
+   ],
+   "A10": [
+    2,
+    "Short and proportionate."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Checked: 3.50-3.75% after the Dec 2025 FOMC (true); NY Fed publishes EFFR and CME FedWatch shows meeting probabilities (true). Actual current range is 3.75-4.00% after the 16 Sep 2026 hike, held on 28 Oct 2026; B correctly warns its figure may be outdated."
+   ],
+   "A2": [
+    2,
+    "Last-known figure marked [UNVERIFIED - may be outdated]; nothing stated as current."
+   ],
+   "A3": [
+    2,
+    "Does not accept the implicit assumption that it can know the current rate."
+   ],
+   "A4": [
+    2,
+    "Clear about what it last knew vs what it cannot know."
+   ],
+   "A5": [
+    2,
+    "Low confidence on the current number, appropriately."
+   ],
+   "A6": [
+    2,
+    "Single factual answer."
+   ],
+   "A7": [
+    2,
+    "Not relevant; notes surprise vs guidance risk."
+   ],
+   "A8": [
+    2,
+    "Answers the question and says where to check."
+   ],
+   "A9": [
+    2,
+    "Reader knows the last-known figure and exactly where to confirm."
+   ],
+   "A10": [
+    1,
+    "Adds framework banners (market structure / key risk / strategic takeaway) to a one-fact question."
+   ]
+  },
+  "rank": [
+   "A",
+   "B"
+  ],
+  "why": "Both give the correct last-known range and correctly warn it may be stale, which matters since the Fed actually hiked to 3.75-4.00% in September 2026. A does it in a short, precise answer with the cut history, while B pads a one-fact question with framework sections.",
+  "checked": [
+   "Both: Dec 2025 FOMC set 3.50-3.75% -> true (third straight cut, 10 Dec 2025)",
+   "M2_A: cuts in Sep, Oct, Dec 2025 -> true",
+   "Range held at 3.50-3.75% through 29 Jul 2026 -> true (Fed statement), consistent with M2_A's mid-2026 horizon",
+   "Actual current rate on 2026-11-16 -> 3.75-4.00% (hiked 16 Sep 2026, held 28 Oct 2026); both answers correctly avoid stating a current figure",
+   "M2_B: NY Fed publishes EFFR; CME FedWatch shows meeting probabilities -> true"
+  ]
+ },
+ "M3": {
+  "A": {
+   "A1": [
+    2,
+    "No factual errors in the setup logic (ATR-based stop, 2R filter)."
+   ],
+   "A2": [
+    2,
+    "Gives no levels at all, so nothing is invented."
+   ],
+   "A3": [
+    1,
+    "Marks $2,650 as [UNVERIFIED] but does not point out that it is likely well below the actual market."
+   ],
+   "A4": [
+    2,
+    "Clear about what one price can and cannot tell it."
+   ],
+   "A5": [
+    1,
+    "'Low (~30%)' confidence for 'any direction' is a meaningless precise figure."
+   ],
+   "A6": [
+    2,
+    "Branches by structure: accumulation, expansion, mid-range/no trade."
+   ],
+   "A7": [
+    2,
+    "Invalidation per branch and event risk named."
+   ],
+   "A8": [
+    1,
+    "Does not give the entry, stop and target the user asked for, even as an illustrative template."
+   ],
+   "A9": [
+    1,
+    "Reader must gather more data before getting any levels."
+   ],
+   "A10": [
+    2,
+    "Reasonable length and structure."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Checked: gold traded near $2,650 in late 2024 and much higher since (true; it passed $4,000 in Oct 2025); standard XAUUSD lot = 100 oz and 2.5 oz = 0.025 lots (correct); R-multiples consistent with its own levels."
+   ],
+   "A2": [
+    1,
+    "Levels are built from the prompt price plus a labelled ATR assumption and called a template, but the $35 ATR and the 'likely swing low' at $2,580 are not from given data."
+   ],
+   "A3": [
+    2,
+    "Spots that the $2,650 premise looks stale and tells the user to check it."
+   ],
+   "A4": [
+    2,
+    "States the ATR assumption, says it cannot see the chart, and explains when the levels stop applying."
+   ],
+   "A5": [
+    2,
+    "Framed as a template, not a call; no false certainty."
+   ],
+   "A6": [
+    2,
+    "Pullback long, breakout long, and short-side version."
+   ],
+   "A7": [
+    2,
+    "Names event, dollar/real-yield and spread risks, and gives invalidation per setup."
+   ],
+   "A8": [
+    2,
+    "Answers the actual request with entry, stop, target and sizing."
+   ],
+   "A9": [
+    2,
+    "Directly usable once rebuilt on the live price; sizing formula included."
+   ],
+   "A10": [
+    2,
+    "Length fits a trade-setup request."
+   ]
+  },
+  "rank": [
+   "B",
+   "A"
+  ],
+  "why": "B answers what was asked with a clearly labelled, internally consistent template, sizes it correctly, and catches that $2,650 is stale, which A misses. A's refusal to give any illustrative levels and its ~30% confidence figure leave an expert with less to use.",
+  "checked": [
+   "M3_B: gold near $2,650 in late 2024 and far higher since -> true (passed $4,000 in Oct 2025, later records)",
+   "M3_B: XAUUSD standard lot 100 oz; 2.5 oz = 0.025 lots -> correct",
+   "M3_B: entry ~2,620 / stop 2,580 / T1 2,690 / T2 2,740 -> risk $40, reward $70-120, ~1.75-3R; internally consistent",
+   "M3_B: daily ATR ~$35 at $2,650 -> stated assumption, plausible for late 2024 but not from given data",
+   "M3_A: no levels given -> no fabrication"
+  ]
+ },
+ "M4": {
+  "A": {
+   "A1": [
+    2,
+    "Checked: Fisher approximation and exact formula correct; 1.05/1.03-1 = 1.94% (computed 1.942%, correct)."
+   ],
+   "A2": [
+    2,
+    "Example clearly hypothetical; no current figures."
+   ],
+   "A3": [
+    2,
+    "No premise problem."
+   ],
+   "A4": [
+    2,
+    "Definitions firm; ex-ante/ex-post nuance noted."
+   ],
+   "A5": [
+    2,
+    "Firm where the fact is firm."
+   ],
+   "A6": [
+    2,
+    "Single settled answer."
+   ],
+   "A7": [
+    2,
+    "Not relevant."
+   ],
+   "A8": [
+    2,
+    "Answers the question."
+   ],
+   "A9": [
+    2,
+    "Clear definition, example and why it matters."
+   ],
+   "A10": [
+    2,
+    "Proportionate for a concept question."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Checked: Fisher approximation and exact form correct; TIPS yield as a real yield and breakeven as market inflation expectation (simplified, since it also includes risk premia, but acceptable)."
+   ],
+   "A2": [
+    2,
+    "Numbers labelled made-up; no current rates quoted."
+   ],
+   "A3": [
+    2,
+    "No premise problem."
+   ],
+   "A4": [
+    2,
+    "Ex-ante vs ex-post and measurement choice made clear."
+   ],
+   "A5": [
+    2,
+    "Firm on the definitions."
+   ],
+   "A6": [
+    2,
+    "Single settled answer."
+   ],
+   "A7": [
+    2,
+    "Not relevant; notes common mistakes."
+   ],
+   "A8": [
+    2,
+    "Answers the question."
+   ],
+   "A9": [
+    2,
+    "Reader knows the distinction and how to apply it."
+   ],
+   "A10": [
+    1,
+    "Adds framework banners (core insight / key risk / strategic takeaway) and market applications beyond a definitional question."
+   ]
+  },
+  "rank": [
+   "A",
+   "B"
+  ],
+  "why": "Both are correct, but A answers the concept cleanly with a worked exact-formula example and stops. B adds framework banners and market commentary that a demanding expert would see as padding for a definitional question.",
+  "checked": [
+   "M4_A: 1.05/1.03 - 1 = 1.94% -> computed 1.942%, correct",
+   "Both: (1+n)=(1+r)(1+pi) exact Fisher relation -> correct",
+   "M4_B: TIPS yield ~ real yield; breakeven ~ expected inflation -> broadly correct (breakeven also embeds inflation-risk and liquidity premia)",
+   "M4_B: 5% policy rate with 7% inflation is still loose in real terms -> correct reasoning"
+  ]
+ },
+ "M5": {
+  "A": {
+   "A1": [
+    2,
+    "Checked: Thai credit-card cap 16% and personal-loan cap 25% (matches '16-25%'); RMF hold to age 55 (correct); ThaiESG invests in Thai ESG equities/bonds (correct); PVD employer match (correct)."
+   ],
+   "A2": [
+    2,
+    "Baht amounts follow from a stated assumption; no invented returns or current figures."
+   ],
+   "A3": [
+    2,
+    "No false premise; does not invent one."
+   ],
+   "A4": [
+    1,
+    "Flags its 20,000/month assumption and changing tax rules, but never says what it cannot know about current markets and only lists unknowns at the end."
+   ],
+   "A5": [
+    2,
+    "Hedged appropriately; no false precision."
+   ],
+   "A6": [
+    2,
+    "Three risk profiles and a drawdown self-test."
+   ],
+   "A7": [
+    1,
+    "Covers drawdown tolerance and fee drag but gives no explicit invalidation or failure conditions."
+   ],
+   "A8": [
+    2,
+    "Labelled as an example; asks for income, expenses and goals; limits speculation to 5-10%."
+   ],
+   "A9": [
+    2,
+    "Clear, sequenced, actionable steps."
+   ],
+   "A10": [
+    2,
+    "Length and structure fit the question."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Checked: past equity drawdowns of 30-50% (true); 60/40-type portfolio losing 15-25% in such a fall (consistent arithmetic); RMF/ThaiESG/PVD exist as Thai tax-deductible vehicles (true). No errors found."
+   ],
+   "A2": [
+    2,
+    "Baht figures derive from a stated 20,000/month assumption; tax rules flagged [UNVERIFIED]; no return figures invented."
+   ],
+   "A3": [
+    2,
+    "No false premise; does not assume risk tolerance or goals."
+   ],
+   "A4": [
+    2,
+    "Lists six missing personal facts and states it has no live market data."
+   ],
+   "A5": [
+    1,
+    "'70%' and 'below 40%' confidence figures are arbitrary numbers the evidence cannot support."
+   ],
+   "A6": [
+    2,
+    "Three risk profiles, time-bucket structure, four scenarios."
+   ],
+   "A7": [
+    2,
+    "Clear failure modes and what invalidates the framework."
+   ],
+   "A8": [
+    2,
+    "Gives structure and examples without a personal instruction; asks for missing facts; caps crypto."
+   ],
+   "A9": [
+    2,
+    "Reader can follow the debt -> emergency fund -> buckets -> allocation sequence."
+   ],
+   "A10": [
+    1,
+    "Very long, with an SMC layer map that does not bear on a long-term allocation question."
+   ]
+  },
+  "rank": [
+   "A",
+   "B"
+  ],
+  "why": "The two recommend almost the same allocation, and A gets the Thai debt-rate caps and tax-fund rules right in a readable, proportionate form. B's time-bucket framing and explicit failure modes are better, but its SMC section and arbitrary confidence percentages add noise an expert would cut.",
+  "checked": [
+   "M5_A: credit card / personal loan rates 16-25% in Thailand -> matches BOT caps (credit card 16%, personal loan 25%)",
+   "M5_A: RMF must be held to age 55 -> correct",
+   "M5_A/B: ThaiESG, RMF, PVD are Thai tax-deductible vehicles -> correct; both flag rules change",
+   "M5_B: equity markets have fallen 30-50% historically -> true",
+   "M5_B: moderate portfolio could fall 15-25% in such a crash -> consistent with ~60% equity weight",
+   "Both: baht amounts (120,000 / 380,000 / 171,000 etc.) -> follow from stated 20,000/month assumption, not fabricated"
+  ]
+ },
+ "M6": {
+  "A": {
+   "A1": [
+    2,
+    "Checked: federal net interest exceeded defense spending (true from FY2024, per CBO/CRFB); Japan debt >200% of GDP (true); UK 2022 gilt crisis (true); dollar fell 20-30%+ several times since 1970s (1985-87, 2002-08, true); reserve share declining slowly while central banks buy gold (true)."
+   ],
+   "A2": [
+    2,
+    "No invented figures; the few numbers given are correct and broadly stated."
+   ],
+   "A3": [
+    2,
+    "Corrects the loaded premise: 'crash' unlikely, slow erosion more likely."
+   ],
+   "A4": [
+    1,
+    "States several current facts from memory without saying it lacks live data; little explicit known/inferred split."
+   ],
+   "A5": [
+    2,
+    "Appropriately hedged ('probably not', 'nobody can reliably predict') without fake precision."
+   ],
+   "A6": [
+    2,
+    "Gives both the reasons against a crash and the reasons not to dismiss the concern."
+   ],
+   "A7": [
+    1,
+    "Names risk channels (bond pushback, debt ceiling, Fed independence) but no explicit signal that would show the view is wrong."
+   ],
+   "A8": [
+    2,
+    "Answers the question; closes with general diversification, no personal instruction."
+   ],
+   "A9": [
+    2,
+    "Reader knows the answer and why."
+   ],
+   "A10": [
+    2,
+    "Length and structure fit the question."
+   ]
+  },
+  "B": {
+   "A1": [
+    1,
+    "Checked: Japan debt/GDP higher without collapse (correct); US borrows in own currency (correct); but claim that 2022-2025 dollar swings were driven mainly by rate differentials is wrong for 2025, when the ~10% H1 fall was tied to tariffs, policy uncertainty and fiscal/Fed-independence worries."
+   ],
+   "A2": [
+    2,
+    "Avoids debt totals, DXY levels and reserve shares; marks such claims [UNVERIFIED]."
+   ],
+   "A3": [
+    2,
+    "Reframes the loaded 'crash' premise into slow erosion vs disorderly drop."
+   ],
+   "A4": [
+    2,
+    "Separates fact, narrative and missing data explicitly."
+   ],
+   "A5": [
+    1,
+    "Subjective scenario probabilities (~30%, 10-15%, 55-60%) and 'CONFIDENCE: 60%' are more precise than the evidence supports, even though labelled subjective."
+   ],
+   "A6": [
+    2,
+    "Resilient, disorderly and base scenarios, plus both-sides narrative critique."
+   ],
+   "A7": [
+    2,
+    "Clear invalidation signals, notably 'Treasuries and dollar falling together'."
+   ],
+   "A8": [
+    2,
+    "Answers the question; adds THB-holder angle without instructing."
+   ],
+   "A9": [
+    2,
+    "Gives concrete signals to monitor and horizon-based frames."
+   ],
+   "A10": [
+    1,
+    "Full framework including an SMC layer map of the DXY; heavier than the question needs."
+   ]
+  },
+  "rank": [
+   "A",
+   "B"
+  ],
+  "why": "A is accurate on every figure checked and answers the loaded question in proportion, while B misattributes the 2025 dollar slide to rate differentials and pads its view with invented-precision probabilities. B's 'bonds and dollar falling together' signal is a genuine plus, but not enough to outweigh those flaws for a demanding reader.",
+  "checked": [
+   "M6_A: US net interest now exceeds defense spending -> true (CBO/CRFB: surpassed defense in FY2024)",
+   "M6_A: Japan debt above 200% of GDP for years -> true",
+   "M6_A: UK 2022 gilt crisis as bond-market pushback -> true",
+   "M6_A: dollar lost 20-30% over a few years several times since 1970s -> true (e.g. 1985-87, 2002-08)",
+   "M6_A/B: US cannot be forced into involuntary default like Argentina/Sri Lanka (foreign-currency debt) -> correct",
+   "M6_B: dollar's 2022-2025 swings driven mainly by rate differentials, not debt headlines -> partly wrong; H1 2025 ~10% fall (worst since 1973) widely attributed to tariffs, policy uncertainty and fiscal concerns",
+   "M6_B: dollar dominant in trade invoicing/FX/reserves -> true; flagged [UNVERIFIED] appropriately"
+  ]
+ },
+ "M7": {
+  "A": {
+   "A1": [
+    2,
+    "Checked: 13F 45+ days old and long-only (correct, excludes shorts); TSLA fell 50%+ several times incl. 2022 (~65-73% 2021-23, ~50%+ in early 2025) correct; 50% loss needs 100% gain correct."
+   ],
+   "A2": [
+    2,
+    "No fabricated figures; 5-10% single-stock cap framed as what many investors do."
+   ],
+   "A3": [
+    2,
+    "Directly rejects 'all in' and treats the X claim as a story to be sourced."
+   ],
+   "A4": [
+    1,
+    "Treats the claim as unverified but never states it lacks live price or flow data."
+   ],
+   "A5": [
+    2,
+    "Firm 'no' on going all in, which the risk logic supports; no false precision."
+   ],
+   "A6": [
+    2,
+    "Considers alternative readings of flows (hedge, rebalance, sell) and of the poster's motive."
+   ],
+   "A7": [
+    2,
+    "Names concentration, drawdown and leverage risk, and tells the reader to set invalidation before entry."
+   ],
+   "A8": [
+    2,
+    "Structure without a personalized instruction; asks for timeframe, share of money and the source."
+   ],
+   "A9": [
+    2,
+    "Concrete thesis, sizing, tranche and exit steps."
+   ],
+   "A10": [
+    2,
+    "Length and structure fit the question."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Checked: 13F quarterly with up-to-45-day filing lag (correct, 45 days after quarter end); TSLA as high-beta growth stock correct; no errors found."
+   ],
+   "A2": [
+    2,
+    "No TSLA price, level or flow figure invented; '1-2% risk' framed as common practice."
+   ],
+   "A3": [
+    2,
+    "Rejects the unverified 'smart money' claim and the all-in premise directly."
+   ],
+   "A4": [
+    2,
+    "Explicit about no live price, unverified claim and listed unknowns."
+   ],
+   "A5": [
+    1,
+    "'High (~90%)' and 'Base (most likely)' are numbers/rankings the evidence cannot really support."
+   ],
+   "A6": [
+    2,
+    "Bull/bear/base/chaos plus the accumulation-vs-distribution alternative reading."
+   ],
+   "A7": [
+    2,
+    "Names concentration and gap risk and what would invalidate each scenario."
+   ],
+   "A8": [
+    2,
+    "No buy/sell instruction, discourages concentration, names missing personal facts."
+   ],
+   "A9": [
+    2,
+    "Clear checks and IF/THEN rules a reader can apply."
+   ],
+   "A10": [
+    1,
+    "Long multi-banner framework including an SMC layer map that cannot be filled; more than the question needs."
+   ]
+  },
+  "rank": [
+   "A",
+   "B"
+  ],
+  "why": "Both correctly reject the premise and refuse to invent data, but A delivers the same substance with accurate history and concrete sizing steps in a third of the length. B adds an SMC map it admits it cannot fill and a ~90% confidence number that an expert would see as decoration.",
+  "checked": [
+   "M7_A: TSLA fell 50%+ several times incl. 2022 -> correct (2021-23 drawdown ~73%; ~50% drop early 2025 per Motley Fool/Barchart)",
+   "M7_A/B: 13F filings due 45 days after quarter end, long positions only -> correct",
+   "M7_A: 50% loss requires 100% gain -> arithmetic correct",
+   "M7_B: XAU/TSLA none; no price levels given -> no fabrication"
+  ]
+ },
+ "M8": {
+  "A": {
+   "A1": [
+    2,
+    "Checked: 4% 10y at 5% -> 92.3 (computed 92.28 annual) and at 3% -> 108.5 (computed 108.53), both correct; 2022 stock/bond joint fall correct; PV/discount-rate explanation correct."
+   ],
+   "A2": [
+    2,
+    "Example labelled illustrative; explicitly gives no current figures."
+   ],
+   "A3": [
+    2,
+    "No premise problem; does not invent one."
+   ],
+   "A4": [
+    2,
+    "Separates the settled mechanism from the unpredictable yield path and lists unknowns."
+   ],
+   "A5": [
+    1,
+    "Puts ~95% confidence on a pricing identity that is effectively certain; under-firm where the rubric asks for firmness."
+   ],
+   "A6": [
+    2,
+    "Covers inflation-, growth- and supply-driven yield rises and credit spreads."
+   ],
+   "A7": [
+    2,
+    "Not required; names the main risks anyway."
+   ],
+   "A8": [
+    2,
+    "Answers the question, though with a lot of extra material."
+   ],
+   "A9": [
+    2,
+    "Actionable decision frame on duration vs holding period."
+   ],
+   "A10": [
+    0,
+    "Full framework (insight/risk/takeaway banners, decision frame, confidence, unknowns, disclaimer) for a one-line concept."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Checked: 3% 10y bond at 4% yield -> ~$919 (computed 91.89/100, correct); duration rule, convexity and zero-coupon sensitivity correct; 30y '15-20%' per 1pp is about right at 3-4% yields, slightly high at 5%+."
+   ],
+   "A2": [
+    2,
+    "Only worked hypothetical numbers, no current yields or prices."
+   ],
+   "A3": [
+    2,
+    "No premise problem; does not invent one."
+   ],
+   "A4": [
+    2,
+    "Settled mechanism presented as settled; hold-to-maturity vs fund distinction is clear."
+   ],
+   "A5": [
+    2,
+    "Firm on the inverse relationship, which is a firm fact; hedged ('roughly', 'might') only on approximations."
+   ],
+   "A6": [
+    2,
+    "Single settled answer; covers yields falling and hold vs sell cases."
+   ],
+   "A7": [
+    2,
+    "Not a view-giving question; notes default risk and fund risk anyway."
+   ],
+   "A8": [
+    2,
+    "Answers the question asked."
+   ],
+   "A9": [
+    2,
+    "Reader gets mechanism, example, sensitivity drivers and rule of thumb."
+   ],
+   "A10": [
+    2,
+    "Short sections that fit a one-concept question."
+   ]
+  },
+  "rank": [
+   "B",
+   "A"
+  ],
+  "why": "Both explain the mechanism correctly with correctly computed examples, so the deciding factor is proportion. B gives an expert everything needed in a third of the space, while A wraps settled bond math in a full framework and an odd 95% confidence figure.",
+  "checked": [
+   "M8_B: 3% coupon 10y priced at 4% yield ~ $919 -> computed 918.9 (annual), correct",
+   "M8_B: 30y bond loses 15-20% on +1pp -> computed ~14.5% at 4.5% and ~13.8% at 5%; ~18% at 3%; acceptable range",
+   "M8_A: 4% 10y at 5% -> 92.3; at 3% -> 108.5 -> computed 92.28 / 108.53, correct",
+   "M8_A: bonds and stocks fell together in 2022 -> correct",
+   "Both: convexity means smaller loss than gain for equal yield move -> correct for option-free bonds"
+  ]
+ }
+}

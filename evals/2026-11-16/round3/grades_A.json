@@ -1,0 +1,565 @@
+{
+ "H5": {
+  "A": {
+   "A1": [
+    2,
+    "Checked: 2004-06 Fed hikes with US stocks rising (correct), 2022 fast hikes and heavy stock losses (correct), banks gaining from wider net interest margin (standard). No errors."
+   ],
+   "A2": [
+    2,
+    "No invented figures; only dated historical episodes."
+   ],
+   "A3": [
+    2,
+    "Directly rejects 'ทุกครั้ง' as the false part of the premise."
+   ],
+   "A4": [
+    2,
+    "States it cannot assess the current cycle without current rate and earnings data."
+   ],
+   "A5": [
+    2,
+    "High confidence on 'not every time', backed by history; no false precision."
+   ],
+   "A6": [
+    2,
+    "Why rates rose, surprise vs expected, sector differences."
+   ],
+   "A7": [
+    1,
+    "Gives the three questions to ask but does not name what would make stocks fall in a given cycle or what signals to watch."
+   ],
+   "A8": [
+    2,
+    "Answers the conceptual question asked."
+   ],
+   "A9": [
+    2,
+    "Clear three-question test the reader can apply."
+   ],
+   "A10": [
+    2,
+    "Concise and well structured for the question."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Checked: 2004-06 stocks rose while the Fed hiked (correct); 2022 stocks and bonds fell together (correct: S&P -19.4%, worst joint year in decades). No errors."
+   ],
+   "A2": [
+    2,
+    "No fabricated figures."
+   ],
+   "A3": [
+    2,
+    "Corrects the 'always' premise in the first line."
+   ],
+   "A4": [
+    1,
+    "Says nothing about not knowing the current rate cycle or data; known vs unknown is never separated."
+   ],
+   "A5": [
+    2,
+    "Hedged appropriately ('มัก', 'อาจ')."
+   ],
+   "A6": [
+    2,
+    "Covers four separate channels: reason for the hike, expectations, speed and level, sectors."
+   ],
+   "A7": [
+    1,
+    "Warns against a mechanical 'rates up = sell' rule but gives no invalidation signals."
+   ],
+   "A8": [
+    2,
+    "Answers the question."
+   ],
+   "A9": [
+    2,
+    "Useful checklist of questions."
+   ],
+   "A10": [
+    2,
+    "Length fits."
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "Checked: 2004-06 hikes with stocks rising (correct); 2017 three Fed hikes with S&P up about 19%, then a sharp Q4 2018 fall of nearly 20% (correct); 2022 fast hikes with tech-led losses (correct)."
+   ],
+   "A2": [
+    2,
+    "Explicitly avoids unverifiable numbers; no fabrication."
+   ],
+   "A3": [
+    2,
+    "Rejects the absolutist premise immediately."
+   ],
+   "A4": [
+    2,
+    "Separates firm history from the current cycle it cannot assess for lack of data."
+   ],
+   "A5": [
+    2,
+    "HIGH stated only for the settled claim; the current cycle is left open."
+   ],
+   "A6": [
+    2,
+    "Two explicit scenarios with confirming signals."
+   ],
+   "A7": [
+    2,
+    "Names the most dangerous setup (an inflation-driven surprise hike on top of high valuations) and the trigger that invalidates the view (earnings downgrades)."
+   ],
+   "A8": [
+    2,
+    "Answers the question."
+   ],
+   "A9": [
+    2,
+    "Gives concrete signals to monitor (earnings revisions, bond-yield spikes, growth stocks leading the decline)."
+   ],
+   "A10": [
+    1,
+    "The templated framework headers (MARKET STRUCTURE / KEY RISK / STRATEGIC TAKEAWAY) are heavier than a conceptual question needs."
+   ]
+  },
+  "rank": [
+   "C",
+   "A",
+   "B"
+  ],
+  "why": "C is the only answer with an explicit invalidation test and monitorable signals, and it adds the 2017-18 episode and clearly says what it cannot know about the current cycle. A is equally accurate and tighter but thinner on risk signals, and B never separates what it knows from what it cannot know about the present.",
+  "checked": [
+   "Fed hiking cycle Jun 2004-Jun 2006 with US stocks rising -> correct (S&P 500 rose over the cycle)",
+   "2022: stocks and bonds fell together -> correct (S&P 500 -19.4%, the worst year for a stock/bond mix since about 1969)",
+   "2017 Fed hikes with stocks up, then a sharp late-2018 fall -> correct (3 hikes in 2017 with S&P +19%; Q4 2018 fall of nearly 20%)",
+   "Banks gaining from wider net interest margins when rates rise -> standard mechanism, correct as a tendency"
+  ]
+ },
+ "H6": {
+  "A": {
+   "A1": [
+    2,
+    "Checked: RMF 30%/500k cap, 5-year hold plus age 55, no gap of more than 1 consecutive year (correct); ThaiESG 30%/300k separate from the 500k cap (correct); 5-year same-day hold for units bought 2567-2569 (correct: the cut was retroactive to 1 Jan 2567); SSF deduction ended 2567, 10-year hold (correct); LTF->ThaiESGX switch deduction spread over 2569-2572 (correct per the SEC Q&A)."
+   ],
+   "A2": [
+    2,
+    "No invented figures; tax savings shown as a formula with example brackets."
+   ],
+   "A3": [
+    2,
+    "Does not accept that SSF still qualifies; no false premise invented."
+   ],
+   "A4": [
+    2,
+    "States it knows the rules up to mid-2569, tags the ThaiESGX residual [UNVERIFIED] and points to rd.go.th and the fund company."
+   ],
+   "A5": [
+    2,
+    "Firm on settled rules, hedged on the residual."
+   ],
+   "A6": [
+    2,
+    "Covers RMF vs ThaiESG, the ThaiESGX residual, and when buying is not worth it for low brackets."
+   ],
+   "A7": [
+    2,
+    "Names the lock-up, the clawback with surcharge, over-buying beyond the cap, and order cut-off dates."
+   ],
+   "A8": [
+    2,
+    "Asks for income, PVD/pension insurance and age; no personal instruction."
+   ],
+   "A9": [
+    2,
+    "Only answer that tells LTF switchers they may still have a 2569 deduction; actionable."
+   ],
+   "A10": [
+    2,
+    "Compact table plus key traps."
+   ]
+  },
+  "B": {
+   "A1": [
+    1,
+    "Says the 5-year ThaiESG hold applies to units bought 'from 2568 onward, previously 8 years'; in fact the cut was retroactive to purchases from 1 Jan 2567. Also says flatly that ThaiESGX 'cannot be bought this year' and misses the LTF-switch deduction that continues in 2569-2572 (per the SEC, ThaiESGX purchases from 2569 share the ThaiESG cap). Other limits are correct."
+   ],
+   "A2": [
+    2,
+    "Caps are real rules; the 800k total is correctly derived."
+   ],
+   "A3": [
+    2,
+    "No false premise accepted."
+   ],
+   "A4": [
+    2,
+    "Opens by saying it cannot check the latest rules and tells the reader to verify."
+   ],
+   "A5": [
+    1,
+    "States the ThaiESGX status as settled fact although it is uncertain and partly wrong."
+   ],
+   "A6": [
+    2,
+    "Covers fund types plus whether the deduction is worth it at low brackets."
+   ],
+   "A7": [
+    2,
+    "Covers the clawback, taxable gains, order deadlines and the need to report to the Revenue Department."
+   ],
+   "A8": [
+    2,
+    "Asks for income and existing deductions."
+   ],
+   "A9": [
+    2,
+    "Clear cap summary including the 800k combined total."
+   ],
+   "A10": [
+    2,
+    "Fits the question."
+   ]
+  },
+  "C": {
+   "A1": [
+    1,
+    "Same holding-period error: says the 8-to-5-year cut applies to units bought 'from 2568'; it was retroactive to 2567. Other rules are correct (RMF, the 500k combined cap incl. กอช. and pension insurance, the end of SSF). The 600k income example (180k + 180k) is correct."
+   ],
+   "A2": [
+    2,
+    "No fabricated figures; the example is labelled."
+   ],
+   "A3": [
+    2,
+    "No false premise accepted."
+   ],
+   "A4": [
+    2,
+    "Explicit that its certain knowledge ends at tax year 2568; ThaiESGX tagged [UNVERIFIED]."
+   ],
+   "A5": [
+    2,
+    "Appropriately hedged where uncertain."
+   ],
+   "A6": [
+    2,
+    "Weighs liquidity and loss risk against the tax saving."
+   ],
+   "A7": [
+    2,
+    "Lock-up, possible fund losses, needing the money before maturity."
+   ],
+   "A8": [
+    2,
+    "Asks for income, PVD/pension and time horizon; refers to a licensed adviser."
+   ],
+   "A9": [
+    1,
+    "Misses the RMF no-skip rule and the LTF-switch residual deduction; less complete for acting this year."
+   ],
+   "A10": [
+    2,
+    "Appropriate length."
+   ]
+  },
+  "rank": [
+   "A",
+   "C",
+   "B"
+  ],
+  "why": "A is the only answer with the ThaiESG holding-period rule exactly right, and it alone flags the continuing LTF-to-ThaiESGX deduction that matters for 2569 filers. C shares B's holding-period slip but flags its uncertainty honestly, while B states an incomplete ThaiESGX position as settled fact.",
+  "checked": [
+   "ThaiESG cap 30%/300,000, separate from the 500k retirement cap -> correct",
+   "ThaiESG holding cut from 8 to 5 years -> retroactive to purchases from 1 Jan 2567 (InnovestX: units bought 2567-2569 hold 5 years; PPTV: retroactive from 1 Jan 2567); B's and C's 'from 2568' is wrong",
+   "ThaiESGX: new-money tier only in 2568; LTF switch up to 300k deducted in 2568, remainder spread equally over 2569-2572; from 2569 ThaiESGX purchases share the ThaiESG 300k cap -> SEC Q&A 1 Apr 2568; A correct, B incomplete",
+   "SSF deduction ended after tax year 2567, 10-year hold -> correct (not independently web-verified; consistent with known scheme 2563-2567)",
+   "RMF 30%/500k, 5-year hold plus age 55, combined 500k cap with PVD/GPF/กอช./pension insurance -> correct (from rule knowledge; not contradicted by sources)"
+  ]
+ },
+ "H7": {
+  "A": {
+   "A1": [
+    2,
+    "Checked arithmetic: 1.5-2x a $120 ATR gives $2,760-2,820; $100/$150 = 0.67 ETH; the style-table percentages map correctly to prices. A 3-5% typical ETH daily move is a fair rule of thumb."
+   ],
+   "A2": [
+    1,
+    "The 'daily ATR near $120' and the $2,880 swing low are framed conditionally but never explicitly labelled as assumptions; the style table states stop distances as typical without evidence."
+   ],
+   "A3": [
+    2,
+    "No false premise; does not treat $3,000 alone as enough to set a stop."
+   ],
+   "A4": [
+    1,
+    "Says it cannot see the chart, but does not flag that $3,000 may be stale or which inputs are assumed."
+   ],
+   "A5": [
+    2,
+    "No overclaiming."
+   ],
+   "A6": [
+    2,
+    "Structure vs ATR stops, a stop guide by trading style, trailing the stop."
+   ],
+   "A7": [
+    2,
+    "Covers stop hunts, leverage and liquidation, 24/7 moves needing hard stops, and a minimum 2R check."
+   ],
+   "A8": [
+    2,
+    "Asks for timeframe, swing low, entry reason and leverage; risk per trade of 0.5-2%; warns against tightening the stop to size up."
+   ],
+   "A9": [
+    2,
+    "Very actionable."
+   ],
+   "A10": [
+    2,
+    "Fits."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Arithmetic checked: 1.5 x $120 = $180 gives $2,820; ATR 3% gives $2,865 and 6% gives $2,730; $100/$180 = 0.56 ETH (~$1,670); 2R target $3,360. All correct."
+   ],
+   "A2": [
+    2,
+    "Every level is tagged [ASSUMED] and derived from the given $3,000."
+   ],
+   "A3": [
+    2,
+    "No false premise; flags the $3,000 quote may be stale."
+   ],
+   "A4": [
+    2,
+    "Explicit Given / Not known lists."
+   ],
+   "A5": [
+    2,
+    "HIGH confidence on the method, LOW on the specific level."
+   ],
+   "A6": [
+    2,
+    "Two paths, plus ATR sensitivity."
+   ],
+   "A7": [
+    2,
+    "Names the invalidation (close below the swing low), sweep risk and liquidation."
+   ],
+   "A8": [
+    2,
+    "Asks for the missing inputs; framework, not an instruction."
+   ],
+   "A9": [
+    2,
+    "Directly reusable with real numbers."
+   ],
+   "A10": [
+    2,
+    "Fits."
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "Arithmetic checked: ATR 3/4/5% gives $2,865/$2,820/$2,775; 0.56 ETH; $3,360 at 2R. All correct."
+   ],
+   "A2": [
+    2,
+    "Every assumption tagged [ASSUMED]."
+   ],
+   "A3": [
+    2,
+    "No false premise; flags the price may be stale."
+   ],
+   "A4": [
+    2,
+    "Clear Given / Unknown separation."
+   ],
+   "A5": [
+    2,
+    "LOW on the level, HIGH on the method."
+   ],
+   "A6": [
+    2,
+    "Works/fails paths; structure vs ATR choice; skip or reduce size if the stop is far."
+   ],
+   "A7": [
+    2,
+    "Invalidation stated, plus 24/7 gaps and slippage, and leverage/liquidation."
+   ],
+   "A8": [
+    2,
+    "Lists exactly the inputs it needs; no instruction; warns against leverage that liquidates before the stop."
+   ],
+   "A9": [
+    2,
+    "Actionable, with the round-number and sizing guidance."
+   ],
+   "A10": [
+    2,
+    "Fits."
+   ]
+  },
+  "rank": [
+   "C",
+   "B",
+   "A"
+  ],
+  "why": "C and B both label every assumed input and split their confidence correctly; C edges ahead by adding slippage and gap risk and a clear rule for choosing between a structure stop and an ATR stop. A is practical and arithmetically sound but presents its ATR and stop-distance figures without explicit assumption labels and never flags that the price may be stale.",
+  "checked": [
+   "Position-size and stop arithmetic in all three answers -> recomputed, all correct",
+   "ETH typical daily move 3-5% / daily ATR ~4% -> plausible rule of thumb, labelled as assumed in B and C only",
+   "Stop placed below the swing low with a buffer, plus 1-2x ATR -> standard practice, correct"
+  ]
+ },
+ "H8": {
+  "A": {
+   "A1": [
+    2,
+    "Checked: ATH 10 Nov 2021 ~$68,8xx-69,000 (correct); April 2021 peak ~$64,800 (correct); first break below $20k since Dec 2020 in June 2022 with a ~$17,600 low on 18 June (correct); FTX low ~$15,500 on 21 Nov 2022 (correct, ~$15,476); 77% (correct, 77.5%); 2017 ~84% and 2013 ~86% (correct); new ATH March 2024 (correct, 5 Mar 2024); >$1T of market value lost (about $1.3T to $0.3T, roughly right)."
+   ],
+   "A2": [
+    2,
+    "Figures are real historical values."
+   ],
+   "A3": [
+    2,
+    "No premise issue."
+   ],
+   "A4": [
+    2,
+    "Settled history; cites data providers."
+   ],
+   "A5": [
+    2,
+    "Firm, as settled history warrants."
+   ],
+   "A6": [
+    2,
+    "Single settled answer."
+   ],
+   "A7": [
+    2,
+    "Not relevant."
+   ],
+   "A8": [
+    2,
+    "Answers both parts."
+   ],
+   "A9": [
+    2,
+    "Clear."
+   ],
+   "A10": [
+    2,
+    "Short and proportionate."
+   ]
+  },
+  "B": {
+   "A1": [
+    1,
+    "Peak, low, 77% and the Nov 8 daily close (~$67.5k) are correct, but 'roughly 80-85% after the 2013 and 2017 peaks' understates 2013 (~86-87%). A minor error."
+   ],
+   "A2": [
+    2,
+    "No fabrication."
+   ],
+   "A3": [
+    2,
+    "No premise issue."
+   ],
+   "A4": [
+    2,
+    "Notes the training-data source and exchange variance."
+   ],
+   "A5": [
+    2,
+    "Firm."
+   ],
+   "A6": [
+    2,
+    "Settled answer."
+   ],
+   "A7": [
+    2,
+    "Not relevant."
+   ],
+   "A8": [
+    2,
+    "Answers the question."
+   ],
+   "A9": [
+    2,
+    "Clear headline answer."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ]
+  },
+  "C": {
+   "A1": [
+    2,
+    "Checked: ATH ~$68.8-69k on 10 Nov 2021; highest daily close ~$67,500 on 8 Nov (correct); April peak ~$64.8k (correct); June 2022 break below $20k (correct); low ~$15,500 on ~21 Nov 2022 (correct); 77-78% (correct); 2017-18 ~84%, 2013-15 ~86% (correct)."
+   ],
+   "A2": [
+    2,
+    "No fabrication."
+   ],
+   "A3": [
+    2,
+    "No premise issue."
+   ],
+   "A4": [
+    2,
+    "Notes data-source variance."
+   ],
+   "A5": [
+    2,
+    "Firm."
+   ],
+   "A6": [
+    2,
+    "Settled answer."
+   ],
+   "A7": [
+    2,
+    "Not relevant."
+   ],
+   "A8": [
+    2,
+    "Answers both parts."
+   ],
+   "A9": [
+    2,
+    "Clear, with a correct causal explanation."
+   ],
+   "A10": [
+    2,
+    "Short; the added 'why' paragraph is brief."
+   ]
+  },
+  "rank": [
+   "C",
+   "A",
+   "B"
+  ],
+  "why": "C gives the correct peak, daily close, staged drawdown and accurate earlier-cycle comparisons, plus a short and sound causal explanation. A is equally accurate with useful context (the June 2022 low and the March 2024 recovery), while B understates the 2013 drawdown.",
+  "checked": [
+   "BTC 2021 ATH -> 10 Nov 2021, ~$68,789 (CMC) / ~$69,000 intraday on some exchanges",
+   "Highest daily close -> ~$67.5-67.7k on 8 Nov 2021 (sources vary; ForexLive cites $67,707)",
+   "Cycle low -> ~$15,476 on 21 Nov 2022 after FTX; drawdown ~77.5%",
+   "June 2022 -> first break below $20k since Dec 2020, low ~$17.6k on 18 June",
+   "Earlier drawdowns -> ~84% (2017-18), ~86-87% (2013-15); B's 80-85% understates 2013",
+   "Reclaimed 2021 high -> March 2024, correct",
+   "Market value lost -> about $1.3T to $0.3T, so A's 'more than $1 trillion' is roughly right"
+  ]
+ }
+}

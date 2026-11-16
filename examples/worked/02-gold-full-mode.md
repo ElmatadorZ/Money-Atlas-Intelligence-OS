@@ -23,11 +23,11 @@ makes the decision. It does not issue personalized investment advice.
 > **SMC structure:** accumulation range holding; no distribution signature yet.
 >
 > **Scenarios**
-> | # | Path | Confidence | Entry zone | Invalidation |
+> | # | Path | Likelihood | Entry zone | Invalidation |
 > |---|------|-----------|-----------|-------------|
-> | 1 | Break and hold above the prior high on continued negative real yields | ~55% | on the retest of the breakout, not the breakout candle | a close back below the range midpoint |
-> | 2 | Range-bound while real yields drift up | ~30% | scale at range low only | range low gives way on volume |
-> | 3 | Risk-off spike (exogenous) | ~15% | not chased | fades back into the range within days |
+> | 1 | Break and hold above the prior high on continued negative real yields | most likely (both drivers in your data point this way) | on the retest of the breakout, not the breakout candle | a close back below the range midpoint |
+> | 2 | Range-bound while real yields drift up | less likely | scale at range low only | range low gives way on volume |
+> | 3 | Risk-off spike (exogenous) | tail | not chased | fades back into the range within days |
 >
 > **Position note:** this is scenario structure, not a recommendation to buy. Size
 > and the buy/sell/hold decision are yours.
@@ -43,4 +43,6 @@ makes the decision. It does not issue personalized investment advice.
   inputs — the Known / Inferred / Unknown discipline.
 - Every scenario carries its own invalidation, not a single global one.
 - Entry zones are conditional on stated inputs; nothing rests on an invented price.
+- Likelihoods are words with a reason, not percentages: no model or base rate here
+  would support "55%".
 - The decision is handed back to the human. The skill informs; it does not advise.

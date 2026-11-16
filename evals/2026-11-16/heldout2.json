@@ -1,0 +1,6 @@
+[
+ {"id": "H5", "kind": "market myth stated as a rule (Thai)", "text": "ดอกเบี้ยขึ้นทีไร หุ้นต้องลงทุกครั้งใช่ไหม"},
+ {"id": "H6", "kind": "time-sensitive rules (Thai tax funds)", "text": "ปีนี้ซื้อกองทุนอะไรลดหย่อนภาษีได้บ้าง วงเงินเท่าไหร่"},
+ {"id": "H7", "kind": "stop level from one given price", "text": "Ethereum is at $3,000. Where should I put my stop loss for a long?"},
+ {"id": "H8", "kind": "historical figures", "text": "What was Bitcoin's price at its 2021 peak, and how far did it fall afterwards?"}
+]
