@@ -10,6 +10,11 @@
 
 ## 📢 Update announcement — v2.1 → v2.3 (16 Nov 2026)
 
+> **New: install from the Claude Code CLI.**
+> `/plugin install money-atlas-intelligence-os --marketplace ElmatadorZ/Money-Atlas-Intelligence-OS`
+> — or see [How to Install](#how-to-install). Version 2.3.0.
+
+
 **Why:** a blind test found that answers written **with v2.0 scored lower than answers written
 without any skill** (141.0 vs 152.0 of 160). v2.0 did not invent prices, but it wrapped simple
 questions in the full framework, forced an SMC map with no chart, put unsupported percentages on
@@ -284,17 +289,40 @@ money-atlas-intelligence-os/
 ├── evals/2026-11-16-hard/      ← professional-level test (computation criterion, held-out)
 ├── examples/                   ← worked input→output examples + runnable demo
 │   └── worked/
-└── tools/validate_skill.py     ← installability + integrity checker (run in CI)
+├── tools/validate_skill.py     ← installability + integrity checker (run in CI)
+├── tools/sync_plugin_skill.py  ← keeps the plugin copy identical to the root files
+├── .claude-plugin/             ← plugin.json + marketplace.json (Claude Code CLI install)
+└── skills/money-atlas-intelligence-os/  ← plugin copy of SKILL.md + the files it loads
 ```
 
 ---
 
-## How to Install (Claude Custom Skill)
+## How to Install
 
-1. Clone or download this repository
-2. Place the `money-atlas-intelligence-os/` folder in your Claude skills directory
-3. The skill activates automatically when Claude detects relevant financial market questions
-4. Or call it explicitly by referencing the skill name in your system prompt
+**Claude Code (CLI) — recommended.** In a Claude Code session, one step:
+
+```
+/plugin install money-atlas-intelligence-os --marketplace ElmatadorZ/Money-Atlas-Intelligence-OS
+```
+
+Or from the terminal:
+
+```bash
+claude plugin marketplace add ElmatadorZ/Money-Atlas-Intelligence-OS
+claude plugin install money-atlas-intelligence-os@elmatadorz-money-atlas
+```
+
+The skill then loads on market questions, or call it directly as
+`/money-atlas-intelligence-os:money-atlas-intelligence-os`. Update with
+`claude plugin update money-atlas-intelligence-os@elmatadorz-money-atlas`; remove with
+`claude plugin uninstall money-atlas-intelligence-os@elmatadorz-money-atlas`.
+
+**Claude Code — manual** (personal skill, no marketplace): copy `SKILL.md`, `full_mode.txt`,
+`light_mode.txt`, `architecture.md`, `system_prompt.txt` and `examples/worked/` into
+`~/.claude/skills/money-atlas-intelligence-os/`.
+
+**Claude.ai:** zip a folder named `money-atlas-intelligence-os` with the same files and upload
+it in the Skills section of Settings.
 
 The skill entry point is **`SKILL.md`** (the Anthropic standard filename). The reasoning is
 self-contained in that file and needs no tools to run — see `metadata.compatibility` in its
