@@ -1,7 +1,7 @@
 # Money Atlas Intelligence OS
 ### Claude Skill (Agent) — Financial Market Strategic Intelligence
 
-**Version:** 2.3  
+**Version:** 2.3.1  
 **Author:** Bunyawat Dechanon (ElmatadorZ)  
 **Brand:** Money Atlas / Alternative Slowbar  
 **Type:** Custom Skill (SKILL.md format)
@@ -12,7 +12,7 @@
 
 > **New: install from the Claude Code CLI.**
 > `/plugin install money-atlas-intelligence-os --marketplace ElmatadorZ/Money-Atlas-Intelligence-OS`
-> — or see [How to Install](#how-to-install). Version 2.3.0.
+> — or see [How to Install](#how-to-install). Version 2.3.1.
 
 
 **Why:** a blind test found that answers written **with v2.0 scored lower than answers written
@@ -62,6 +62,13 @@ an extra criterion for computation; [`evals/2026-11-16-hard/`](evals/2026-11-16-
 | Activation, 24 messages among 6 skills | **16/16** market questions trigger, **0/8** false triggers — same as v2.0 |
 | Code scan (bandit) | 0 high-severity issues |
 | Install | `claude plugin validate --strict` passes; installs 2.3.0 from GitHub |
+
+**v2.3.1 (17 Nov 2026) — the one gap closed.** The proof run's only loss to the no-skill answer
+was proportion (template banners and internal terms). v2.3.1 speaks the user's language and keeps
+📍 banners for asset reads. On six new held-out questions
+([`evals/2026-11-17-v2.3.1/`](evals/2026-11-17-v2.3.1/README.md)): proportion 7.5 → **10.5** of 12,
+banners outside asset reads 4 of 5 → **0 of 5**, total **135.5** vs v2.3 135.0 vs no skill 126.0
+(of 144). Depth did not improve with it — the total is a tie with v2.3.
 
 **Listed elsewhere?** Directories and lists that index this skill (skill registries, awesome
 lists, leaderboards) point at this repository and at `SKILL.md` in its root. The skill name

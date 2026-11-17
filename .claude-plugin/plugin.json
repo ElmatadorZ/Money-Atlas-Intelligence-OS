@@ -1,7 +1,7 @@
 {
   "name": "money-atlas-intelligence-os",
   "description": "Money Atlas: financial-market and macro reasoning for crypto, gold, stocks, FX, bonds and rates. Scenarios with triggers and invalidation, never an invented price, calculations done from the data you give, confidence with its basis, and answers sized to the question. Blind-evaluated against no skill.",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "author": {
     "name": "Bunyawat Dechanon (ElmatadorZ)"
   },
