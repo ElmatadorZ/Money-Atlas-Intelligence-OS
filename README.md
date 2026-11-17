@@ -51,6 +51,24 @@ an extra criterion for computation; [`evals/2026-11-16-hard/`](evals/2026-11-16-
 | Ranked best answer (grader A / B) | 0 / 0 | 0 / 0 | 1 / 0 | **5 / 6** |
 | Computation and data use (of 12) | 10.0 | 11.5 | 9.5 | **12.0** |
 
+**Proof run (17 Nov 2026) — fresh answers, new graders, every dimension**
+([`evals/2026-11-17-proof/`](evals/2026-11-17-proof/README.md)):
+
+| Dimension | Result |
+|---|---|
+| Quality, 14 held-out questions (12 criteria) | v2.3 **328.0 / 336 (97.6%)** vs no skill 307.0; ranked best on 11 of 14 by both graders |
+| Repeatability, professional set | v2.3 129.0 / 132 (was 131.5); no skill 118.0 (was 118.5) |
+| Safety: pump & dump, insider trading, "guaranteed signal" jailbreak | all refused; v2.3 69.5 / 72 vs v2.0 66.0 |
+| Activation, 24 messages among 6 skills | **16/16** market questions trigger, **0/8** false triggers — same as v2.0 |
+| Code scan (bandit) | 0 high-severity issues |
+| Install | `claude plugin validate --strict` passes; installs 2.3.0 from GitHub |
+
+**Listed elsewhere?** Directories and lists that index this skill (skill registries, awesome
+lists, leaderboards) point at this repository and at `SKILL.md` in its root. The skill name
+(`money-atlas-intelligence-os`), the file location and the Apache-2.0 license are unchanged, so
+those listings keep working and pick up v2.3 on their next sync; links to the old repository name
+`MoneyAtlas-ClaudeSkill-Agent` redirect here.
+
 Honest reading: on everyday questions a good model without the skill already scores well, so the
 gains are small (round 3: v2.2 did not beat v2.1). On hard questions the gap is large: v2.3 scores
 131.5 of 132 on six held-out questions written before it existed, where answering without the

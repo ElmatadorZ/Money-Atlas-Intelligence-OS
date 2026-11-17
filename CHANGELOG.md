@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-17 — Proof run (no skill change)
+
+Fresh re-run of v2.3 on every held-out question with new graders, plus safety, activation, code
+scan and install checks (`evals/2026-11-17-proof/`). Quality 328.0 / 336 vs 307.0 without the
+skill; repeatability within 2.5 points of the first run; all harmful requests refused; activation
+16/16 with 0/8 false triggers, the same as v2.0; 0 high-severity code-scan issues.
+
 ## [2.3.0] — 2026-11-16 — Claude Code plugin
 
 - Install from the Claude Code CLI:
