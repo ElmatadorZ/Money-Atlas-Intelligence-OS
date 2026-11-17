@@ -1,0 +1,6 @@
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 4
+		Medium: 2
+		High: 0
