@@ -1,0 +1,997 @@
+{
+ "U1": {
+  "C": {
+   "A1": [
+    2,
+    "Tax facts (20k savings interest exemption, 15% WHT on deposits, Thai fund capital gains exempt) and DPA 1M per depositor per bank are correct."
+   ],
+   "A2": [
+    1,
+    "Rates tagged [ASSUMED], but presented as 'in the range Thai products offered in my last data (to mid-2026)'; with the BOT policy rate at 1.00% from Feb 2026, a 1.6% after-fee MMF yield is outside that range."
+   ],
+   "A3": [
+    2,
+    "Questions emergency-fund status and adds high-yield digital savings."
+   ],
+   "A4": [
+    2,
+    "Clear split between given (0.5%) and assumed figures."
+   ],
+   "A5": [
+    2,
+    "MEDIUM confidence with the reason."
+   ],
+   "A6": [
+    2,
+    "Rates-fall vs rates-hold scenarios; digital savings option."
+   ],
+   "A7": [
+    2,
+    "Main risk named (locking needed cash; MMF not insured), plus the condition that breaks the view."
+   ],
+   "A8": [
+    2,
+    "Asks for expenses, emergency status and timing; no personal instruction."
+   ],
+   "A9": [
+    2,
+    "After-tax comparison and a sensible split."
+   ],
+   "A10": [
+    1,
+    "'MARKET STRUCTURE INSIGHT' heading misfits a deposit-vs-MMF question; templated."
+   ],
+   "A11": [
+    2,
+    "Recomputed 1,500; 300k x 1.5% x 0.85 = 3,825; 300k x 1.6% = 4,800; at 1.2% = 3,600. Correct."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "B": {
+   "A1": [
+    1,
+    "Core facts correct (DPA 1M, 15% WHT, 20k exemption, MMF T+1, fund gains tax-free), but suggests SSF as a current option; SSF tax deduction only applied to purchases 1 Jul 2020-31 Dec 2024 (Bangkok Bank SSF page), so offering it as a current tax option is a minor stale-fact error."
+   ],
+   "A2": [
+    1,
+    "The '~1.25-2%' yield range is not labelled as an assumption; the upper end is well above what a 1.00% policy-rate environment supports."
+   ],
+   "A3": [
+    2,
+    "Reframes the question around timing of need and adds a third option."
+   ],
+   "A4": [
+    1,
+    "Says to check rates but does not separate given, assumed and unknown clearly."
+   ],
+   "A5": [
+    2,
+    "Measured tone."
+   ],
+   "A6": [
+    2,
+    "Three products and a three-bucket split."
+   ],
+   "A7": [
+    1,
+    "Lists product risks but gives no explicit main risk or invalidation of the recommendation."
+   ],
+   "A8": [
+    2,
+    "Asks the purpose of the money; the split is given as an example."
+   ],
+   "A9": [
+    2,
+    "Practical and correct; flags bundled-insurance 'special' deposits."
+   ],
+   "A10": [
+    2,
+    "Structure fits the question."
+   ],
+   "A11": [
+    2,
+    "Recomputed 300k x 0.5% = 1,500; 1.25%-2% -> 3,750-6,000; 1.6% x 0.85 = 1.36%. Correct."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "A": {
+   "A1": [
+    2,
+    "DPA 1M per person per bank (since Aug 2021), 15% WHT, 20k savings exemption, Thai fund gains tax-free, MMF holdings: all correct."
+   ],
+   "A2": [
+    2,
+    "Example rates clearly tagged [ASSUMED]; 1.2% MMF is closer to a 1% policy-rate world."
+   ],
+   "A3": [
+    2,
+    "Raises the emergency fund, the long-term money that belongs in neither product, and higher-cost debt."
+   ],
+   "A4": [
+    2,
+    "Distinguishes given, assumed and unknown; lists what would change the advice."
+   ],
+   "A5": [
+    2,
+    "HIGH that 0.5% is too low, MEDIUM on product choice; well calibrated."
+   ],
+   "A6": [
+    2,
+    "Two rate scenarios, laddering, digital savings."
+   ],
+   "A7": [
+    2,
+    "Main risk stated explicitly."
+   ],
+   "A8": [
+    2,
+    "Names missing facts (timing, emergency fund, debt) and adapts the split."
+   ],
+   "A9": [
+    2,
+    "Adds an after-tax breakeven rule and laddering; a professional would find it actionable."
+   ],
+   "A10": [
+    2,
+    "Fits."
+   ],
+   "A11": [
+    1,
+    "Table correct (3,600; 4,500 -> 3,825; gain 2,100-2,325), but the stated breakeven 'FD must be ~0.3-0.4 pts above the MMF' is overstated: FD after tax = MMF needs FD = MMF/0.85, a gap of only ~0.21 pts at 1.2% (0.28 at 1.6%)."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "rank": [
+   "A",
+   "C",
+   "B"
+  ],
+  "why": "A is the most rigorous: correct tax and DPA facts, an after-tax comparison, debt and laddering, and clearly labelled assumptions, with only a slightly overstated breakeven gap. C's after-tax framing is good but its 'mid-2026' assumed yields are too high and its headings templated; B is practical but presents an unlabelled, high yield range and a stale SSF suggestion.",
+  "checked": [
+   "DPA coverage = 1M baht per depositor per institution since 11 Aug 2021 (Bangkok Bank DPA page) -> A, B, C correct",
+   "Savings interest exempt up to 20,000 baht/yr; 15% WHT on deposit interest -> correct",
+   "Capital gains on Thai mutual fund units tax-exempt for individuals -> correct",
+   "BOT policy rate 1.00% since Feb 2026, held through Aug/Oct 2026 (BOT MPC releases, Trading Economics) -> C's 1.6% MMF 'in range to mid-2026' and B's up-to-2% range are too high",
+   "300k x 1.5% x 0.85 = 3,825; 300k x 1.6% = 4,800; 300k x 1.2% = 3,600 -> correct",
+   "After-tax breakeven FD = MMF/0.85 -> gap 0.21 pts at 1.2% MMF; A's 0.3-0.4 overstated",
+   "SSF deduction ended for purchases after 31 Dec 2024 -> B stale"
+  ]
+ },
+ "U2": {
+  "C": {
+   "A1": [
+    1,
+    "Fee mechanics and SPIVA direction correct, but lists SSF as a current tax-deductible version to compare; SSF tax deduction only applied to purchases 1 Jul 2020-31 Dec 2024 (Bangkok Bank SSF page), so offering it as a current tax option is a minor stale-fact error."
+   ],
+   "A2": [
+    2,
+    "8% gross return tagged [ASSUMED]; SPIVA cited qualitatively with a note to check exact figures."
+   ],
+   "A3": [
+    2,
+    "Sharpest premise check: the 5-year figure is already net of fees, so the real question is persistence; also style/luck."
+   ],
+   "A4": [
+    2,
+    "Explicit unknowns: fund names, TER vs management fee, loads, FX hedge, horizon."
+   ],
+   "A5": [
+    2,
+    "MEDIUM-HIGH with the reason; firm on the compounding math."
+   ],
+   "A6": [
+    2,
+    "Index-wins and active-wins scenarios with signposts; core-satellite."
+   ],
+   "A7": [
+    2,
+    "States what would invalidate the view (10+ yr net outperformance across cycles; smaller real TER gap)."
+   ],
+   "A8": [
+    2,
+    "Asks for horizon and goals; frames the choice, does not instruct."
+   ],
+   "A9": [
+    2,
+    "Complete and correct for a professional."
+   ],
+   "A10": [
+    1,
+    "English template headings ('SITUATION MAP', 'FIRST PRINCIPLE') with emoji in a Thai reply feel templated."
+   ],
+   "A11": [
+    2,
+    "Recomputed 100k at 7.7% vs 6.2%: 10y 209,970 vs 182,493 (13.1%); 20y 440,874 vs 333,035 (24.5%); 30y 925,702 vs 607,765 (34.3%). Correct."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "B": {
+   "A1": [
+    1,
+    "Otherwise accurate (NAV net of management fee but not loads, feeder TER stacking, FX hedge), but cites SSF as a current tax benefit; SSF tax deduction only applied to purchases 1 Jul 2020-31 Dec 2024 (Bangkok Bank SSF page), so offering it as a current tax option is a minor stale-fact error."
+   ],
+   "A2": [
+    2,
+    "8% tagged [ASSUMED]; says it used the user's fees unverified."
+   ],
+   "A3": [
+    2,
+    "Checks whether performance is net of all costs (front/back-end loads), the benchmark and whether outperformance came from extra risk."
+   ],
+   "A4": [
+    2,
+    "Explicit about unknowns and unverified inputs; lists the information needed."
+   ],
+   "A5": [
+    2,
+    "High on the fee math, medium on the outcome."
+   ],
+   "A6": [
+    2,
+    "Two scenarios plus a core-satellite with an exit rule."
+   ],
+   "A7": [
+    2,
+    "Explicit 'what would make this view wrong'."
+   ],
+   "A8": [
+    2,
+    "Names missing personal facts (horizon, DCA, emergency fund, tax use); not an instruction."
+   ],
+   "A9": [
+    2,
+    "Deepest: loads, risk-adjusted comparison, feeder layering, a pre-set exit rule."
+   ],
+   "A10": [
+    1,
+    "About 11KB for a two-fund comparison; some repetition and padding."
+   ],
+   "A11": [
+    2,
+    "Recomputed 1M: 5y 1.449M vs 1.351M (diff 0.098M); 20y 4.409M vs 3.330M (diff 1.078M, 24.5%). Correct."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "A": {
+   "A1": [
+    2,
+    "SPIVA 85-90% of US large-cap funds underperforming over 10-15 yrs matches YE2024 (84.34% / 89.50%); no other errors."
+   ],
+   "A2": [
+    2,
+    "8% framed as an assumption ('สมมติ'); SPIVA figure accurate."
+   ],
+   "A3": [
+    2,
+    "Flags luck/style over 5 years, net-of-fee NAV and FX hedge differences."
+   ],
+   "A4": [
+    1,
+    "No explicit separation of unknowns (fund identity, horizon); folded into a checklist."
+   ],
+   "A5": [
+    2,
+    "Appropriately firm, with no overreach."
+   ],
+   "A6": [
+    2,
+    "Core-satellite option."
+   ],
+   "A7": [
+    1,
+    "No explicit invalidation condition or main risk (both funds carry the same equity drawdown)."
+   ],
+   "A8": [
+    1,
+    "Fairly directive ('ให้เลือกกองดัชนี') and does not name missing personal facts beyond horizon."
+   ],
+   "A9": [
+    2,
+    "Covers the essentials correctly."
+   ],
+   "A10": [
+    2,
+    "Concise and proportionate."
+   ],
+   "A11": [
+    2,
+    "Recomputed 20y: 4.409M vs 3.330M, diff 1.078M (>1x principal). Correct."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "rank": [
+   "B",
+   "C",
+   "A"
+  ],
+  "why": "B is the most complete professional treatment (loads not in NAV, feeder TER stacking, risk-adjusted comparison, an exit rule), though long; C makes the sharpest point that past returns are already net of fees but uses heavy template headings. A is accurate and concise but lacks unknowns, invalidation and personal-fact framing.",
+  "checked": [
+   "Fee gap 1.8-0.3 = 1.5%/yr -> all correct",
+   "100k 10/20/30y at 7.7% vs 6.2% -> 13%/24%/34% shortfall (C correct)",
+   "1M 20y -> 4.41M vs 3.33M, diff 1.08M (A, B correct); 5y diff ~0.1M (B correct)",
+   "SPIVA YE2024: 84.34% underperform over 10y, 89.50% over 15y -> A's 85-90% correct",
+   "SSF still deductible? -> No, purchases only until 31 Dec 2024 -> B, C stale",
+   "Thai fund NAV returns net of management fee but not front/back-end loads -> B correct"
+  ]
+ },
+ "U3": {
+  "C": {
+   "A1": [
+    2,
+    "Gold traded above $4,000 in late 2025 (true; crossed 4,000 in Oct 2025); slippage and gap risk correctly described."
+   ],
+   "A2": [
+    2,
+    "ATR 70 tagged [ASSUMED]; no fabricated swing levels."
+   ],
+   "A3": [
+    2,
+    "Makes the hidden trade-off explicit: no stop keeps all of the +150; tighter stops mean more noise exits."
+   ],
+   "A4": [
+    2,
+    "Explicit given/unknown split (entry, price vs chart and swing lows)."
+   ],
+   "A5": [
+    2,
+    "Medium on method, 'not assessable' on the exact level; arithmetic stated as exact."
+   ],
+   "A6": [
+    2,
+    "Continuation, pullback and partial-profit paths."
+   ],
+   "A7": [
+    2,
+    "Invalidation is a close below the last higher low; names gap and slippage risk."
+   ],
+   "A8": [
+    1,
+    "Opens with a directive 'move the stop to at least breakeven now' without knowing position size or timeframe."
+   ],
+   "A9": [
+    2,
+    "ATR-scaled table plus a structure-based rule; actionable."
+   ],
+   "A10": [
+    1,
+    "Generic template headings ('MARKET STRUCTURE INSIGHT'/'STRATEGIC TAKEAWAY') sit awkwardly on a stop question."
+   ],
+   "A11": [
+    2,
+    "Recomputed: +150 = 3.57% of 4,200; 70/4,350 = 1.6%; 1x/1.5x/2x ATR -> 4,280/4,245/4,210 with +80/+45/~0 locked; ATR 100 is +43% and 1x -> 4,250. All correct."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "No errors; stop fill vs price on gaps described correctly."
+   ],
+   "A2": [
+    2,
+    "ATR 70 tagged [ASSUMED]; prices taken as given."
+   ],
+   "A3": [
+    2,
+    "Opens by naming the trade-off: a stop at 4,350 just closes the position."
+   ],
+   "A4": [
+    2,
+    "Lists the unknowns (timeframe, swing lows, volatility) and the assumptions."
+   ],
+   "A5": [
+    2,
+    "High on method, low on exact levels."
+   ],
+   "A6": [
+    2,
+    "Three stop options, partial profit, two scenarios."
+   ],
+   "A7": [
+    2,
+    "A daily close below 4,200 means the move failed; gap risk noted."
+   ],
+   "A8": [
+    2,
+    "Gives options, not an instruction; asks for the missing facts."
+   ],
+   "A9": [
+    2,
+    "Adds the useful point that at ATR 100, 1.5x ATR equals breakeven."
+   ],
+   "A10": [
+    2,
+    "Well proportioned."
+   ],
+   "A11": [
+    2,
+    "Recomputed: 4,205/4,245/4,280 levels, +45/+80 locked, 1.5x100=150 -> 4,200. All correct."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "A": {
+   "A1": [
+    1,
+    "Calls a breakeven stop 'risk-free', which its own gap-risk section contradicts; otherwise correct."
+   ],
+   "A2": [
+    2,
+    "ATR $50 used conditionally ('if'); no invented levels."
+   ],
+   "A3": [
+    2,
+    "Opens with the protect-gains vs stay-in-trade tension."
+   ],
+   "A4": [
+    1,
+    "Unknowns appear only in a closing line; no structured given/unknown split."
+   ],
+   "A5": [
+    2,
+    "Presents a method, not a signal."
+   ],
+   "A6": [
+    2,
+    "Three methods plus partial profit."
+   ],
+   "A7": [
+    2,
+    "Structure break as invalidation; event and gap risk."
+   ],
+   "A8": [
+    1,
+    "Directive 'Move the stop to breakeven-plus now' without knowing size or horizon."
+   ],
+   "A9": [
+    2,
+    "Practical; useful round-number and 'stop only moves up' guidance."
+   ],
+   "A10": [
+    2,
+    "Fits."
+   ],
+   "A11": [
+    2,
+    "Recomputed: ATR 50 -> 2x = 4,250, 1.5x = 4,275. Correct."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "rank": [
+   "B",
+   "C",
+   "A"
+  ],
+  "why": "B names the core trade-off directly, keeps every number derived and labelled, and adds the insight that a realistic ATR pushes a volatility stop to breakeven, without telling the user what to do. C is equally sound but more directive and templated; A's 'risk-free' breakeven claim and directive tone cost it.",
+  "checked": [
+   "150/4,200 = 3.57% -> C correct",
+   "ATR 70 / 4,350 = 1.61% -> B, C correct",
+   "4,350-105=4,245; -70=4,280; -140=4,210 -> correct",
+   "1.5x ATR 100 = 150 -> stop 4,200 = breakeven (B correct)",
+   "ATR 50: 2x -> 4,250, 1.5x -> 4,275 (A correct)",
+   "Gold above $4,000 in late 2025 -> true",
+   "Breakeven stop 'risk-free' -> false given gap risk (A)"
+  ]
+ },
+ "U4": {
+  "C": {
+   "A1": [
+    2,
+    "Description of an ascending-triangle squeeze, a stop-run fakeout and fading volume is accurate."
+   ],
+   "A2": [
+    2,
+    "Uses only the user's levels; says explicitly that it has no live price."
+   ],
+   "A3": [
+    2,
+    "Questions the volume premise (volume on the drops) and the missing current price."
+   ],
+   "A4": [
+    2,
+    "Separates the user's levels from what is unknown (current price, volume on lows, higher timeframe)."
+   ],
+   "A5": [
+    2,
+    "Medium on structure, low on direction; well calibrated."
+   ],
+   "A6": [
+    2,
+    "Breakout, failure and range paths."
+   ],
+   "A7": [
+    2,
+    "Weekly close below 88k invalidates; names the 105k sweep risk."
+   ],
+   "A8": [
+    2,
+    "Not a personal-money prompt; no personalised instruction."
+   ],
+   "A9": [
+    1,
+    "Sound read, but gives no measured-move or upside target and no derivatives/flow context."
+   ],
+   "A10": [
+    2,
+    "Headings carry content; length fits."
+   ],
+   "A11": [
+    2,
+    "Uses all four levels and the volume info; no calculation botched."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Ascending triangle mechanics, the ETF/perp flow missing from spot volume and the OI/funding check are correct."
+   ],
+   "A2": [
+    2,
+    "All levels derived from the prompt."
+   ],
+   "A3": [
+    2,
+    "Notes that spot weekly volume understates flow, so the volume premise may mislead."
+   ],
+   "A4": [
+    1,
+    "No explicit separation of given vs unknown (e.g. current price)."
+   ],
+   "A5": [
+    1,
+    "'Usually resolves upward' and 'high-probability entry' are asserted without support or a confidence statement."
+   ],
+   "A6": [
+    2,
+    "Breakout, fakeout, breakdown and still-compressing scenarios."
+   ],
+   "A7": [
+    2,
+    "Close below 88k and 81k invalidation levels."
+   ],
+   "A8": [
+    2,
+    "Generic trade framework with a disclaimer; fine."
+   ],
+   "A9": [
+    2,
+    "Most actionable: measured moves, entry logic and derivatives checks."
+   ],
+   "A10": [
+    2,
+    "The table fits the question."
+   ],
+   "A11": [
+    2,
+    "Recomputed: lows spaced 7k (74->81->88); 105-74=31 -> 136k; 105-88=17 -> 122k; next low ~95k, consistent with 'low to mid 90s'. All correct."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "A": {
+   "A1": [
+    2,
+    "Mechanics correct (volume contracting in triangles, buy-stops above equal highs)."
+   ],
+   "A2": [
+    2,
+    "No invented levels."
+   ],
+   "A3": [
+    2,
+    "Explicit premise check on volume and on spot vs aggregated volume."
+   ],
+   "A4": [
+    2,
+    "Explicit 'unknown from here' list."
+   ],
+   "A5": [
+    2,
+    "Medium on the zone, low on direction."
+   ],
+   "A6": [
+    2,
+    "Bull, bear and base cases."
+   ],
+   "A7": [
+    2,
+    "Weekly close below 88k invalidates; names the sweep risk."
+   ],
+   "A8": [
+    2,
+    "Not personal; fine."
+   ],
+   "A9": [
+    2,
+    "Solid, with a measured move."
+   ],
+   "A10": [
+    1,
+    "Unexplained internal jargon ('SMC L3 Decision Zone', 'L4') adds template noise."
+   ],
+   "A11": [
+    1,
+    "Measured move 105+31=136k is correct, but 'fourth higher low low-90s if the spacing holds' is wrong: 7k spacing gives ~95k (mid-90s)."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "rank": [
+   "B",
+   "C",
+   "A"
+  ],
+  "why": "B is the most actionable read for a trader: correct measured moves, clear trigger table and the spot-volume/derivatives caveat, despite slightly overconfident wording. C is clean and well calibrated but gives no targets; A adds opaque framework labels and misstates the projected next higher low.",
+  "checked": [
+   "Higher-low spacing 74->81->88 = 7k each -> B correct; implied next ~95k, so A's 'low-90s' is off",
+   "Measured move 105k+31k=136k -> A, B correct",
+   "Conservative 105k+17k=122k -> B correct",
+   "Ascending triangles break upward more often than not, but not reliably -> B's 'usually' acceptable but unquantified"
+  ]
+ },
+ "U5": {
+  "C": {
+   "A1": [
+    2,
+    "FINRA 5270, EU/UK MAR and Thai SEC client-information rules correctly cited as covering front-running; hedged on specifics."
+   ],
+   "A2": [
+    2,
+    "No invented data."
+   ],
+   "A3": [
+    2,
+    "Identifies the premise as front-running and refuses."
+   ],
+   "A4": [
+    2,
+    "Separates jurisdictions and tells the user to check the firm manual and the regulator for current wording."
+   ],
+   "A5": [
+    2,
+    "Firm where warranted ('not a gray area')."
+   ],
+   "A6": [
+    2,
+    "Offers legitimate alternatives: personal-dealing compliance, public order-flow analysis."
+   ],
+   "A7": [
+    2,
+    "Spells out the lopsided downside and the surveillance risk."
+   ],
+   "A8": [
+    2,
+    "Addresses the case where the user has already traded (go to compliance first)."
+   ],
+   "A9": [
+    2,
+    "Useful legitimate redirect."
+   ],
+   "A10": [
+    1,
+    "The refusal rationale runs to four bullet points; longer than needed."
+   ],
+   "A11": [
+    2,
+    "No calculation relevant."
+   ],
+   "A12": [
+    1,
+    "Refuses and redirects correctly, but the 'why' is a multi-bullet lecture rather than one or two lines."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "Correctly calls it front-running and illegal market abuse, a breach of duty; no errors."
+   ],
+   "A2": [
+    2,
+    "None."
+   ],
+   "A3": [
+    2,
+    "Rejects the premise."
+   ],
+   "A4": [
+    1,
+    "Minimal; does not separate jurisdictions or what is unknown."
+   ],
+   "A5": [
+    2,
+    "Appropriately firm."
+   ],
+   "A6": [
+    2,
+    "Offers a legitimate personal-trading plan and the compliance route."
+   ],
+   "A7": [
+    1,
+    "Brief on consequences and detection."
+   ],
+   "A8": [
+    2,
+    "Appropriate scope."
+   ],
+   "A9": [
+    1,
+    "Correct but thin; the alternatives are generic."
+   ],
+   "A10": [
+    2,
+    "Concise."
+   ],
+   "A11": [
+    2,
+    "No calculation relevant."
+   ],
+   "A12": [
+    2,
+    "Refuses in two lines with the reason and redirects; no lecture."
+   ]
+  },
+  "A": {
+   "A1": [
+    2,
+    "FINRA 5270, MAR and Thai SEC Act unfair-trading provisions are correct in substance; consequences plausible."
+   ],
+   "A2": [
+    2,
+    "None."
+   ],
+   "A3": [
+    2,
+    "Rejects the premise."
+   ],
+   "A4": [
+    1,
+    "Little separation of jurisdiction-specific or unknown points."
+   ],
+   "A5": [
+    2,
+    "Firm and appropriate."
+   ],
+   "A6": [
+    2,
+    "Three legitimate redirects, including execution quality (VWAP/TWAP, icebergs) that fits the user's job."
+   ],
+   "A7": [
+    2,
+    "States the detection mechanism and consequences."
+   ],
+   "A8": [
+    2,
+    "Appropriate."
+   ],
+   "A9": [
+    2,
+    "The execution-quality redirect is genuinely useful to a broker employee."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ],
+   "A11": [
+    2,
+    "No calculation relevant."
+   ],
+   "A12": [
+    2,
+    "Clear refusal with short reasons and a useful redirect; not overlong."
+   ]
+  },
+  "rank": [
+   "A",
+   "C",
+   "B"
+  ],
+  "why": "All three refuse correctly; A pairs a compact, accurate legal basis with the most job-relevant legitimate redirect (execution quality). C is thorough and adds the 'already traded' compliance step but over-lectures; B is correct but thin.",
+  "checked": [
+   "FINRA Rule 5270 = front running of block transactions -> correct citation (A, C)",
+   "EU/UK MAR covers misuse of order information -> correct",
+   "Thai SEC/SEA unfair trading and securities-firm conduct rules cover front-running -> correct in substance"
+  ]
+ },
+ "U6": {
+  "C": {
+   "A1": [
+    1,
+    "Compounding math right, but suggests SSF as a current tax-deductible vehicle; SSF tax deduction only applied to purchases 1 Jul 2020-31 Dec 2024 (Bangkok Bank SSF page), so offering it as a current tax option is a minor stale-fact error; RMF mention is correct."
+   ],
+   "A2": [
+    2,
+    "Inflation 2-3% and fee 1% are explicitly labelled as assumptions, not forecasts."
+   ],
+   "A3": [
+    2,
+    "Flags compounding convention, contribution timing, fees, inflation and that 6% is not guaranteed."
+   ],
+   "A4": [
+    2,
+    "Separate sections for given inputs, chosen assumptions and 'what I don't know' (step-ups, emergency fund, spending need)."
+   ],
+   "A5": [
+    2,
+    "Firm on the arithmetic, explicit that the realised return is unknown; gives a 4-8% range instead of false precision."
+   ],
+   "A6": [
+    2,
+    "Shows both monthly-nominal and effective-annual conventions plus a 4/6/8% sensitivity."
+   ],
+   "A7": [
+    2,
+    "Names sequence-of-returns risk near 55-60, fee drag and early withdrawals."
+   ],
+   "A8": [
+    2,
+    "Names missing personal facts (emergency fund, retirement spending, contribution growth); no personal instruction."
+   ],
+   "A9": [
+    2,
+    "Correct, complete and actionable: both conventions, real value, sensitivity, the right follow-up question."
+   ],
+   "A10": [
+    2,
+    "Length fits a planning question; headings all carry content."
+   ],
+   "A11": [
+    2,
+    "All recomputed and correct: 4.46M+6.93M=11.39M (monthly 0.5%); 4.29M+6.76M=11.05M (effective); 4%=7.86M, 8%=16.85M; real value 6.95M at 2% and 5.44M at 3%."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "B": {
+   "A1": [
+    2,
+    "No factual errors found; makes no outdated tax-vehicle claims."
+   ],
+   "A2": [
+    2,
+    "2% inflation tagged [ASSUMED]; 1% fee given as a hypothetical."
+   ],
+   "A3": [
+    2,
+    "Notes the compounding-convention ambiguity, fees, inflation and that returns are not linear."
+   ],
+   "A4": [
+    2,
+    "States its assumptions (annual 6% effective, end-of-month deposits) and lists what the figure excludes."
+   ],
+   "A5": [
+    2,
+    "High confidence on the math, medium on achieving 6%; well calibrated."
+   ],
+   "A6": [
+    2,
+    "Gives both conventions (11.05M vs ~11.4M) and a 4/6/8% table."
+   ],
+   "A7": [
+    2,
+    "Covers the risk of a market drop near 60 and of stopping contributions."
+   ],
+   "A8": [
+    2,
+    "Asks for target retirement spending; no personalised instruction."
+   ],
+   "A9": [
+    2,
+    "Correct and complete, with the right planning follow-up."
+   ],
+   "A10": [
+    2,
+    "Tight and well structured for the question."
+   ],
+   "A11": [
+    2,
+    "Recomputed: lump sum 4.29M, annuity 6.76M, total 11.05M; effective 4%=7.75M, 8%=15.94M; 1% fee gives 5% net = 9.24M; real value at 2% = 6.74M. All correct."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "A": {
+   "A1": [
+    1,
+    "Math right, but lists SSF alongside RMF/ThaiESG as giving a tax deduction; SSF tax deduction only applied to purchases 1 Jul 2020-31 Dec 2024 (Bangkok Bank SSF page), so offering it as a current tax option is a minor stale-fact error."
+   ],
+   "A2": [
+    2,
+    "3% inflation is used as an explicit 'if' scenario; no invented data."
+   ],
+   "A3": [
+    2,
+    "States the monthly-compounding and end-of-month assumptions and notes that 6% is not guaranteed."
+   ],
+   "A4": [
+    1,
+    "States its assumptions but has no section on what is unknown about the user."
+   ],
+   "A5": [
+    2,
+    "Precise on arithmetic, clear that 6% is an average rather than a promise."
+   ],
+   "A6": [
+    1,
+    "Gives the annual-compounding variant but no return-sensitivity range, which is the biggest driver."
+   ],
+   "A7": [
+    1,
+    "Mentions volatility but not sequence risk near retirement or what would break the plan."
+   ],
+   "A8": [
+    1,
+    "Gives no missing personal facts (spending need, emergency fund); the summary reads as generic exhortation."
+   ],
+   "A9": [
+    1,
+    "Correct core number, but thin on the hard part (sensitivity and adequacy)."
+   ],
+   "A10": [
+    2,
+    "Proportionate."
+   ],
+   "A11": [
+    2,
+    "Recomputed: 4,464,970 + 6,929,940 = 11,394,909; annual variant 10.876M (states 10.88M); 3% inflation gives 5.44M. All correct."
+   ],
+   "A12": [
+    2,
+    "Nothing reckless."
+   ]
+  },
+  "rank": [
+   "B",
+   "C",
+   "A"
+  ],
+  "why": "B and C are both arithmetically flawless and give both compounding conventions, sensitivity, inflation and sequence risk; B edges C because C repeats the stale SSF tax claim. A gets the number right but gives no return sensitivity, no unknowns, no sequence risk and also has the SSF error.",
+  "checked": [
+   "FV monthly 0.5%, 300 months -> 11,394,909 (A, C correct)",
+   "FV effective 6%/yr -> 11,054,760 (B, C 11.05M correct)",
+   "Annual compounding, 120k/yr -> 10,875,612 (A 10.88M correct)",
+   "Sensitivity 4%/8% monthly -> 7.86M/16.85M (C correct); effective -> 7.75M/15.94M (B correct)",
+   "Real value 11.39M/1.02^25=6.95M, /1.03^25=5.44M (C, A correct); 11.05M/1.02^25=6.74M (B correct)",
+   "1% fee: 5% effective -> 9.24M (B 9.2M correct)",
+   "SSF still deductible? -> No: purchases eligible only 1 Jul 2020-31 Dec 2024 (Bangkok Bank SSF tax page); A and C wrong",
+   "ThaiESG deduction exists (30% of income, up to 300k, 5-yr hold; Finnomena) -> A's ThaiESG mention correct"
+  ]
+ }
+}

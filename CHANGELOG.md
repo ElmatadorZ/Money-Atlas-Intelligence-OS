@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.3.1] — 2026-11-17 — Speak the user's language
+
+- **No internal machinery in answers**: no mode names, "Market Core", "L1–L5"/"Layer 5" or "this
+  framework"; say it in plain words.
+- **📍 banners only for asset reads**; personal-money decisions, trade mechanics and refusals are
+  prose or plain headings.
+- **Refusals** (manipulation, insider or front-running trades, "guaranteed" signals): one or two
+  plain sentences, then the legitimate alternative — no framework, no lecture.
+- Dated example of a changed rule: Thailand's SSF deduction (mid-2020 to end-2024).
+- `data_feed.py`: HTTP timeouts (bandit: no medium or high issues).
+- Measured on six new held-out questions (`evals/2026-11-17-v2.3.1/`): proportion 7.5 → 10.5 of 12,
+  no banners outside asset reads; total 135.5 vs v2.3 135.0 vs no skill 126.0 (of 144).
+
 ## 2026-11-17 — Proof run (no skill change)
 
 Fresh re-run of v2.3 on every held-out question with new graders, plus safety, activation, code

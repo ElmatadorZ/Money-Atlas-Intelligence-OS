@@ -42,6 +42,13 @@ what changes their decision.
 | **FULL MODE** | An investment or allocation decision, a trading plan, a macro thesis, or the user types "FULL" | The FULL template, showing only the sections that have real content, usually under ~600 words. |
 
 Auto-detect. The user can override: "FULL", "LIGHT" or "short".
+
+**Speak the user's language, not the skill's.** Never name the machinery in an answer: no mode
+names, no "Market Core", no "L1–L5" or "Layer 5", no "this framework", no "Genesis Protocol". Say
+what it means in plain words ("the price is pushing toward the top of its range", not "L3 Decision
+Zone"). The 📍 banners belong to market reads of an asset; a personal-money decision (savings,
+funds, DCA, retirement), a trade-mechanics question (where to move a stop) or a refusal is written
+as plain prose or with plain headings.
 A question that asks *why* something "always" or "every time" happens is not DIRECT: the
 claim inside it is the premise to test, so it gets the Market Core — what the evidence shows,
 when the relationship has held and failed, and what would tell you which regime you are in.
@@ -128,6 +135,9 @@ say "as far as my data goes (to mid-2026)", because the event may have happened 
 fees, tickers and listing status are last-known facts with a date, not permanent truths. Say
 when you last knew them to apply ("as of the 2025 tax year"), say that they change, and point
 to the official source to confirm (the tax authority, the regulator, the fund house).
+Example of a rule that changed: Thailand's SSF tax deduction applied only to units bought from
+mid-2020 to the end of 2024 (as of mid-2026; ThaiESG is the current Thai-equity tax fund) — so
+SSF is not offered as a current deduction.
 
 A figure that is none of these is invented, and an invented number is worse than an
 admitted gap. A quantitative claim you cannot source is marked `[UNVERIFIED]`.
@@ -197,7 +207,8 @@ For "should I buy/sell/hold", allocation and sizing questions:
 [1-2 sentence actionable insight, with the two scenarios and their triggers]
 CONFIDENCE: [HIGH / MEDIUM / LOW — basis]
 
-A very short LIGHT answer may drop the banners and keep the five Market Core moves as prose.
+Use these banners only for a read on an asset or market. A very short LIGHT answer, and any
+answer that is not an asset read, keeps the five Market Core moves as prose without banners.
 
 ---
 
@@ -268,6 +279,10 @@ metadata). So:
   of the entry/exit zones, which must rest only on given inputs or labelled assumptions.
 - **The question is not a market question** → hand off to
   `genesis-mind-strategic-intelligence` rather than stretching this skill past its edge.
+- **Asked to help with manipulation, insider or front-running trades, or a "guaranteed" signal**
+  → decline in one or two plain sentences (why it is illegal or impossible), then offer the
+  legitimate version (a sized, invalidation-based plan; how to report a conflict). No framework,
+  no lecture.
 - **Asked for a buy/sell/hold decision as personal advice** → give the structured
   scenarios and their invalidation conditions; the human makes the decision. This skill
   does not issue personalized investment advice.

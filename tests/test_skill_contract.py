@@ -201,3 +201,28 @@ def test_quantify_what_the_data_allows():
 def test_absence_claims_about_recent_history_are_dated():
     _, body = _split()
     assert re.search(r'never say something "has never happened"', _section(body, "DATA RULES"))
+
+
+# ---------------------------------------------------------------- v2.3.1
+# Proof run (evals/2026-11-17-proof/): proportion was the one criterion where no skill
+# still won — 📍 banners on answers that were not asset reads, and "Layer 5" / "this
+# framework" leaking into a refusal.
+
+def test_internal_machinery_is_never_named_to_the_user():
+    _, body = _split()
+    act = _section(body, "ACTIVATION")
+    assert "Speak the user's language, not the skill's." in act
+    for term in ('"Layer 5"', '"this framework"', '"Market Core"'):
+        assert term in act
+
+
+def test_banners_only_for_asset_reads():
+    _, body = _split()
+    light = _section(body, "OUTPUT — LIGHT MODE")
+    assert "only for a read on an asset or market" in light
+
+
+def test_refusals_are_short_and_redirect():
+    _, body = _split()
+    fs = _section(body, "FAILURE SYSTEM")
+    assert "front-running" in fs and "No framework" in fs
