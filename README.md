@@ -1,7 +1,7 @@
 # Money Atlas Intelligence OS
 ### Claude Skill (Agent) — Financial Market Strategic Intelligence
 
-**Version:** 2.3.1  
+**Version:** 2.4.0  
 **Author:** Bunyawat Dechanon (ElmatadorZ)  
 **Brand:** Money Atlas / Alternative Slowbar  
 **Type:** Custom Skill (SKILL.md format)
@@ -12,7 +12,11 @@
 
 > **New: install from the Claude Code CLI.**
 > `/plugin install money-atlas-intelligence-os --marketplace ElmatadorZ/Money-Atlas-Intelligence-OS`
-> — or see [How to Install](#how-to-install). Version 2.3.1.
+> — or see [How to Install](#how-to-install). Version 2.4.0.
+>
+> **New in 2.4: the data agent.** The plugin now also installs an MCP server that fetches live
+> prices (Binance, MetaTrader 5, Stooq, FRED), computes market snapshots and position sizes, and
+> keeps a paper-trading ledger that only a person can approve. See [Data agent (MCP)](#data-agent-mcp).
 
 
 **Why:** a blind test found that answers written **with v2.0 scored lower than answers written
@@ -310,6 +314,8 @@ money-atlas-intelligence-os/
 ├── cli/                        ← Command-line runners
 │
 ├── tests/                      ← unit tests for the reasoning engines + skill contract
+├── money_atlas_mcp/            ← MCP data server: providers, analytics, paper ledger, approval CLI
+├── docs/AGENT_ARCHITECTURE.md  ← Genesis Mind analysis, architecture and build order for the agent
 ├── evals/2026-11-16/           ← blind A/B test: prompts, answers, grades, aggregate.py
 ├── evals/2026-11-16-hard/      ← professional-level test (computation criterion, held-out)
 ├── examples/                   ← worked input→output examples + runnable demo
@@ -319,6 +325,42 @@ money-atlas-intelligence-os/
 ├── .claude-plugin/             ← plugin.json + marketplace.json (Claude Code CLI install)
 └── skills/money-atlas-intelligence-os/  ← plugin copy of SKILL.md + the files it loads
 ```
+
+---
+
+## Data agent (MCP)
+
+Installing the plugin also registers **`money-atlas-data`**, a stdlib-only MCP server
+(`money_atlas_mcp/`). The skill is the brain; this is the body. Design and build order:
+[`docs/AGENT_ARCHITECTURE.md`](docs/AGENT_ARCHITECTURE.md).
+
+| Tool | What it returns |
+|---|---|
+| `get_quote` | Latest price — Binance (crypto), MT5 (gold, FX), Stooq (stocks/indices, end-of-day) |
+| `get_candles` | OHLCV bars |
+| `get_macro_series` | FRED series (DGS10, CPIAUCSL, FEDFUNDS, UNRATE, …) |
+| `market_snapshot` | Range, ATR, swing highs/lows, structure, measured-move projection |
+| `position_size` | Units for a given account, risk % and stop |
+| `paper_propose_order` | A **paper** order, checked against hard limits, waiting for human approval |
+| `paper_orders` | Orders, limits, kill switch, realised P&L |
+
+Every result carries `source`, `as_of` and a `stale` flag, so the skill can cite it as given data.
+
+**Paper only, human-approved.** No tool can approve, send or execute an order. A person reviews
+and approves in a terminal:
+
+```bash
+python -m money_atlas_mcp.approve              # list orders awaiting approval
+python -m money_atlas_mcp.approve PA-1A2B3C    # review, then type the id to approve
+touch ~/.money_atlas/KILL                      # kill switch: block all new orders and approvals
+```
+
+Limits (in `~/.money_atlas/paper_ledger.json`): 1% risk per trade, 3 open orders, 3% daily loss,
+no leverage. MT5 needs Windows, a running terminal and `pip install MetaTrader5`; the other sources
+need nothing. On Windows, if `python3` is not on PATH, change the server command to `python`.
+Offline or in tests: `MONEY_ATLAS_FIXTURES=money_atlas_mcp/fixtures/sample.json` (answers are
+marked FIXTURE). The older `execution_engine.py` sends live orders with no limits — do not wire it
+to an agent.
 
 ---
 

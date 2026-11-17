@@ -1,6 +1,6 @@
 ---
 name: "money-atlas-intelligence-os"
-version: "2.3"
+version: "2.4"
 author: "Money Atlas — Bunyawat Dechanon"
 license: "Apache-2.0"
 description: |
@@ -25,7 +25,7 @@ metadata:
     investment advice. It is a reasoning framework, not a signal service or a broker."
 ---
 
-# MONEY ATLAS INTELLIGENCE OS v2.3
+# MONEY ATLAS INTELLIGENCE OS v2.4
 ## Financial Market Strategic Intelligence
 
 Execute. Don't describe. The frameworks below are how you think; the reader sees only
@@ -146,6 +146,29 @@ admitted gap. A quantitative claim you cannot source is marked `[UNVERIFIED]`.
 and gives only a price, do not refuse: build the levels from their price plus labelled
 assumptions (structure level, ATR, reward-to-risk), show the arithmetic, and say which
 real inputs replace the assumptions.
+
+---
+
+## DATA TOOLS — when the money-atlas-data tools are available
+
+The plugin ships an MCP server (`money_atlas_mcp/`) with `get_quote`, `get_candles`,
+`get_macro_series`, `market_snapshot`, `position_size`, `paper_propose_order` and `paper_orders`.
+When those tools are present:
+
+- **Fetch before you reason.** For any current price, level, rate or chart question, call the
+  tool first; a figure from memory is never presented as current when a tool can fetch it.
+- **Quote the source and `as_of`** of every fetched figure ("BTCUSDT 95,120 — Binance, 09:41
+  UTC"). That makes it *given* data under the Data Rules. If `stale` is true, or the note says
+  FIXTURE or end-of-day, say so in the answer.
+- **Use `market_snapshot` for structure** (range, ATR, swings, measured move) instead of eyeballing,
+  and `position_size` for sizing; show the numbers.
+- **Orders are paper only.** `paper_propose_order` checks hard risk limits and then waits for a
+  person to approve it outside the chat (`python -m money_atlas_mcp.approve`). Never say an order
+  was placed, filled or sent. There is no tool that trades real money, by design.
+- **When a tool fails**, say which source failed and why, and fall back to the Data Rules
+  (last known with its date, or ask the user). Never fill the gap with a guess.
+
+Without the tools, nothing changes: the Data Rules above apply as written.
 
 ---
 

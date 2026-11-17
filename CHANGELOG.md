@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.4.0] — 2026-11-17 — The data agent
+
+- **`money_atlas_mcp/`**: a stdlib-only MCP server (JSON-RPC 2.0 over stdio) registered by the
+  plugin. Providers: Binance (public), MetaTrader 5 (optional package, read-only), Stooq (daily),
+  FRED (CSV), offline fixtures. Tools: `get_quote`, `get_candles`, `get_macro_series`,
+  `market_snapshot`, `position_size`, `paper_propose_order`, `paper_orders`. Every result carries
+  `source`, `as_of` and `stale`; failures are typed errors, never a silent `None`.
+- **Paper trading with human-only approval**: hard limits in code (1% risk per trade, 3 open, 3%
+  daily loss, no leverage), stop-side check, kill switch; approval only via
+  `python -m money_atlas_mcp.approve`. No tool can approve or send an order (tested).
+- **SKILL.md DATA TOOLS** section: fetch before reasoning, quote source and time, paper-only orders,
+  say which source failed instead of guessing.
+- `docs/AGENT_ARCHITECTURE.md`: the Genesis Mind analysis, decision and build order.
+- 71 tests (25 for the server, run offline with recorded responses).
+
 ## [2.3.1] — 2026-11-17 — Speak the user's language
 
 - **No internal machinery in answers**: no mode names, "Market Core", "L1–L5"/"Layer 5" or "this
