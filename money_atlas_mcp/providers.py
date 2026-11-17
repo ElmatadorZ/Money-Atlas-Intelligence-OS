@@ -35,6 +35,21 @@ def http_get(url: str) -> str:
         raise ProviderError(f"request failed: {type(e).__name__}: {e}") from e
 
 
+def clean(text: object, n: int = 80) -> str:
+    """Remote text is untrusted: keep it short, printable and on one line before it can
+    reach the model's context."""
+    s = "".join(ch if ch.isprintable() else " " for ch in str(text))
+    return " ".join(s.split())[:n]
+
+
+def check_limit(limit, maximum: int = 1000) -> int:
+    if isinstance(limit, bool) or not isinstance(limit, (int, float)) or limit != int(limit):
+        raise ProviderError(f"limit must be a whole number from 1 to {maximum}")
+    if not 1 <= int(limit) <= maximum:
+        raise ProviderError(f"limit must be from 1 to {maximum}")
+    return int(limit)
+
+
 def now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
@@ -58,7 +73,7 @@ class Binance:
         sym = symbol.upper().replace("/", "")
         data = json.loads(self.fetch(f"{self.base}/ticker/24hr?symbol={urllib.parse.quote(sym)}"))
         if "lastPrice" not in data:
-            raise ProviderError(f"binance: no quote for {sym}: {data}")
+            raise ProviderError(f"binance: no quote for {clean(sym, 20)}: {clean(data.get('msg', 'unexpected response') if isinstance(data, dict) else 'unexpected response')}")
         return {"symbol": sym, "price": float(data["lastPrice"]),
                 "change_pct_24h": float(data.get("priceChangePercent", 0.0)),
                 "high_24h": float(data["highPrice"]), "low_24h": float(data["lowPrice"]),
@@ -68,10 +83,12 @@ class Binance:
         if interval not in self.INTERVALS:
             raise ProviderError(f"binance: interval must be one of {sorted(self.INTERVALS)}")
         sym = symbol.upper().replace("/", "")
+        limit = check_limit(limit)
         rows = json.loads(self.fetch(
-            f"{self.base}/klines?symbol={urllib.parse.quote(sym)}&interval={interval}&limit={int(limit)}"))
+            f"{self.base}/klines?symbol={urllib.parse.quote(sym)}&interval={interval}&limit={limit}"))
         if not isinstance(rows, list) or not rows:
-            raise ProviderError(f"binance: no candles for {sym}: {rows}")
+            raise ProviderError(f"binance: no candles for {clean(sym, 20)}: "
+                                f"{clean(rows.get('msg', 'unexpected response') if isinstance(rows, dict) else 'empty')}")
         bars = [{"t": ms_to_iso(int(r[0])), "o": float(r[1]), "h": float(r[2]),
                  "l": float(r[3]), "c": float(r[4]), "v": float(r[5])} for r in rows]
         return {"symbol": sym, "interval": interval, "bars": bars,
@@ -91,11 +108,12 @@ class Stooq:
     def candles(self, symbol: str, interval: str = "1d", limit: int = 100) -> Dict:
         if interval not in {"1d", "1w", "1M"}:
             raise ProviderError("stooq: interval must be 1d, 1w or 1M")
+        limit = check_limit(limit)
         i = {"1d": "d", "1w": "w", "1M": "m"}[interval]
         text = self.fetch(f"https://stooq.com/q/d/l/?s={urllib.parse.quote(symbol.lower())}&i={i}")
         rows = list(csv.DictReader(io.StringIO(text)))
         if not rows or "Close" not in rows[0]:
-            raise ProviderError(f"stooq: no data for {symbol} (response: {text[:80]!r})")
+            raise ProviderError(f"stooq: no data for {clean(symbol, 20)} (unexpected response, {len(text)} bytes)")
         bars = [{"t": r["Date"], "o": float(r["Open"]), "h": float(r["High"]), "l": float(r["Low"]),
                  "c": float(r["Close"]), "v": float(r.get("Volume") or 0)} for r in rows[-int(limit):]]
         return {"symbol": symbol.lower(), "interval": interval, "bars": bars,
@@ -123,13 +141,17 @@ class Fred:
     def series(self, series_id: str, limit: int = 24) -> Dict:
         sid = series_id.upper()
         text = self.fetch(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={urllib.parse.quote(sid)}")
+        limit = check_limit(limit)
         rows = list(csv.reader(io.StringIO(text)))
-        if len(rows) < 2:
-            raise ProviderError(f"fred: no data for {sid}")
+        if len(rows) < 2 or len(rows[0]) != 2:
+            raise ProviderError(f"fred: no data for {clean(sid, 20)} (unexpected response, {len(text)} bytes)")
         obs = []
-        for date, value in rows[1:]:
-            if value not in (".", ""):
-                obs.append({"date": date, "value": float(value)})
+        for row in rows[1:]:
+            if len(row) == 2 and row[1] not in (".", ""):
+                try:
+                    obs.append({"date": clean(row[0], 10), "value": float(row[1])})
+                except ValueError:
+                    continue
         if not obs:
             raise ProviderError(f"fred: {sid} has no numeric observations")
         obs = obs[-int(limit):]
@@ -174,6 +196,7 @@ class MT5:
     def candles(self, symbol: str, interval: str = "1d", limit: int = 100) -> Dict:
         if interval not in self.TIMEFRAMES:
             raise ProviderError(f"mt5: interval must be one of {sorted(self.TIMEFRAMES)}")
+        limit = check_limit(limit)
         mt5 = self._lib()
         rates = mt5.copy_rates_from_pos(symbol, getattr(mt5, self.TIMEFRAMES[interval]), 0, int(limit))
         if rates is None or len(rates) == 0:
@@ -209,11 +232,13 @@ class Fixtures:
         return self._get("quotes", symbol)
 
     def candles(self, symbol: str, interval: str = "1d", limit: int = 100) -> Dict:
+        limit = check_limit(limit)
         c = self._get("candles", symbol)
         c["bars"] = c["bars"][-int(limit):]
         return c
 
     def series(self, series_id: str, limit: int = 24) -> Dict:
+        limit = check_limit(limit)
         s = self._get("series", series_id)
         s["observations"] = s["observations"][-int(limit):]
         return s
@@ -224,9 +249,18 @@ class Fixtures:
 MT5_HINTS = ("XAU", "XAG", "EUR", "GBP", "JPY", "AUD", "NZD", "CAD", "CHF", "USDTHB", "US30", "NAS100")
 
 
+SYMBOL_OK = set("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.^/_-")
+
+
+def check_symbol(symbol) -> str:
+    if not isinstance(symbol, str) or not 1 <= len(symbol) <= 20 or not set(symbol) <= SYMBOL_OK:
+        raise ProviderError("symbol must be 1-20 characters: letters, digits and . ^ / _ -")
+    return symbol
+
+
 def resolve_source(symbol: str) -> str:
     """Pick a provider from the symbol's shape when the caller does not name one."""
-    s = symbol.strip()
+    s = check_symbol(symbol).strip()
     if s.startswith("^") or "." in s:
         return "stooq"                      # ^spx, spy.us, ptt.th (if covered)
     up = s.upper().replace("/", "")
@@ -250,9 +284,12 @@ class Router:
         self.providers = providers
 
     def get(self, source: Optional[str], symbol: str):
+        check_symbol(symbol)
+        if source is not None and not isinstance(source, str):
+            raise ProviderError("source must be a string")
         name = (source or resolve_source(symbol)).lower()
         if name not in self.providers:
-            raise ProviderError(f"unknown source {name!r}; available: {sorted(self.providers)}")
+            raise ProviderError(f"unknown source {clean(name, 20)!r}; available: {sorted(self.providers)}")
         return self.providers[name]
 
     def quote(self, symbol: str, source: Optional[str] = None) -> Dict:
@@ -263,6 +300,8 @@ class Router:
         return self.get(source, symbol).candles(symbol, interval, limit)
 
     def series(self, series_id: str, limit: int = 24) -> Dict:
+        if not isinstance(series_id, str) or not 1 <= len(series_id) <= 30 or not series_id.replace("_", "").isalnum():
+            raise ProviderError("series_id must be a FRED id such as DGS10 or CPIAUCSL")
         return self.providers["fred"].series(series_id, limit)
 
 

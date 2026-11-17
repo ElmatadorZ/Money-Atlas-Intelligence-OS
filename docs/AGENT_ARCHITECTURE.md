@@ -84,7 +84,7 @@ feed. Unknown: real-world rate limits from Thailand; MT5 broker symbol naming.
 | `providers.py` | Binance (public REST), Stooq (daily CSV), FRED (CSV, no key), MT5 (optional `MetaTrader5`, read-only), Fixtures (offline, labelled). Typed `ProviderError`, never a silent `None`. Router infers the source from the symbol. |
 | `analytics.py` | Wilder ATR, fractal swings, structure (higher lows / lower highs), range position, measured-move projection, position sizing — each labelled with its method. |
 | `paper.py` | Paper ledger: hard limits (1% risk per trade, 3 open, 3% daily loss, no leverage by default), stop-side check, kill switch file. Orders start `awaiting_approval`. |
-| `approve.py` | The **only** approval path: a person runs `python -m money_atlas_mcp.approve <id>` and types the id back. |
+| `approve.py` | The **only** approval path: a person at an interactive terminal enters an approval passphrase (PBKDF2-hashed); approvals are HMAC-signed and `--verify` detects ledger edits. |
 | `server.py` | MCP over stdio (JSON-RPC 2.0, protocol 2025-06-18): 8 tools, staleness flags, server instructions that bind the skill's Data Rules. |
 | `.claude-plugin/plugin.json` | Registers the server, so installing the plugin installs brain and body together. |
 
@@ -98,6 +98,11 @@ feed. Unknown: real-world rate limits from Thailand; MT5 broker symbol naming.
 | 3 | Portfolio module: holdings, exposure by asset/currency, rebalancing *proposals*, drawdown tracking — still paper | A quarter of paper results reviewed against a benchmark |
 | 4 | Strategy research: backtests on the same bars the server serves (reuse `backtest/`), walk-forward, costs included | Out-of-sample results that survive costs |
 | 5 | Only then, and only if you decide to: live execution behind the same approval CLI, small fixed size, broker-side stop, daily loss limit, kill switch | Paper record, written risk policy, and a person approving every order |
+
+**Security boundary (from the red team, `evals/2026-11-17-mcp-redteam/`).** An agent running as the
+same OS user with a shell can rewrite or delete `~/.money_atlas`. It cannot approve without the
+passphrase, and edits are detected, but before phase 5 approval must move to a channel the agent
+cannot reach (a separate OS user or a second device).
 
 Retire or isolate `execution_engine.py` (live orders, no limits) and `integration/market_api.py`
 (ignores its symbol) before wiring anything else to an agent.

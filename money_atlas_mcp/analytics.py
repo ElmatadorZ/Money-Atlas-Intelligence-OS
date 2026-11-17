@@ -4,7 +4,17 @@ Deterministic, stdlib only. Every function states its method so the skill can sh
 """
 from __future__ import annotations
 
+import math
 from typing import Dict, List, Optional
+
+
+def finite(name: str, v, positive: bool = False) -> float:
+    """Reject bools, strings, NaN and infinity: NaN passes every `<`/`>` check silently."""
+    if isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v):
+        raise ValueError(f"{name} must be a finite number")
+    if positive and v <= 0:
+        raise ValueError(f"{name} must be greater than zero")
+    return float(v)
 
 
 def atr(bars: List[Dict], period: int = 14) -> Optional[float]:
@@ -73,6 +83,13 @@ def snapshot(candles: Dict, atr_period: int = 14) -> Dict:
 def position_size(account: float, risk_pct: float, entry: float, stop: float,
                   contract_size: float = 1.0) -> Dict:
     """Units so that a stop-out loses `risk_pct` of `account`."""
+    account = finite("account", account, positive=True)
+    risk_pct = finite("risk_pct", risk_pct, positive=True)
+    entry = finite("entry", entry, positive=True)
+    stop = finite("stop", stop, positive=True)
+    contract_size = finite("contract_size", contract_size, positive=True)
+    if risk_pct > 100:
+        raise ValueError("risk_pct cannot exceed 100")
     if entry == stop:
         raise ValueError("entry and stop must differ")
     risk_cash = account * risk_pct / 100

@@ -1,0 +1,43 @@
+{
+ "atr_vs_reference_max_rel_error": 8.165264505389881e-16,
+ "position_size_property_violations_of_20000": 0,
+ "get_quote": {
+  "n": 5000,
+  "p50_ms": 0.064,
+  "p95_ms": 0.089,
+  "p99_ms": 0.117,
+  "throughput_per_s": 14518.5
+ },
+ "market_snapshot_60_bars": {
+  "n": 2000,
+  "p50_ms": 0.15,
+  "p95_ms": 0.175,
+  "p99_ms": 0.193,
+  "throughput_per_s": 6500.8
+ },
+ "position_size": {
+  "n": 5000,
+  "p50_ms": 0.049,
+  "p95_ms": 0.068,
+  "p99_ms": 0.083,
+  "throughput_per_s": 19287.8
+ },
+ "fuzz": {
+  "messages": 20000,
+  "replies": 20000,
+  "server_alive": true,
+  "seconds": 1.48
+ },
+ "server_peak_rss_mb": 21.3,
+ "snapshot_100_bars_ms": 0.09,
+ "snapshot_1000_bars_ms": 0.79,
+ "snapshot_5000_bars_ms": 4.2,
+ "propose_at_100_orders_ms": 0.97,
+ "propose_at_1000_orders_ms": 4.6,
+ "propose_at_3000_orders_ms": 9.96,
+ "concurrency_8_processes_x_50": {
+  "expected": 400,
+  "stored": 400,
+  "all_exit_0": true
+ }
+}

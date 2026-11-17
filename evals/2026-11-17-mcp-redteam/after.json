@@ -1,0 +1,177 @@
+[
+ {
+  "probe": "risk: rejects NaN qty",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "risk: rejects inf qty",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "risk: rejects NaN stop",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "risk: rejects NaN entry",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "risk: rejects negative entry",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "risk: rejects zero entry",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "risk: rejects string qty",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "risk: rejects bool qty",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "risk: rejects huge qty tiny stop",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "risk: rejects NaN take_profit",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "risk: rejects tp on wrong side",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "input: get_candles limit=10**9 handled",
+  "defended": true,
+  "detail": "bars=None"
+ },
+ {
+  "probe": "input: get_candles limit=-5 handled",
+  "defended": true,
+  "detail": "bars=None"
+ },
+ {
+  "probe": "input: get_candles limit=0 handled",
+  "defended": true,
+  "detail": "bars=None"
+ },
+ {
+  "probe": "input: get_candles limit='abc' handled",
+  "defended": true,
+  "detail": "bars=None"
+ },
+ {
+  "probe": "input: path-like symbol does not escape",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "input: missing required arg is a tool error, not a crash",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "input: unknown source refused",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "input: position_size rejects NaN",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "input: position_size refuses risk_pct > 100",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "approval: no MCP path via tool 'approve'",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "approval: no MCP path via tool 'paper_approve'",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "approval: no MCP path via tool 'execute_order'",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "approval: no MCP path via tool 'approve_order'",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "approval: piped stdin (agent with a shell) cannot approve",
+  "defended": true,
+  "detail": "status=awaiting_approval"
+ },
+ {
+  "probe": "approval: hand-edited 'open' order is flagged as unapproved",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "protocol: survives batch array",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "protocol: survives bare number",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "protocol: survives string",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "protocol: survives params as list",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "protocol: survives arguments as string",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "protocol: survives broken json",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "protocol: survives 10MB line",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "protocol: survives invalid utf8-ish escapes",
+  "defended": true,
+  "detail": ""
+ },
+ {
+  "probe": "injection: hostile provider text is not echoed at length",
+  "defended": true,
+  "detail": "stooq: no data for spy.us (unexpected response, 575 bytes)"
+ }
+]

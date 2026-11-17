@@ -13,7 +13,13 @@
 - **SKILL.md DATA TOOLS** section: fetch before reasoning, quote source and time, paper-only orders,
   say which source failed instead of guessing.
 - `docs/AGENT_ARCHITECTURE.md`: the Genesis Mind analysis, decision and build order.
-- 71 tests (25 for the server, run offline with recorded responses).
+- **Red-teamed before release** (`evals/2026-11-17-mcp-redteam/`): the first build defended 17 of
+  35 attacks (NaN slipped past the risk checks, a piped shell could approve, malformed messages
+  crashed the server, hostile provider text reached the model). After fixes: 35/35 — finite-number
+  validation, approval passphrase (PBKDF2) and interactive terminal, HMAC-signed approvals with
+  `--verify`, invalid-request handling, ASCII-safe output, no echo of remote text, bounded `limit`,
+  ledger lock. LLM red team 4/4. Fuzz 20,000 messages, no crash; p99 latency under 0.2 ms.
+- 117 tests (server tested offline with recorded responses).
 
 ## [2.3.1] — 2026-11-17 — Speak the user's language
 

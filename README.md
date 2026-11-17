@@ -350,10 +350,17 @@ Every result carries `source`, `as_of` and a `stale` flag, so the skill can cite
 and approves in a terminal:
 
 ```bash
-python -m money_atlas_mcp.approve              # list orders awaiting approval
-python -m money_atlas_mcp.approve PA-1A2B3C    # review, then type the id to approve
-touch ~/.money_atlas/KILL                      # kill switch: block all new orders and approvals
+python -m money_atlas_mcp.approve --set-passphrase   # once: your approval passphrase (8+ chars)
+python -m money_atlas_mcp.approve                    # list orders awaiting approval
+python -m money_atlas_mcp.approve PA-1A2B3C          # review, then approve with the passphrase
+python -m money_atlas_mcp.approve --verify           # detect any hand-edited approvals
+touch ~/.money_atlas/KILL                            # kill switch: block all new orders and approvals
 ```
+
+Approval needs an interactive terminal and the passphrase, so an agent cannot approve by piping
+input; approvals are signed, so editing the ledger is detected. Never paste the passphrase into a
+chat. Red-team and performance results: [`evals/2026-11-17-mcp-redteam/`](evals/2026-11-17-mcp-redteam/README.md)
+(35/35 attacks defended, 20,000-message fuzz with no crash, p99 under 0.2 ms).
 
 Limits (in `~/.money_atlas/paper_ledger.json`): 1% risk per trade, 3 open orders, 3% daily loss,
 no leverage. MT5 needs Windows, a running terminal and `pip install MetaTrader5`; the other sources
