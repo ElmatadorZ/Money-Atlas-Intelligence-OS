@@ -1,7 +1,7 @@
 {
   "name": "money-atlas-intelligence-os",
-  "description": "Money Atlas: financial-market and macro reasoning for crypto, gold, stocks, FX, bonds and rates. Scenarios with triggers and invalidation, never an invented price, calculations done from the data you give, confidence with its basis, and answers sized to the question. Blind-evaluated against no skill.",
-  "version": "2.3.1",
+  "description": "Money Atlas: financial-market and macro reasoning plus a stdlib MCP data server (Binance, MetaTrader 5, Stooq, FRED) with market snapshots, position sizing and human-approved paper trading. Scenarios with invalidation, no invented prices, every figure sourced and timestamped.",
+  "version": "2.4.0",
   "author": {
     "name": "Bunyawat Dechanon (ElmatadorZ)"
   },
@@ -15,5 +15,13 @@
     "trading",
     "risk",
     "skill"
-  ]
+  ],
+  "mcpServers": {
+    "money-atlas-data": {
+      "command": "python3",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/money_atlas_mcp/server.py"
+      ]
+    }
+  }
 }

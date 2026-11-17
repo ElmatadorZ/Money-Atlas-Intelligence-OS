@@ -1,5 +1,26 @@
 # Changelog
 
+## [2.4.0] — 2026-11-17 — The data agent
+
+- **`money_atlas_mcp/`**: a stdlib-only MCP server (JSON-RPC 2.0 over stdio) registered by the
+  plugin. Providers: Binance (public), MetaTrader 5 (optional package, read-only), Stooq (daily),
+  FRED (CSV), offline fixtures. Tools: `get_quote`, `get_candles`, `get_macro_series`,
+  `market_snapshot`, `position_size`, `paper_propose_order`, `paper_orders`. Every result carries
+  `source`, `as_of` and `stale`; failures are typed errors, never a silent `None`.
+- **Paper trading with human-only approval**: hard limits in code (1% risk per trade, 3 open, 3%
+  daily loss, no leverage), stop-side check, kill switch; approval only via
+  `python -m money_atlas_mcp.approve`. No tool can approve or send an order (tested).
+- **SKILL.md DATA TOOLS** section: fetch before reasoning, quote source and time, paper-only orders,
+  say which source failed instead of guessing.
+- `docs/AGENT_ARCHITECTURE.md`: the Genesis Mind analysis, decision and build order.
+- **Red-teamed before release** (`evals/2026-11-17-mcp-redteam/`): the first build defended 17 of
+  35 attacks (NaN slipped past the risk checks, a piped shell could approve, malformed messages
+  crashed the server, hostile provider text reached the model). After fixes: 35/35 — finite-number
+  validation, approval passphrase (PBKDF2) and interactive terminal, HMAC-signed approvals with
+  `--verify`, invalid-request handling, ASCII-safe output, no echo of remote text, bounded `limit`,
+  ledger lock. LLM red team 4/4. Fuzz 20,000 messages, no crash; p99 latency under 0.2 ms.
+- 117 tests (server tested offline with recorded responses).
+
 ## [2.3.1] — 2026-11-17 — Speak the user's language
 
 - **No internal machinery in answers**: no mode names, "Market Core", "L1–L5"/"Layer 5" or "this
